@@ -1,0 +1,17 @@
+D:\Bhavesh Bambhaniya\Complete Project\StitchQueue\StitchQueue\bin\StitchQueue.dll.config
+D:\Bhavesh Bambhaniya\Complete Project\StitchQueue\StitchQueue\bin\StitchQueue.dll
+D:\Bhavesh Bambhaniya\Complete Project\StitchQueue\StitchQueue\bin\StitchQueue.pdb
+D:\Bhavesh Bambhaniya\Complete Project\StitchQueue\StitchQueue\obj\Debug\StitchQueue.dll
+D:\Bhavesh Bambhaniya\Complete Project\StitchQueue\StitchQueue\obj\Debug\StitchQueue.pdb
+D:\Bhavesh Bambhaniya\Complete Project\StitchQueue\StitchQueue\obj\Debug\StitchQueue.csprojResolveAssemblyReference.cache
+D:\Bhavesh Bambhaniya\Complete Project\StitchQueue\StitchQueue\StitchQueue\bin\StitchQueue.dll.config
+D:\Bhavesh Bambhaniya\Complete Project\StitchQueue\StitchQueue\StitchQueue\bin\StitchQueue.dll
+D:\Bhavesh Bambhaniya\Complete Project\StitchQueue\StitchQueue\StitchQueue\bin\StitchQueue.pdb
+D:\Bhavesh Bambhaniya\Complete Project\StitchQueue\StitchQueue\StitchQueue\obj\Debug\StitchQueue.dll
+D:\Bhavesh Bambhaniya\Complete Project\StitchQueue\StitchQueue\StitchQueue\obj\Debug\StitchQueue.pdb
+D:\Bhavesh Bambhaniya\Complete Project\StitchQueue\StitchQueue\StitchQueue\bin\System.Web.Http.dll
+D:\Bhavesh Bambhaniya\Complete Project\StitchQueue\StitchQueue\StitchQueue\bin\System.Net.Http.Formatting.dll
+D:\Bhavesh Bambhaniya\Complete Project\StitchQueue\StitchQueue\StitchQueue\bin\Newtonsoft.Json.dll
+D:\Bhavesh Bambhaniya\Complete Project\StitchQueue\StitchQueue\StitchQueue\bin\System.Web.Http.xml
+D:\Bhavesh Bambhaniya\Complete Project\StitchQueue\StitchQueue\StitchQueue\bin\System.Net.Http.Formatting.xml
+D:\Bhavesh Bambhaniya\Complete Project\StitchQueue\StitchQueue\StitchQueue\obj\Debug\StitchQueue.csprojResolveAssemblyReference.cache

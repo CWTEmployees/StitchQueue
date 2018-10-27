@@ -1,0 +1,205 @@
+.panel {
+
+    margin-bottom: 20px;.
+    height: auto !important;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #EDEDED !important;;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 5px 5px rgba(0,0,0,.05) !important;
+    box-shadow: 0 5px 5px rgba(0,0,0,.05) !important;
+
+}
+
+.address-box{
+   display: -webkit-flex; 
+   -webkit-flex-direction: column; 
+   display: flex;
+   flex-direction: column; 
+   flex: 0 0 100%; 
+   padding-bottom : 15px;
+  }
+  
+  .address-box-item {
+   border:1px solid #707070; 
+   border-radius:10px;
+   margin: 15px 5px 15px 5px;
+   display: -webkit-flex; 
+   -webkit-flex-direction: column; 
+   display: flex;
+   flex-direction: column;     
+   width:100%;
+   padding:10px 0px 0px 0px;
+  }
+
+  
+  .address-box-item > div:first-child {
+    flex: 1 0 auto;
+  }
+  
+
+  .address-type-underline {
+    width:50%;
+    height:1px;
+    background-color:#707070;
+    margin: 3px auto 10px auto;
+  }
+  
+  .button-area {
+    height : 40px;
+    width : 100%;
+    border-radius : 10px 10px 10px 10px;
+    text-align : left !important;
+    display: inline-flex;
+    box-sizing: border-box;
+  }
+  
+  .full-button {
+    width:100%;
+    height:50px;
+    background-color:#182386;    
+    color:#FFFFFF;
+    font-size:1.1875em;
+    font-weight:regular;
+    border-radius:10px 10px 10px 10px;
+    margin-bottom:20px;
+  }
+  
+  .left-button {
+    width:50%;
+    height:100%;
+    background-color:#E22052;    
+    color:#FFFFFF;
+    font-size:1.1875em;
+    font-weight:regular;
+    border-radius:10px 0px 0px 10px;
+  }
+  
+  .right-button{
+    width:50%;
+    height:100%;
+    background-color:#D0D0D0;    
+    color:#0E1335;
+    font-size:1.1875em;
+    font-weight:regular;
+    border-radius:0px 10px 10px 0px;
+  }
+  
+  .form__row{
+    width: 100%; !important;
+    margin-left:0px !important;
+  }
+  
+  .edit-address-box{
+    display : inline !important;
+  }
+  
+  .add-address-circle-btn{
+      font-size: 130px;
+      display: block;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: none;
+      line-height: 45px;
+      background-color:none;
+      color:#E22052;
+      text-align: center;
+      -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    }
+  
+   @media screen and (max-width: 767px){
+  .address-box{
+        -webkit-flex-direction: column; 
+      display: flex;
+      flex-direction: column;   
+    }    
+    
+    .edit-address-box{
+      display : inline !important;
+    }
+     
+     #small-view-element{
+       display: none; 
+     }
+    
+     .add-address-box-item{
+     }
+ 
+  }
+  
+  
+  @media screen and (min-width: 767px) and (max-width: 900px) {    
+    .address-box{
+      -webkit-flex-direction: row; 
+      flex-direction: row;
+      flex-flow: wrap;    
+    }
+    
+    .address-box-item{
+      flex: 0 0 45%; 
+    }
+    
+    .edit-address-box{
+      display : flex !important;
+    }
+    
+    .add-address-box-item{
+        border:1px solid #707070; 
+      border-radius:10px;
+      margin: 15px 5px 15px 5px;
+      display: -webkit-flex; 
+      -webkit-flex-direction: column; 
+      display: flex;
+      flex-direction: column;     
+      width:100%;
+      padding:10px 0px 0px 0px;
+        flex: 0 0 45%; 
+        align-items: center;
+        justify-content: center;
+    }   
+    
+    
+  }
+
+  @media screen and (min-width: 901px)
+  {
+  .address-box
+  {
+    -webkit-flex-direction: row; 
+    flex-direction: row;
+    flex-flow: wrap;    
+    }
+    
+    .address-box-item{
+      flex: 0 0 31%; 
+    }  
+    
+    .edit-address-box
+    {
+      display : flex !important;
+    }
+    
+    .add-address-box-item
+    {
+      border:1px solid #fff; 
+      border-radius:10px;
+      margin: 15px 5px 15px 5px;
+      display: -webkit-flex; 
+      -webkit-flex-direction: column; 
+      display: flex;
+      flex-direction: column;     
+      width:100%;
+      padding:10px 0px 0px 0px;
+        flex: 0 0 31%; 
+        align-items: center;
+        justify-content: center;
+        margin-left: -70px;
+    }   
+   
+}
+    
+ 
+  }

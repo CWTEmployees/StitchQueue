@@ -1,0 +1,36 @@
+
+	.contact-bg {background:#f9f9f9; float:left;  width:100%; height:auto; padding:0px; margin:20px 0px;}
+	.contact-hd 
+	{
+		font-size:20px; 
+		color:#E1206B; 
+		text-transform:uppercase; 
+		font-family: 'Montserrat', sans-serif !important;
+	}
+	.contact-text { font-size:16px; line-height:27px; padding:5px 0px; color:#333333; font-family: 'Montserrat', sans-serif;}
+	.contact-form-text { border:1px solid #EDEDED; font-size:16px; margin:2px 0px; padding-left:12px; font-weight:100; line-height:40PX; width:32.90%; font-family: 'Montserrat', sans-serif;}
+	.contact-form-massage-text { border:1px solid #EDEDED; font-size:16px; margin:2px 0px; padding-left:12px; font-weight:100; line-height:120PX; width:100%; font-family: 'Montserrat', sans-serif;}
+	.text-bg 
+  {
+    background:#fff; 
+    box-shadow: 0 7px 17px 0 rgba(23,84,116,0.18);
+    float:left;  
+    width:100%; 
+    height:auto; 
+    padding:15px;
+    margin:20px 0px;
+  }
+	.map-bg 
+  {
+    background:#fff; 
+    box-shadow: 0 7px 17px 0 rgba(23,84,116,0.18);
+    float:left;  
+    width:100%; 
+    height:auto; 
+    padding:2px; 
+    margin:20px 0px;
+  }
+	.form-box-rght{  background:#f9f9f9; float:left; width:100%; height:auto; padding:10px; margin-bottom:20px;}
+	.form-text { border:1px solid #EDEDED; margin:2px 0px; padding-left:12px; font-weight:100; line-height:40PX; width:168px; font-family: 'Montserrat', sans-serif;}
+	.massage-text { border:1px solid #EDEDED; margin:2px 0px; padding-left:12px; font-weight:100; line-height:40PX; width:340px; font-family: 'Montserrat', sans-serif;}
+	.send-buton{ background:#E1206B; border:0px; color:#ffffff; font-size:16px; padding:4px 15px; float:right; font-family: 'Montserrat', sans-serif;}
