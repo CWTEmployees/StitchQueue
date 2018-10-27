@@ -1,0 +1,29 @@
+.back_image
+{
+    background:url("./images/why.jpg"); 
+    background-attachment:fixed; 
+    background-size:100% 100%; 
+    background-repeat:no-repeat;
+}
+#why
+{
+  background-image: url("./images/why.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: auto;
+}
+.why_choose_us
+{
+  margin-right: 100px;
+  margin-left: 100px;
+}
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    text-align:left;
+    margin-right:-4px;
+    text-align: center;
+}

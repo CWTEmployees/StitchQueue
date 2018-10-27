@@ -1,0 +1,326 @@
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: normal;
+	margin: 0;
+	color: #444;
+}
+
+h1 {
+    font-size: 24px;
+	line-height: 30px;
+}
+
+h2 {
+    font-size: 22px;
+	line-height: 28px;
+}
+
+h3 {
+    font-size: 18px;
+	line-height: 24px;
+}
+
+h4 {
+    font-size: 16px;
+	line-height: 22px;
+}
+
+h5 {
+    font-size: 14px;
+	line-height: 20px;
+}
+
+h6 {
+    font-size: 12px;
+	line-height: 18px;
+}
+
+p {
+    color: #666;
+    font-size: 13px;
+    /*font-family: 'Raleway', sans-serif;*/
+    line-height: 22px;
+    margin: 0;
+}
+
+p strong {
+	font-weight: 600;
+}
+
+
+
+
+
+
+.radio > img.op-check{
+    bottom: 22%;
+    display: block;
+    left: 10%;
+    position: absolute;
+}
+	
+.op-check-remove{
+	bottom: 22%;
+    display: none;
+    left: 10%;
+    position: absolute;
+	}
+
+.progress > #div1:before{
+	background-color:#000;
+	}
+	
+	
+.prod-left-text{
+	}
+
+form input[type="text"], form input[type="email"], form input[type="number"], form input[type="search"], form input[type="password"], form textarea {
+	height:45px;;
+}
+
+#tabs-texst{background: none; border: none; font-size: 12px; line-height: 27px;}
+.progress-bar > p 
+{
+    font-size:12px; 
+    line-height:normal;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*View cart css*/
+
+.main-top-hed{
+/*margin-top: -20px;*/ 
+    padding-bottom: 10px; 
+    border-bottom: 1px solid #E8E8E8;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.sub-hed{border-bottom: 1px solid #E8E8E8; padding: 15px 0px 5px 0px;}
+.op-size-block{background-color: #f1f1f1;
+    display: inline-block;
+    margin: 0 1% 0 0;
+    width: 48%;}
+.op-block-img{width:30%; float:left; padding:1px;}
+.op-size-block-text{width:60%; padding:10px; float:left;}
+.op-size-block-text h4{font-weight:normal; font-size:15px; color:#FA735D;}
+.op-size-block-text p{line-height: normal;}
+.op-last-edit{width:10%; float:left;}
+.op-last-edit div:first-child{padding-top:5px; padding-bottom: 78%;}
+.op-summry-block{padding: 15px 0;}
+.p-detail-block {
+    float: left;
+    width: 35%;
+    padding: 5px 10px;
+}
+.op-prod-special-text {
+    position: absolute;right:0;width:48%;padding: 5px;
+}
+.op-prod-sumry:not(:first-child) {
+    clear: both;
+    margin: 15px 0 0;
+}
+.p-detail-block:nth-child(n+3) {
+    margin-top: 15px;
+}
+.op-prod-special-text .txt-head{line-height: normal}
+.op-prod-sumry{width:16%; border:1px solid #f3f3f3; float:left; padding:1px;text-align: center;}
+.op-prod-sumry-text{width:100%;}
+.op-prod-sumry-text p {line-height: normal; font-size:14px;}
+#special-p{line-height: normal; font-size:14px;}
+.others-prod-sumry{width:40%; border:1px solid #f3f3f3; float:left; padding:1px;}
+.other-sum-text{width:60%; padding: 5px 5px; float:left;}
+.other-sum-text p{line-height: normal; font-size:14px;}
+.sum-price{padding-top: 15px;}
+.sum-price ul > li > p > span{float:right;}
+.price-total-sum{font-size:24px !important; color:#fa735d;}
+
+/* View cart css ends here */
+
+/* Checkout Address css Starts */
+.block-text-add{padding: 30px 30px 0px;}
+.zero-padding{padding:0;}
+.bg-white > span > img {padding: 20px 0;}
+.add-main{padding:1%; text-align:center;}
+.add-main-center{padding: 0 5px;}
+.add-hed-text{padding-bottom: 10px; text-transform:uppercase;}
+.add-hed-text-p{border-bottom: 1px solid #E8E8E8; font-size: 16px; padding: 0px 5px 15px;}
+.address-form{width:97%; text-align:left; padding: 15px 0;}
+.address-form > div > input {height: 34px !important;}
+.single-field{padding-right:3px;}
+.add-button-border{border-top:1px solid #e8e8e8; margin-top:25px;}
+.country-drop-menu{width: 100%; margin-bottom: 4%;}
+.add-button-border > div{padding-top:25px;}
+/* Checkout Address css Ends Here */
+
+
+
+.do-gender{margin-top: -30px;}
+
+	
+.btn-info {
+    background-color: #fff;
+    color: inherit;
+}
+/*select*/
+.btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open > .dropdown-toggle.btn-info {
+    background-color: #fff;
+    color: inherit;
+}
+
+.bootstrap-select .btn{
+	line-height:30px;
+	}
+/*select End*/
+
+.form-group {
+    /*margin-bottom: 0px;*/
+    /*margin-top: -5px;*/
+}
+.humen-field{margin-top: 15px;
+    margin-bottom: -50px;}
+	
+fieldset.container-inline-salect {
+  display:-moz-inline-block;
+  display:-moz-inline-box;
+  display: inline-block;
+}
+
+.pull-right {
+    margin-top: -20px;
+}
+
+.add-main > div > input {
+    border-radius: 0;
+    font-size: 12px;
+    height: 30px;
+    color:#000;
+    line-height: normal;
+    margin: 12px 0 12px -8px;
+    padding: 0 10px;
+}
+
+.add-main .field-left > input{margin: 12px 0 0px -9.5px;}
+.add-main > div > select {
+    height: 30px;
+    margin: 0 6px 0 -9.5px;
+}
+.block-left-right{max-width:32%;}
+.main-left-right{max-width:32%; margin:0 1.99999%;}
+.second-select{margin:10px 0 0 -8px !important; width:104.6%;}
+.second-third-add-box{padding-bottom: 75px;}
+.third-third-add-box{padding-bottom: 33px;}
+.add-main > div {
+    text-align: left;
+}
+.chek-box{padding-left:28px;}
+.hed-add-col{    background-color: #F3F3F3;
+    padding: 6px 12px;
+    font-size: 18px;
+    border-radius: 0;
+    margin-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;}
+.form-inline .form-group{vertical-align:baseline;}	
+.edit-block{    text-align: right;
+    margin: 0 0 -25px 15px;}
+.panel-box-border{
+    box-shadow: none;
+    margin-bottom: -1px;
+    border-radius: 0;
+	border:none;}
+.panel-box-border .panel-collapse .panel-body > p {font-size:15px;}
+.ship-payment-radio{margin-left:20px; cursor:pointer;}
+.ship-payment-radio .radio > span
+{
+    color: #000; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+.after-review-butt{
+	background: #E40256;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    width: 60%;
+    font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	border: none;
+}
+.panel-body #review-block > h4 {border-bottom:1px dashed #f3f3f3; padding: 5px 0; font-size:15px;}
+.panel-body #review-block > h4 > span{text-align:left; font-family: 'Montserrat', sans-serif;}
+.panel-body #review-block > h4 > span+span{float:right;}
+
+.panel-body #review-block > p {border-bottom:1px dashed #f3f3f3; padding:10px 0; font-size:15px; color:#000;}
+.panel-body #review-block > p > span{text-align:left; font-family: 'Montserrat', sans-serif;}
+.panel-body #review-block > p > span+span{float:right; font-family: 'Montserrat', sans-serif;}
+
+.review-sub-total{width:100%;}
+.review-sub-total tr td{
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    padding: 10px 0;
+    text-align: right;
+	}
+    .panel-body label
+              {
+                color: #888888;
+              }
+.review-sub-total tr td{width:60%;}
+.review-sub-total tr td+td{width:40%;}
+.review-sub-total tr td > strong{text-transform:uppercase;}
+
+/* modal popup */
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){width:100% !important;}
+#product_manager .modal-dialog .modal-content .modal-body .prod-block{padding-top:0;}
+#product_manager .modal-dialog .modal-content .modal-body{text-align:center;}
+.modal-body p.option-vname{font-size: 20px; line-height: normal; margin: 20px 0; font-weight: normal;}
+
+/*Profile Edit and View Page*/
+.profile-edit-view{padding: 15px; border: 1px solid #f3f3f3; font-size: 18px; color: #000; line-height: 40px;}
+.profile-edit-view > a span{float:right; margin-bottom: -40px;}
+.profile-edit-view-butt{padding: 40px 0 0; text-align: center;}
+
+/*Order History View Page*/
+.top-heading-line{background-color: #ECF0F1;}
+.top-heading-line td{text-align: center; color: #000; font-size: 15px; font-weight: 600; margin-bottom:10px; padding: 4px 0;}
+.mid-contant-line{border-bottom: 1px dashed #DEDEDE;}
+.mid-contant-line td{text-align: center; color: #000; font-size: 13px; font-weight:normal; padding: 14px 0; vertical-align:text-top; font-family: Raleway;}
+.mid-contant-line td > p {font-size: 13px; line-height: normal; text-align: left;}
+
+/*Forgot Pass View Page*/
+.forgot-pas-in{padding: 25px 15px;}
+.forgot-pas-in p{width:70%; padding-bottom: 20px;}
+.forgot-pas-in p span input{
+	line-height: 34px;
+    width: 280px;
+	float:right;
+    border: 1px solid #dedede;
+	font-size: 14px;
+    padding: 0 10px;
+	}
+.retrive-pas{padding-top:40px; text-align:center;}
+
+/*Change Pass View Page*/
+.change-pas-in{padding: 25px 15px;}
+.change-pas-in p{padding-bottom: 20px;}
+.change-pas-in p span{float:right; margin: -5px 0;}
+.change-pas-in p span input{
+	line-height: 34px;
+    width: 280px;
+    border: 1px solid #dedede;
+	font-size: 14px;
+    padding: 0 10px;
+	}
+/*modal popup edit profile form*/
+.modal-slect button{color:inherit; margin-top:-3px; border:1px solid rgb( 186, 186, 186 );}
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .modal-slect button{color:inherit; border:1px solid rgb( 186, 186, 186 ); background: none !important;}
+
+/*Feedback rating-heding-radio*/
+.rating-heding-radio {border-bottom: 1px dashed #f3f3f3; padding: 13px 0;}
+.rating-heding-radio p {line-height: 23px; font-size: 16px; font-weight: bold;}
+.rating-radio-text {border-bottom: 1px dashed #f3f3f3; padding: 13px 0;}
+.rating-radio-text span{line-height: 16px; font-size: 16px; padding-right: 20px;}
+input[type=radio], input[type=checkbox] .rating-radio-text span {margin-right: 10px;}
+

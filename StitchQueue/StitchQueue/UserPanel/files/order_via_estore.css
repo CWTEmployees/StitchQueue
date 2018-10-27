@@ -1,0 +1,123 @@
+/* 
+    Document   : order_via_estore
+    Created on : Aug 24, 2015, 6:55:32 PM
+    Author     : sarfraz yousuf
+    Description:
+        Purpose of the stylesheet follows.
+*/
+.es-step-heading{padding: 20px 0 10px; border-bottom: 1px solid #f3f3f3;}
+.es-step-heading h1 {
+    color: #f8745d;
+    font-size: 32px;
+    font-weight: normal;
+}
+.es-step-heading span {padding-right:30px;}
+
+.step1-second-row{
+    padding:2% 0 5%;
+}
+.step-text-box1, .step-text-box2, .step-text-box3, .step-text-box4{
+    text-align: -webkit-center;
+    text-align: -moz-center;
+    text-align: -o-center;
+    text-align: center;
+}
+.step-text-box1 {
+    background-color: #f3f3f3;
+    text-align: -webkit-center;
+    text-align: -moz-center;
+    text-align: -o-center;
+    text-align: center;
+    min-height: 300px;
+    padding: 7% 0;
+}
+.step-text-box2 {
+    background-color: #f3f3f3;
+    text-align: -webkit-center;
+    min-height: 300px;
+    padding: 4% 0;
+}
+.step-text-box3 {
+    background-color: #f3f3f3;
+    text-align: -webkit-center;
+    min-height: 300px;
+    padding: 1% 0;
+}
+.step-text-box4 {
+    background-color: #f3f3f3;
+    text-align: -webkit-center;
+    min-height: 300px;
+	padding: 6% 0;
+}
+.step-text-img {
+    text-align: center;
+    min-height: 300px;
+    padding: 30px 0;
+}
+.step-text-box1 h3, .step-text-box2 h3, .step-text-box3 h3, .step-text-box4 h3 {
+    color: #f9745c;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+}
+.step-text-box1 h4, .step-text-box2 h4, .step-text-box3 h4, .step-text-box4 h4 {
+    color: #6c6c6c;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.step-text-box1 p, .step-text-box2 p, .step-text-box3 p, .step-text-box4 p {
+    font-size: 16px;
+    padding: 5px 0;
+}
+
+.step1-pink-back{background-color:#ffebeb; padding:20px 0; text-align:center;}
+.step-1-what{padding:5px 0;}
+.step-1-what p{padding:5px 0; font-size:16px;}
+.what-hapens{color:#7a7a7a; font-size:18px;}
+.step1-button-placed {
+    text-align: center;
+    margin: 0;
+}
+.step1-button-placed div {
+    padding: 50px 0;
+}
+.step1-button-placed div a {
+    background-color: #fa735d;
+    padding: 15px 20px;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+	text-transform:uppercase;
+}
+
+.step1-button-placed div a:hover {
+    background-image: linear-gradient(to bottom, #ff5c61 0%, #ff383e 100%);
+}
+
+.step2-content input[type="text"] {
+    border: 1px solid #CECECE;
+    height: 45px;
+    margin-bottom: 0;
+    color:#000;
+}
+.col-xs-12.text-label {
+    padding: 7px 10px;
+    color: #000;
+}
+.step2-content div {
+   font-size: 16px;
+   padding: 4px 0;
+}
+.step2-but{text-align:center; margin: 50px 0;}
+.step2-but > button{
+	background-color: #f9745c;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+	}
+
+/* header start */
+.navbar{background-color:transparent !important;}
+.order_via_estore_page .step2-content {
+    margin-top: 25px;
+}
