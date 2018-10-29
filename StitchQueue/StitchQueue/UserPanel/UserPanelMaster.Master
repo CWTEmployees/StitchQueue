@@ -29,16 +29,15 @@
     <link href="./files/order_via_estore.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="./files/jasny-bootstrap.min.css">
     <link rel="shortcut icon" type="image/png" href="./files/favicon.png" />
-    <script type="text/javascript" src="./files/jquery-2.1.1.min.js.download"></script>
-    <script type="text/javascript" src="./files/bootstrap.js.download"></script>
-    <script async="" charset="utf-8" src="./files/saved_resource" type="text/javascript"></script>
-    <script async="" src="./files/analytics.js.download"></script>
-    <script type="text/javascript" src="./files/bootstrap-datepicker.min.js.download"></script>
-    <script type="text/javascript" src="./files/jquery.easing.min.js.download"></script>
-    <script type="text/javascript" src="./files/custom.js.download"></script>
-    <script type="text/javascript" src="./files/bootstrap-select.min.js.download"></script>
-    <script src="./files/jasny-bootstrap.min.js.download"></script>
-    <script type="text/javascript" src="./files/jquery.prompt.js.download"></script>
+    <script type="text/javascript" src="./files/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="./files/bootstrap.js"></script>
+ 
+    <script type="text/javascript" src="./files/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="./files/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="./files/custom.js"></script>
+    <script type="text/javascript" src="./files/bootstrap-select.min.js"></script>
+    <script src="./files/jasny-bootstrap.min.js"></script>
+    <script type="text/javascript" src="./files/jquery.prompt.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -47,7 +46,7 @@
 
     <link rel="stylesheet" type="text/css" href="./files/address2.css">
     <link href="./files/theme.scss.css" rel="stylesheet" type="text/css" media="all">
-    <script src="./files/jquery.min.js.download" type="text/javascript"></script>
+    <script src="./files/jquery.min.js" type="text/javascript"></script>
     <script src="./js/dropdown.js"></script>
 
     <style>
