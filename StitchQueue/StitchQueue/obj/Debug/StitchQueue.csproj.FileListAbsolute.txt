@@ -26,3 +26,14 @@ C:\Users\Gopichand\Documents\GitHub\Stitch_Q\StitchQueue\StitchQueue\StitchQueue
 C:\Users\Gopichand\Documents\GitHub\Stitch_Q\StitchQueue\StitchQueue\StitchQueue\bin\System.Web.Http.xml
 C:\Users\Gopichand\Documents\GitHub\Stitch_Q\StitchQueue\StitchQueue\StitchQueue\bin\System.Net.Http.Formatting.xml
 C:\Users\Gopichand\Documents\GitHub\Stitch_Q\StitchQueue\StitchQueue\StitchQueue\obj\Debug\StitchQueue.pdb
+D:\web\new by Gopi stichQueue\StitchQueue\StitchQueue\StitchQueue\bin\StitchQueue.dll.config
+D:\web\new by Gopi stichQueue\StitchQueue\StitchQueue\StitchQueue\bin\StitchQueue.dll
+D:\web\new by Gopi stichQueue\StitchQueue\StitchQueue\StitchQueue\bin\StitchQueue.pdb
+D:\web\new by Gopi stichQueue\StitchQueue\StitchQueue\StitchQueue\bin\System.Web.Http.dll
+D:\web\new by Gopi stichQueue\StitchQueue\StitchQueue\StitchQueue\bin\System.Net.Http.Formatting.dll
+D:\web\new by Gopi stichQueue\StitchQueue\StitchQueue\StitchQueue\bin\Newtonsoft.Json.dll
+D:\web\new by Gopi stichQueue\StitchQueue\StitchQueue\StitchQueue\bin\System.Web.Http.xml
+D:\web\new by Gopi stichQueue\StitchQueue\StitchQueue\StitchQueue\bin\System.Net.Http.Formatting.xml
+D:\web\new by Gopi stichQueue\StitchQueue\StitchQueue\StitchQueue\obj\Debug\StitchQueue.csprojResolveAssemblyReference.cache
+D:\web\new by Gopi stichQueue\StitchQueue\StitchQueue\StitchQueue\obj\Debug\StitchQueue.dll
+D:\web\new by Gopi stichQueue\StitchQueue\StitchQueue\StitchQueue\obj\Debug\StitchQueue.pdb
