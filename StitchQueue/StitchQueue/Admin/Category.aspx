@@ -85,6 +85,7 @@
                 </div>
 
 
+<<<<<<< HEAD
 
 
 
@@ -241,11 +242,24 @@
 
 
 
+=======
+                <div class="form-inline">
+>>>>>>> cba8e4d48c8fe2919461bd6901bf9a937dd32091
 
-                        </asp:DropDownList>
-                        <%--<select class="form-control input-lg" name="sub_category" id="sub_category"></select>--%>
-                    </div>
-                </div>
+                        <label class="control-label col-md-3 col-sm-3" for="Category">Model Category:</label>
+                        <div class="col-sm-4"> 
+                          <!-- <select id="category" name ="category" class="form-control" placeholder="Category*"></select> -->
+                           <select class="form-control input-lg" id="model_category" name ="model_category"></select>
+                        </div>
+                  </div>
+
+                  <div class="form-inline">
+                        <label class="control-label col-md-3 col-sm-3" for="Category">Sub Category:</label>
+                        <div class="col-sm-4"> 
+                          <!-- <select name ="sub_category" id ="sub_category" class="form-control" placeholder="Sub category"></select> -->
+                           <select class="form-control input-lg" name ="sub_category" id ="sub_category"></select>
+                        </div>
+                  </div>
 
                 <div class="form-inline">
                     <label class="control-label col-md-3 col-sm-3" for="Category">Price:</label>
@@ -383,7 +397,11 @@
     <!-- //Js for bootstrap working -->
 
 
+<<<<<<< HEAD
     <%-- <script type="text/javascript" src="js/category.js"></script>
+=======
+    <script src="js/category.js"></script>
+>>>>>>> cba8e4d48c8fe2919461bd6901bf9a937dd32091
     <script>
 
         populateCountries("model_category", "sub_category");

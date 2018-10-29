@@ -20,6 +20,7 @@ namespace StitchQueue.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox modelid;
+<<<<<<< HEAD
         
         /// <summary>
         /// DropDown1 control.
@@ -56,5 +57,7 @@ namespace StitchQueue.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList DropDown2;
+=======
+>>>>>>> cba8e4d48c8fe2919461bd6901bf9a937dd32091
     }
 }

@@ -4,12 +4,12 @@ var country_arr = new Array("Anarkali","Blouse","Bottom","Embroidery","Kurti", "
 // States
 var s_a = new Array();
 s_a[0]="";
-s_a[1]="Drees Models";
-s_a[2]="Back|Front|Sleeve";
-s_a[3]="Bottom Models";
-s_a[4]="Embroidery Models";
-s_a[5]="Back|Front|Sleeve";
-s_a[6]="Back|Bottom|Front|Sleeve";
+s_a[1]="Botton Lining|Bottom style|Closing|Top Lining|Others";
+s_a[2]="Closing|Lining|Others";
+s_a[3]="Bottom styles|Others";
+s_a[4]="Others";
+s_a[5]="Botton Lining|Bottom style|Closing|Top Lining|Others";
+s_a[6]="Botton Lining|Bottom style|Closing|Top Lining|Others";
 
 
 
@@ -31,7 +31,8 @@ function populateStates( countryElementId, stateElementId ){
 	}
 }
 
-function populateCountries(countryElementId, stateElementId){
+function populateCountries(countryElementId, stateElementId)
+{
 	// given the id of the <select> tag as function argument, it inserts <option> tags
 	var countryElement = document.getElementById(countryElementId);
 	countryElement.length=0;
