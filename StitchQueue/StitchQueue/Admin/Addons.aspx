@@ -110,7 +110,8 @@
                         <label class="control-label col-md-3 col-sm-3" for="Category">Model Category:</label>
                         <div class="col-sm-4"> 
                           <!-- <select id="category" name ="category" class="form-control" placeholder="Category*"></select> -->
-                           <select class="form-control input-lg" id="model_category" name ="model_category"></select>
+                           <%--<select class="form-control input-lg" id="model_category" name ="model_category"></select>--%>
+                            <asp:DropDownList ID="model_category" runat="server" class="form-control input-lg"></asp:DropDownList>
                         </div>
                   </div>
 

@@ -21,17 +21,17 @@
 
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
     <link rel="stylesheet" href="css/bar.css">
-    <link rel="stylesheet" type="text/css" href="css/pignose.calender.css" />
+    <%--<link rel="stylesheet" type="text/css" href="css/pignose.calender.css" />--%>
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
     <link rel="stylesheet" href="css/style4.css">
-    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <%--<link href="css/fontawesome-all.css" rel="stylesheet">--%>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <%--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">--%>
 
 
     <!--web-fonts-->
-    <link href="//fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <%--<link href="//fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">--%>
+    <%--<link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">--%>
     <!--//web-fonts-->
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>

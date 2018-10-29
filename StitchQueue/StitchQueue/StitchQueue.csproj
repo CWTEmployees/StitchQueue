@@ -91,8 +91,10 @@
     <Content Include="Admin\js\example.js" />
     <Content Include="Admin\js\index.js" />
     <Content Include="Admin\js\jquery-2.2.3.min.js" />
+    <Content Include="Admin\js\jquery-3.2.1.min.js" />
     <Content Include="Admin\js\jquery.charts.js" />
     <Content Include="Admin\js\kuma-gauge.jquery.js" />
+    <Content Include="Admin\js\ModelCategory.js" />
     <Content Include="Admin\js\modernizr.js" />
     <Content Include="Admin\js\moment.min.js" />
     <Content Include="Admin\js\percentage-circles.js" />
@@ -109,6 +111,7 @@
     <Content Include="Admin\Order.aspx" />
     <Content Include="Admin\PartnerDetails.aspx" />
     <Content Include="Admin\Product.aspx" />
+    <Content Include="Admin\test.aspx" />
     <Content Include="Admin\webfonts\fa-brands-400.svg" />
     <Content Include="Admin\webfonts\fa-regular-400.svg" />
     <Content Include="Admin\webfonts\fa-solid-900.svg" />
@@ -1075,6 +1078,13 @@
     </Compile>
     <Compile Include="Admin\Product.aspx.designer.cs">
       <DependentUpon>Product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
     </Compile>
     <Compile Include="anarkali\Anarkali.aspx.cs">
       <DependentUpon>Anarkali.aspx</DependentUpon>
