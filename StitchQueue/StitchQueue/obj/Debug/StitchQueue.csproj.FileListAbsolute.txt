@@ -15,3 +15,14 @@ D:\Bhavesh Bambhaniya\Complete Project\StitchQueue\StitchQueue\StitchQueue\bin\N
 D:\Bhavesh Bambhaniya\Complete Project\StitchQueue\StitchQueue\StitchQueue\bin\System.Web.Http.xml
 D:\Bhavesh Bambhaniya\Complete Project\StitchQueue\StitchQueue\StitchQueue\bin\System.Net.Http.Formatting.xml
 D:\Bhavesh Bambhaniya\Complete Project\StitchQueue\StitchQueue\StitchQueue\obj\Debug\StitchQueue.csprojResolveAssemblyReference.cache
+C:\Users\Gopichand\Documents\GitHub\Stitch_Q\StitchQueue\StitchQueue\StitchQueue\obj\Debug\StitchQueue.csprojResolveAssemblyReference.cache
+C:\Users\Gopichand\Documents\GitHub\Stitch_Q\StitchQueue\StitchQueue\StitchQueue\obj\Debug\StitchQueue.dll
+C:\Users\Gopichand\Documents\GitHub\Stitch_Q\StitchQueue\StitchQueue\StitchQueue\bin\StitchQueue.dll.config
+C:\Users\Gopichand\Documents\GitHub\Stitch_Q\StitchQueue\StitchQueue\StitchQueue\bin\StitchQueue.dll
+C:\Users\Gopichand\Documents\GitHub\Stitch_Q\StitchQueue\StitchQueue\StitchQueue\bin\StitchQueue.pdb
+C:\Users\Gopichand\Documents\GitHub\Stitch_Q\StitchQueue\StitchQueue\StitchQueue\bin\System.Web.Http.dll
+C:\Users\Gopichand\Documents\GitHub\Stitch_Q\StitchQueue\StitchQueue\StitchQueue\bin\System.Net.Http.Formatting.dll
+C:\Users\Gopichand\Documents\GitHub\Stitch_Q\StitchQueue\StitchQueue\StitchQueue\bin\Newtonsoft.Json.dll
+C:\Users\Gopichand\Documents\GitHub\Stitch_Q\StitchQueue\StitchQueue\StitchQueue\bin\System.Web.Http.xml
+C:\Users\Gopichand\Documents\GitHub\Stitch_Q\StitchQueue\StitchQueue\StitchQueue\bin\System.Net.Http.Formatting.xml
+C:\Users\Gopichand\Documents\GitHub\Stitch_Q\StitchQueue\StitchQueue\StitchQueue\obj\Debug\StitchQueue.pdb

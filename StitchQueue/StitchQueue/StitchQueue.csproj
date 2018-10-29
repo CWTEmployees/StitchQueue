@@ -940,15 +940,12 @@
     <Content Include="Admin\webfonts\fa-brands-400.eot" />
     <Content Include="Admin\webfonts\fa-brands-400.ttf" />
     <Content Include="Admin\webfonts\fa-brands-400.woff" />
-    <Content Include="Admin\webfonts\fa-brands-400.woff2" />
     <Content Include="Admin\webfonts\fa-regular-400.eot" />
     <Content Include="Admin\webfonts\fa-regular-400.ttf" />
     <Content Include="Admin\webfonts\fa-regular-400.woff" />
-    <Content Include="Admin\webfonts\fa-regular-400.woff2" />
     <Content Include="Admin\webfonts\fa-solid-900.eot" />
     <Content Include="Admin\webfonts\fa-solid-900.ttf" />
     <Content Include="Admin\webfonts\fa-solid-900.woff" />
-    <Content Include="Admin\webfonts\fa-solid-900.woff2" />
     <Content Include="UserPanel\files\analytics.js.download" />
     <Content Include="UserPanel\files\bootstrap-datepicker.min.js.download" />
     <Content Include="UserPanel\files\bootstrap-select.min.js.download" />

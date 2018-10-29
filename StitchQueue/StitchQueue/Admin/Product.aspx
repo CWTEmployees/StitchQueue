@@ -242,4 +242,12 @@
     </div>
 
     <h1>&emsp;</h1>
+
+
+     <script type= "text/javascript" src = "js/product.js"></script>
+     <script>
+
+         populateCountries("model_category", "sub_category");
+         // populateCountries("country2","state2"); 
+    </script>
 </asp:Content>
