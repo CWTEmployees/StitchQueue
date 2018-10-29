@@ -84,33 +84,22 @@
                 </div>
 
 
-                <div class="form-inline">   
-                    <label class="control-label col-md-3 col-sm-3" for="Category">Model Category:</label>
-                    <div class="col-sm-4">
-                        <!-- <select id="category" name ="category" class="form-control" placeholder="Category*"></select> -->
-                        <asp:DropDownList ID="modelcategory" runat="server" class="form-control input-lg" OnTextChanged="modelcategory_TextChanged">
-                           <%-- <asp:ListItem>Select Category</asp:ListItem>
-                            <asp:ListItem Value="7">Anarkali</asp:ListItem>
-                            <asp:ListItem Value="3">Blouse</asp:ListItem>
-                            <asp:ListItem Value="8">Bottom</asp:ListItem>
-                            <asp:ListItem Value="9">Embroidery</asp:ListItem>
-                            <asp:ListItem Value="4">Kurti</asp:ListItem>
-                            <asp:ListItem Value="6">Salwar</asp:ListItem>--%>
-                        </asp:DropDownList>
-                        <%--<select class="form-control input-lg" id="model_category" name="model_category"></select>--%>
-                    </div>
-                </div>
-
                 <div class="form-inline">
-                    <label class="control-label col-md-3 col-sm-3" for="Category">Sub Category:</label>
-                    <div class="col-sm-4">
-                        <!-- <select name ="sub_category" id ="sub_category" class="form-control" placeholder="Sub category"></select> -->
-                        <asp:DropDownList ID="subcategory" runat="server" class="form-control input-lg">
 
-                        </asp:DropDownList>
-                        <%--<select class="form-control input-lg" name="sub_category" id="sub_category"></select>--%>
-                    </div>
-                </div>
+                        <label class="control-label col-md-3 col-sm-3" for="Category">Model Category:</label>
+                        <div class="col-sm-4"> 
+                          <!-- <select id="category" name ="category" class="form-control" placeholder="Category*"></select> -->
+                           <select class="form-control input-lg" id="model_category" name ="model_category"></select>
+                        </div>
+                  </div>
+
+                  <div class="form-inline">
+                        <label class="control-label col-md-3 col-sm-3" for="Category">Sub Category:</label>
+                        <div class="col-sm-4"> 
+                          <!-- <select name ="sub_category" id ="sub_category" class="form-control" placeholder="Sub category"></select> -->
+                           <select class="form-control input-lg" name ="sub_category" id ="sub_category"></select>
+                        </div>
+                  </div>
 
                 <div class="form-inline">
                     <label class="control-label col-md-3 col-sm-3" for="Category">Price:</label>
@@ -287,10 +276,11 @@
     <!-- //Js for bootstrap working -->
 
 
-    <script type="text/javascript" src="js/category.js"></script>
-    <script language="javascript">
+    <script src="js/category.js"></script>
+    <script>
 
         populateCountries("model_category", "sub_category");
         // populateCountries("country2","state2"); 
     </script>
+
 </asp:Content>
