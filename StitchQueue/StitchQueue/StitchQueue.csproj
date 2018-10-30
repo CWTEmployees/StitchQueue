@@ -38,6 +38,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\packages\AjaxControlToolkit.18.1.1\lib\net40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Web.DynamicData" />
@@ -786,6 +789,7 @@
     <Content Include="UserPanel\OrderHistory.aspx" />
     <Content Include="UserPanel\Profile.aspx" />
     <Content Include="UserPanel\SizzingProfile.aspx" />
+    <Content Include="UserPanel\UpdateSizingProfile.aspx" />
     <Content Include="UserPanel\UserPanelMaster.Master" />
     <Content Include="Admin\AdminMaster.Master" />
     <Content Include="Products Summery_files\analytics.js.download" />
@@ -1366,6 +1370,13 @@
     </Compile>
     <Compile Include="UserPanel\SizzingProfile.aspx.designer.cs">
       <DependentUpon>SizzingProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPanel\UpdateSizingProfile.aspx.cs">
+      <DependentUpon>UpdateSizingProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPanel\UpdateSizingProfile.aspx.designer.cs">
+      <DependentUpon>UpdateSizingProfile.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserPanel\UserPanelMaster.Master.cs">
       <DependentUpon>UserPanelMaster.Master</DependentUpon>
