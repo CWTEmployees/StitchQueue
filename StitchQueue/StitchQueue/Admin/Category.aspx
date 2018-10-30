@@ -3,10 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <%--<script src="js/jquery-2.2.3.min.js"></script>--%>
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/ModelCategory.js"></script>
-    <style type="text/css">
+   <style type="text/css">
         .form-inline {
             width: 100%;
         }
@@ -85,181 +82,23 @@
                 </div>
 
 
-<<<<<<< HEAD
-
-
-
-                <div class="form-inline">
+                <div class="form-inline">   
                     <label class="control-label col-md-3 col-sm-3" for="Category">Model Category:</label>
                     <div class="col-sm-4">
                         <!-- <select id="category" name ="category" class="form-control" placeholder="Category*"></select> -->
-                        <asp:DropDownList ID="DropDown1" runat="server">
-                            <asp:ListItem Value="0">--Select--</asp:ListItem>
-
-                            <asp:ListItem Value="1">Blouse</asp:ListItem>
-                            <asp:ListItem Value="2">Anarkali</asp:ListItem>
-                            <asp:ListItem Value="3">Kurti</asp:ListItem>
-                            <asp:ListItem Value="4">Salwar</asp:ListItem>
-                            <asp:ListItem Value="5">Bottom</asp:ListItem>
-                            <asp:ListItem Value="6">Embroidery</asp:ListItem>
-
-
-                        </asp:DropDownList>
-                        <%--<select class="form-control input-lg" id="model_category" name="model_category"></select>--%>
+                        
+                        <select class="form-control input-lg" id="model_category" name="model_category"></select>
                     </div>
                 </div>
-
-                <%--testting dropdown--%>
-
-                 <form id="form1">
-        <div>
-            <div>
-                <script type="text/javascript">
-                    window.onload = function () {
-                        debugger;
-                        var parentSelect = document.getElementById("DropDownList1");
-                        var childSelect = document.getElementById("DropDownList2");
-                        var options = [].slice.apply(childSelect, [0]);
-                        var emptyOption = options[0];
-                        childSelect.innerHTML = "";
-                        childSelect.options.add(emptyOption);
-
-                        parentSelect.addEventListener("change", function (e) {
-                            var selectedValue = parentSelect.options[parentSelect.selectedIndex].value;
-                            var setall = new Array();
-                            setall = selectedValue.split(',');
-                            var selectedValue = setall[0];
-                            childSelect.innerHTML = "";
-                            childSelect.options.add(emptyOption);
-                            if (selectedValue == 0) return;
-                            for (var i = 0; i < options.length; i++) {
-                                if (options[i].getAttribute("value").split(',')[0] == selectedValue) {
-                                    childSelect.options.add(options[i]);
-                                }
-                            }
-
-                        });
-                        return false;
-                    };
-                </script>
-                <asp:DropDownList ID="DropDownList1" runat="server" Height="19px" Width="149px">
-                    <asp:ListItem Value="0">--Select--</asp:ListItem>
-                    <asp:ListItem Value="7">Anarkali</asp:ListItem>
-                    <asp:ListItem Value="3">Blouse</asp:ListItem>
-                    <asp:ListItem Value="8">Bottom</asp:ListItem>
-                    <asp:ListItem Value="9">Embroidery</asp:ListItem>
-                    <asp:ListItem Value="4">Kurti</asp:ListItem>
-                    <asp:ListItem Value="6">Salwar</asp:ListItem>
-                </asp:DropDownList>
-                <br />
-                <br />
-                <asp:DropDownList ID="DropDownList2" runat="server" Height="18px" Width="151px">
-                    <asp:ListItem Value="0">--Select--</asp:ListItem>
-                    <asp:ListItem Value="7">Dress Model</asp:ListItem>
-                    <asp:ListItem Value="3">Front</asp:ListItem>
-                    <asp:ListItem Value="3">Back</asp:ListItem>
-                    <asp:ListItem Value="3">Sleeve</asp:ListItem>
-                    <asp:ListItem Value="8">Bottom Model</asp:ListItem>
-                    <asp:ListItem Value="9">Embroiedry Model</asp:ListItem>
-                    <asp:ListItem Value="4">Front</asp:ListItem>
-                    <asp:ListItem Value="4">Back</asp:ListItem>
-                    <asp:ListItem Value="4">Sleeve</asp:ListItem>
-                    <asp:ListItem Value="6">Front</asp:ListItem>
-                    <asp:ListItem Value="6">Back</asp:ListItem>
-                    <asp:ListItem Value="6">Sleeve</asp:ListItem>
-                    <asp:ListItem Value="6">Bottom</asp:ListItem>
-                    
-                    
-                </asp:DropDownList>
-            </div>
-        </div>
-    </form>
-
-                <%--                <div class="col-xs-6">
-  <select class="form-control" name="select1" id="select1">
-    <option value="1">Blouse</option>
-    <option value="2">Anarkali</option>
-    <option value="3">Kurti</option>
-    <option value="4">Salwar</option>
-  </select>
-</div>
-<div class="col-xs-6">
-  <select class="form-control" name="select2" id="select2">
-    <option value="1">front</option>
-    <option value="1">back</option>
-    <option value="1">Sleeve</option>
-    <option value="2">DressModel</option>
- 
-<option value="3">front</option>
-    <option value="3">back</option>
-    <option value="3">Sleeve</option>
- 
-    
-    <option value="4">front</option>
-    <option value="4">back</option>
-    <option value="4">Sleeve</option>
-    <option value="4">BWM<option>
-</select>
-</div>--%>
-                <script>
-                    //Reference: https://jsfiddle.net/fwv18zo1/
-                    var $DropDown1 = $('#DropDown1'),
-             $DropDown2 = $('#DropDown2'),
-         $options = $DropDown2.find('option');
-
-                    $DropDown1.on('change', function () {
-                        $DropDown2.html($options.filter('[value="' + this.value + '"]'));
-                    }).trigger('change');
-                </script>
-
 
                 <div class="form-inline">
                     <label class="control-label col-md-3 col-sm-3" for="Category">Sub Category:</label>
                     <div class="col-sm-4">
                         <!-- <select name ="sub_category" id ="sub_category" class="form-control" placeholder="Sub category"></select> -->
-                        <asp:DropDownList ID="DropDown2" runat="server">
-                            <asp:ListItem Value="0">--Select--</asp:ListItem>
-
-                            <asp:ListItem Value="1">Front</asp:ListItem>
-                            <asp:ListItem Value="1">Back</asp:ListItem>
-                            <asp:ListItem Value="1">Sleeve</asp:ListItem>
-
-
-                            <asp:ListItem Value="2">Dress Model</asp:ListItem>
-
-                            <asp:ListItem Value="3">Front</asp:ListItem>
-                            <asp:ListItem Value="3">Back</asp:ListItem>
-                            <asp:ListItem Value="3">Sleeve</asp:ListItem>
-
-                            <asp:ListItem Value="4">Front</asp:ListItem>
-                            <asp:ListItem Value="4">Back</asp:ListItem>
-                            <asp:ListItem Value="4">Sleeve</asp:ListItem>
-                            <asp:ListItem Value="4">Bottom Model</asp:ListItem>
-
-                            <asp:ListItem Value="5">Bottom</asp:ListItem>
-
-                            <asp:ListItem Value="6">Embroiedry Model</asp:ListItem>
-
-
-
-=======
-                <div class="form-inline">
->>>>>>> cba8e4d48c8fe2919461bd6901bf9a937dd32091
-
-                        <label class="control-label col-md-3 col-sm-3" for="Category">Model Category:</label>
-                        <div class="col-sm-4"> 
-                          <!-- <select id="category" name ="category" class="form-control" placeholder="Category*"></select> -->
-                           <select class="form-control input-lg" id="model_category" name ="model_category"></select>
-                        </div>
-                  </div>
-
-                  <div class="form-inline">
-                        <label class="control-label col-md-3 col-sm-3" for="Category">Sub Category:</label>
-                        <div class="col-sm-4"> 
-                          <!-- <select name ="sub_category" id ="sub_category" class="form-control" placeholder="Sub category"></select> -->
-                           <select class="form-control input-lg" name ="sub_category" id ="sub_category"></select>
-                        </div>
-                  </div>
+                       
+                        <select class="form-control input-lg" name="sub_category" id="sub_category"></select>
+                    </div>
+                </div>
 
                 <div class="form-inline">
                     <label class="control-label col-md-3 col-sm-3" for="Category">Price:</label>
@@ -290,7 +129,44 @@
     </div>
 
 
+    <script type="text/javascript">
 
+        function insert() {
+
+            debugger
+            {
+                var id = document.getElementById("id").value;
+                var category = document.getElementById("model_category").value;
+                var subcat = document.getElementById("sub_category").value;
+                var cost = document.getElementById("price").value;
+
+                // Returns successful data submission message when the entered information is stored in database.
+                var data = "{'Name': '" + name + "', 'Email': '" + email + "', 'Mobile': '" + mobile + "', 'Message': '" + message + "'}";
+                // AJAX code to submit form.
+                $.ajax
+                    ({
+                        type: "POST",
+                        url: "SendMail.aspx/Mail",
+                        contentType: "application/json; charset=utf-8",
+                        data: data,
+                        cache: false,
+                        success: function (data) {
+                            if (data.d == 1) {
+                                alert("Failed,Try again");
+                                clearData();
+                            }
+                            else {
+                                alert("Message Sent Succefully");
+                                clearData();
+
+                            }
+                        }
+                    });
+            }
+
+
+        }
+    </script>
 
 
 
@@ -332,7 +208,7 @@
     </style>
 
 
-    <%-- <script>
+    <script>
 
         function readURL(input) {
             if (input.files && input.files[0]) {
@@ -349,12 +225,14 @@
             }
         }
 
-    </script>--%>
+    </script>
 
 
-
+    <!-- Required common Js -->
+    <script src='js/jquery-2.2.3.min.js'></script>
+    <!-- //Required common Js -->
     <!-- loading-gif Js -->
-    <%--  <script src="js/modernizr.js"></script>
+    <script src="js/modernizr.js"></script>
     <script>
         //paste this code under head tag or in a seperate js file.
         // Wait for window load
@@ -362,21 +240,21 @@
             // Animate loader off screen
             $(".se-pre-con").fadeOut("slow");;
         });
-    </script>--%>
+    </script>
     <!--// loading-gif Js -->
     <!-- Sidebar-nav Js -->
-    <%-- <script>
+    <script>
         $(document).ready(function () {
             $('#sidebarCollapse').on('click', function () {
                 $('#sidebar').toggleClass('active');
             });
         });
-    </script>--%>
+    </script>
     <!--// Sidebar-nav Js -->
 
 
     <!-- dropdown nav -->
-    <%-- <script>
+    <script>
         $(document).ready(function () {
             $(".dropdown").hover(
                 function () {
@@ -389,7 +267,7 @@
                 }
             );
         });
-    </script>--%>
+    </script>
     <!-- //dropdown nav -->
 
     <!-- Js for bootstrap working-->
@@ -397,21 +275,10 @@
     <!-- //Js for bootstrap working -->
 
 
-<<<<<<< HEAD
-    <%-- <script type="text/javascript" src="js/category.js"></script>
-=======
-    <script src="js/category.js"></script>
->>>>>>> cba8e4d48c8fe2919461bd6901bf9a937dd32091
-    <script>
+    <script type="text/javascript" src="js/category.js"></script>
+    <script >
 
         populateCountries("model_category", "sub_category");
         // populateCountries("country2","state2"); 
-    </script>--%>
-
-
-
-    <script type="text/javascript">
-        
     </script>
-
 </asp:Content>
