@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
-    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+   <!-- <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <!-- Latest compiled and minified CSS -->
@@ -25,7 +25,7 @@
     <!-- <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"> -->
     <!-- <link href='http://fonts.googleapis.com/css?family=Buenard:700' rel='stylesheet' type='text/css'> -->
 
-    <script src="./js/wow.js" type="text/javascript"></script>
+   <!-- <script src="./js/wow.js" type="text/javascript"></script>-->
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="http://pupunzi.com/mb.components/mb.YTPlayer/demo/inc/jquery.mb.YTPlayer.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -38,6 +38,7 @@
     <script>
         window.jQuery || document.write("<script src='Scripts/jquery-2.1.3.js'><\/script>");
     </script>
+
 
 
 
@@ -259,7 +260,7 @@
         });
     </script>
 
-    <script>
+  <%--  <script>
         var modal = document.getElementById('stitchModel');
         var btn = document.getElementById("myBtn");
         var span = document.getElementsByClassName("close")[0];
@@ -274,7 +275,7 @@
                 modal.style.display = "none";
             }
         }
-    </script>
+    </script>--%>
 
 </body>
 </html>

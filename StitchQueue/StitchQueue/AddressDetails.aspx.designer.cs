@@ -40,13 +40,13 @@ namespace StitchQueue {
         protected global::System.Web.UI.WebControls.TextBox address1;
         
         /// <summary>
-        /// autocomplete control.
+        /// address2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox autocomplete;
+        protected global::System.Web.UI.WebControls.TextBox address2;
         
         /// <summary>
         /// city control.
@@ -94,13 +94,13 @@ namespace StitchQueue {
         protected global::System.Web.UI.WebControls.TextBox phone;
         
         /// <summary>
-        /// ship control.
+        /// chkPassport control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox ship;
+        protected global::System.Web.UI.WebControls.CheckBox chkPassport;
         
         /// <summary>
         /// SFirstname control.
@@ -182,5 +182,14 @@ namespace StitchQueue {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox SPhone;
+        
+        /// <summary>
+        /// btnsubmit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnsubmit;
     }
 }

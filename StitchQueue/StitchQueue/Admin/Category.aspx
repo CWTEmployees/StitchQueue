@@ -82,35 +82,41 @@
                 </div>
 
 
-                <div class="form-inline">   
+                <div class="form-inline" runat="server" id="divModel">   
                     <label class="control-label col-md-3 col-sm-3" for="Category">Model Category:</label>
                     <div class="col-sm-4">
                         <!-- <select id="category" name ="category" class="form-control" placeholder="Category*"></select> -->
-                        
-                        <select class="form-control input-lg" id="model_category" name="model_category"></select>
+                        <asp:DropDownList ID="drpModel" OnSelectedIndexChanged="drpModel_SelectedIndexChanged" class="form-control input-lg" AutoPostBack="true" runat="server">
+                            
+                        </asp:DropDownList>
+                        <%--<select class="form-control input-lg" id="model_category" name="model_category"></select>--%>
                     </div>
                 </div>
 
-                <div class="form-inline">
+                <div class="form-inline" runat="server" id="divSubModel" visible="false">
                     <label class="control-label col-md-3 col-sm-3" for="Category">Sub Category:</label>
                     <div class="col-sm-4">
                         <!-- <select name ="sub_category" id ="sub_category" class="form-control" placeholder="Sub category"></select> -->
-                       
-                        <select class="form-control input-lg" name="sub_category" id="sub_category"></select>
+                       <asp:DropDownList ID="drpSubModel" AutoPostBack="true" runat="server" class="form-control input-lg">
+                            
+                        </asp:DropDownList>
+                        <%--<select class="form-control input-lg" name="sub_category" id="sub_category"></select>--%>
                     </div>
                 </div>
 
                 <div class="form-inline">
                     <label class="control-label col-md-3 col-sm-3" for="Category">Price:</label>
                     <div class="col-sm-4">
-                        <input type="text" name="price" class="form-control" id="price" placeholder="Price" />
+                        <%--<input type="text" name="price" class="form-control" id="price" placeholder="Price" />--%>
+                        <asp:TextBox ID="txtprice" runat="server" class="form-control" placeholder="Price"></asp:TextBox>
                     </div>
                 </div>
 
                 <div class="form-inline">
                     <label class="control-label col-md-3 col-sm-3" for="Category">Model Title:</label>
                     <div class="col-sm-4">
-                        <input type="text" name="title" class="form-control" id="title" placeholder="Title" />
+                        <%--<input type="text" name="title" class="form-control" id="title" placeholder="Title" />--%>
+                        <asp:TextBox ID="txtstylename" runat="server" class="form-control" placeholder="Title"></asp:TextBox>
                     </div>
                 </div>
 

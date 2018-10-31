@@ -313,7 +313,7 @@
                 <!-- <span class="btn btn-default btn-submit">SCHDULE PICKUP <input type="submit" name="s1"></span>  -->
 
                 <a href="AddressDetails.aspx" class="btn btn-default btn-submit">Proceed</a>
-
+                <%--<asp:Button ID="btncheck" runat="server" Text="Proceed" OnClick="btncheck_Click" />--%>
                 <a href="Home.aspx" class="btn btn-default btn-submit">ADD MORE</a>
                 <%--<span class="btn btn-default btn-submit">ADD MORE<input type="submit" name="s2"></span>--%>
             </div>

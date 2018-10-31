@@ -7,45 +7,63 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace StitchQueue.Admin {
+namespace StitchQueue {
     
     
-    public partial class Addons {
+    public partial class OrderInvoice {
         
         /// <summary>
-        /// divModel control.
+        /// InvoicePanel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divModel;
+        protected global::System.Web.UI.WebControls.Panel InvoicePanel;
         
         /// <summary>
-        /// drpModel control.
+        /// lblOrderId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList drpModel;
+        protected global::System.Web.UI.WebControls.Label lblOrderId;
         
         /// <summary>
-        /// divSubModel control.
+        /// lblOrderDate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divSubModel;
+        protected global::System.Web.UI.WebControls.Label lblOrderDate;
         
         /// <summary>
-        /// drpSubModel control.
+        /// GridInvoice control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList drpSubModel;
+        protected global::System.Web.UI.WebControls.GridView GridInvoice;
+        
+        /// <summary>
+        /// Label2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label2;
+        
+        /// <summary>
+        /// DownloadInvoice control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button DownloadInvoice;
     }
 }

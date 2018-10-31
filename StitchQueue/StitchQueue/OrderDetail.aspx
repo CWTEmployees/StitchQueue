@@ -46,6 +46,37 @@
                     <br>
                 </div>
 
+                <div class="col-md-4">
+                    <h2 class="hed-add-col">ORDER REVIEW</h2>
+                    <!-- Start payment 1 -->
+                    <div class="panel panel-default">
+                        <!-- Toggle Heading -->
+
+                        <!-- Toggle Content -->
+                        <asp:GridView ID="product" runat="server" AutoGenerateColumns="False" GridLines="Horizontal" Width="200%" ShowFooter="True">
+                            <Columns>
+
+                                <asp:BoundField DataField="sno" HeaderText="Sno" Visible="False" />
+                                <asp:BoundField DataField="productid" HeaderText="ProductId" Visible="False" />
+                                <asp:ImageField DataImageUrlField="img" HeaderStyle-Height="50px" FooterStyle-Height="50px" FooterStyle-HorizontalAlign="Center">
+                                    <ItemStyle HorizontalAlign="Center" />
+                                    <ControlStyle Height="150px" Width="150px" />
+                                </asp:ImageField>
+                                <asp:ImageField DataImageUrlField="img2" HeaderStyle-Height="50px" FooterStyle-Height="50px" FooterStyle-HorizontalAlign="Center">
+                                    <ItemStyle HorizontalAlign="Center" />
+                                    <ControlStyle Height="150px" Width="150px" />
+                                </asp:ImageField>
+                                <asp:BoundField DataField="pname" HeaderText="ProductName" />
+                                <asp:BoundField DataField="price" HeaderText="Price" />
+
+
+                            </Columns>
+                        </asp:GridView>
+                    </div>
+
+                    <!-- End Add 3 -->
+                </div>
+
 
                 <div class="col-md-12 no-padding">
                     <div class="col-md-4">
@@ -66,23 +97,28 @@
                                                 </h4>
                                             </div>
                                             <!-- Toggle Content -->
-                                            <div id="collapse-1" class="panel-collapse collapse in">
-                                                <div class="panel-body">
-                                                    <a href="#" class="edit-block btn btn-block">Edit <i class="fa fa-edit"></i>
-                                                    </a>
-                                                    <label>Full Name</label>
-                                                    <p></p>
-                                                    <p style="margin-top: 5px; font-weight: bold; font-size: 16px; font-family: 'Montserrat', sans-serif;">Address:</p>
-                                                    <label>Address Line 1</label><br>
-                                                    <label>Address Line 1</label><br>
-                                                    <label>City</label><br>
-                                                    <label>Area</label><br>
-                                                    <label>Pin</label>
-                                                    <p style="margin-top: 5px; font-weight: bold; font-size: 16px; font-family: 'Montserrat', sans-serif;">Contact Details:</p>
-                                                    <label>Mobile</label>
-                                                    <label>Email</label>
-                                                </div>
-                                            </div>
+                                            <asp:ListView ID="orderaddress" runat="server">
+                                                <ItemTemplate>
+                                                    <div id="collapse-1" class="panel-collapse collapse in">
+                                                        <div class="panel-body">
+                                                            <%--<a href="#" class="edit-block btn btn-block">Edit <i class="fa fa-edit"></i>--%>
+                                                            </a>
+                                                            <label><%# Eval("fullname") %></label>
+                                                            <p></p>
+                                                            <p style="margin-top: 5px; font-weight: bold; font-size: 16px; font-family: 'Montserrat', sans-serif;">Address:</p>
+                                                            <label><%# Eval("address1") %></label><br>
+                                                            <label><%# Eval("address2") %></label><br>
+                                                            <label><%# Eval("city") %></label><br>
+                                                            <label><%# Eval("state") %></label><br>
+                                                            <label><%# Eval("zip") %></label>
+                                                            <p style="margin-top: 5px; font-weight: bold; font-size: 16px; font-family: 'Montserrat', sans-serif;">Contact Details:</p>
+                                                            <label><%# Eval("mobile") %></label>
+                                                            <br />
+                                                            <label><%# Session["User"] %></label>
+                                                        </div>
+                                                    </div>
+                                                </ItemTemplate>
+                                            </asp:ListView>
                                         </div>
                                         <!-- End Add 1 -->
 
@@ -151,62 +187,29 @@
                             </div>
                         </div>
                         <!-- End payment 3 -->
-                        <h2 class="hed-add-col">INSTRUCTIONS</h2>
+                        <%--<h2 class="hed-add-col">INSTRUCTIONS</h2>--%>
                         <div class="panel panel-default">
                             <!-- Toggle Heading -->
 
                             <!-- Toggle Content -->
-                            <div class="panel-collapse collapse in">
+
+                            <div class="checkout-button">
+                                <asp:Button ID="btnPlace" runat="server" class="btn btn-primary btn-large btn-block after-review-butt" OnClick="btnPlace_Click" Text="Submit Order" /> 
+                                <%--<button id="process-order" class="btn btn-primary btn-large btn-block after-review-butt">Submit Order</button>--%>
+                            </div>
+                            <%--<div class="panel-collapse collapse in">
                                 <div class="panel-body">
                                     <div class="order-instruction-block">
                                         <textarea name="shipping_notes" cols="40" rows="10" style="height: 100px; width: 100%; padding: 5px;"></textarea>
                                     </div>
                                 </div>
-                            </div>
+                            </div>--%>
                         </div>
                     </div>
 
 
 
-                    <div class="col-md-4">
-                        <h2 class="hed-add-col">ORDER REVIEW</h2>
-                        <!-- Start payment 1 -->
-                        <div class="panel panel-default">
-                            <!-- Toggle Heading -->
 
-                            <!-- Toggle Content -->
-                            <div class="panel-collapse collapse in">
-                                <div class="panel-body">
-                                    <div id="review-block">
-
-                                        <h4><span>Name</span>
-                                            <span>Totals</span>
-                                        </h4>
-                                        <p><span>Two-piece</span><span>PKR&nbsp;2000</span></p>
-                                        <table class="review-sub-total">
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <spong>Subtotal</spong>
-                                                    </td>
-                                                    <td id="gc_subtotal_price">PKR&nbsp;2000</td>
-                                                </tr>
-
-                                                <tr style="border-top: 1px dashed #f3f3f3;">
-                                                    <td><strong>Grand Total</strong></td>
-                                                    <td><strong>PKR&nbsp;2000</strong></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="checkout-button">
-                            <button id="process-order" class="btn btn-primary btn-large btn-block after-review-butt">Submit Order</button>
-                        </div>
-                        <!-- End Add 3 -->
-                    </div>
                 </div>
 
 

@@ -105,21 +105,26 @@
                         </div>
                   </div> -->
 
-                    <div class="form-inline">
+                    <div class="form-inline" runat="server" id="divModel">
 
                         <label class="control-label col-md-3 col-sm-3" for="Category">Model Category:</label>
                         <div class="col-sm-4"> 
                           <!-- <select id="category" name ="category" class="form-control" placeholder="Category*"></select> -->
                            <%--<select class="form-control input-lg" id="model_category" name ="model_category"></select>--%>
-                            <asp:DropDownList ID="model_category" runat="server" class="form-control input-lg"></asp:DropDownList>
+                            <asp:DropDownList ID="drpModel" OnSelectedIndexChanged="drpModel_SelectedIndexChanged" class="form-control input-lg" AutoPostBack="true" runat="server">
+                            
+                        </asp:DropDownList>
                         </div>
                   </div>
 
-                  <div class="form-inline">
+                  <div class="form-inline" runat="server" id="divSubModel" visible="false">
                         <label class="control-label col-md-3 col-sm-3" for="Category">Sub Category:</label>
                         <div class="col-sm-4"> 
                           <!-- <select name ="sub_category" id ="sub_category" class="form-control" placeholder="Sub category"></select> -->
-                           <select class="form-control input-lg" name ="sub_category" id ="sub_category"></select>
+                           <%--<select class="form-control input-lg" name ="sub_category" id ="sub_category"></select>--%>
+                            <asp:DropDownList ID="drpSubModel" AutoPostBack="true" runat="server" class="form-control input-lg">
+                            
+                        </asp:DropDownList>
                         </div>
                   </div>
                   <div class="form-inline">
