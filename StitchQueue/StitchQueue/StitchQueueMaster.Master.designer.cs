@@ -22,13 +22,13 @@ namespace StitchQueue {
         protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
         
         /// <summary>
-        /// usermsater control.
+        /// master control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm usermsater;
+        protected global::System.Web.UI.HtmlControls.HtmlForm master;
         
         /// <summary>
         /// clbl control.

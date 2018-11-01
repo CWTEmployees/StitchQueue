@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-   <style type="text/css">
+    <style type="text/css">
         .form-inline {
             width: 100%;
         }
@@ -77,56 +77,81 @@
                     <label class="control-label col-md-3 col-sm-3 col-xs-3" for="id">Model Id:</label>
                     <div class="col-sm-4">
                         <asp:TextBox ID="modelid" runat="server" class="form-control" placeholder="Enter Model Id"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="rfvPname" runat="server" ForeColor="Red" ValidationGroup="Addprdct" ControlToValidate="modelid" ErrorMessage="Enter Product Id" Display="Dynamic"></asp:RequiredFieldValidator>
+                        <%--<input type="text" name="id" class="form-control" id="id" placeholder="Enter Model Id">--%>
+                    </div>
+                </div>
+
+                <div class="form-inline">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-3" for="id">Model Name:</label>
+                    <div class="col-sm-4">
+                        <asp:TextBox ID="modelname" runat="server" class="form-control" placeholder="Enter Name"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ForeColor="Red" ValidationGroup="Addprdct" ControlToValidate="modelname" ErrorMessage="Enter Product Name" Display="Dynamic"></asp:RequiredFieldValidator>
                         <%--<input type="text" name="id" class="form-control" id="id" placeholder="Enter Model Id">--%>
                     </div>
                 </div>
 
 
-                <div class="form-inline" runat="server" id="divModel">   
+                <%-- <div class="form-inline" runat="server" id="divModel">   
                     <label class="control-label col-md-3 col-sm-3" for="Category">Model Category:</label>
                     <div class="col-sm-4">
-                        <!-- <select id="category" name ="category" class="form-control" placeholder="Category*"></select> -->
                         <asp:DropDownList ID="drpModel" OnSelectedIndexChanged="drpModel_SelectedIndexChanged" class="form-control input-lg" AutoPostBack="true" runat="server">
                             
                         </asp:DropDownList>
-                        <%--<select class="form-control input-lg" id="model_category" name="model_category"></select>--%>
                     </div>
-                </div>
+                </div>--%>
 
-                <div class="form-inline" runat="server" id="divSubModel" visible="false">
+                <%--<div class="form-inline" runat="server" id="divSubModel" visible="false">
                     <label class="control-label col-md-3 col-sm-3" for="Category">Sub Category:</label>
                     <div class="col-sm-4">
-                        <!-- <select name ="sub_category" id ="sub_category" class="form-control" placeholder="Sub category"></select> -->
                        <asp:DropDownList ID="drpSubModel" AutoPostBack="true" runat="server" class="form-control input-lg">
                             
                         </asp:DropDownList>
-                        <%--<select class="form-control input-lg" name="sub_category" id="sub_category"></select>--%>
                     </div>
-                </div>
+                </div>--%>
 
                 <div class="form-inline">
                     <label class="control-label col-md-3 col-sm-3" for="Category">Price:</label>
                     <div class="col-sm-4">
                         <%--<input type="text" name="price" class="form-control" id="price" placeholder="Price" />--%>
-                        <asp:TextBox ID="txtprice" runat="server" class="form-control" placeholder="Price"></asp:TextBox>
+                        <asp:TextBox ID="price" runat="server" class="form-control" placeholder="Price"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="rfvprice" runat="server" ForeColor="Red" ValidationGroup="Addprdct" ControlToValidate="price" ErrorMessage="Enter Product Price"></asp:RequiredFieldValidator>
                     </div>
                 </div>
 
-                <div class="form-inline">
+                <%--<div class="form-inline">
                     <label class="control-label col-md-3 col-sm-3" for="Category">Model Title:</label>
                     <div class="col-sm-4">
-                        <%--<input type="text" name="title" class="form-control" id="title" placeholder="Title" />--%>
+                        <input type="text" name="title" class="form-control" id="title" placeholder="Title" />
                         <asp:TextBox ID="txtstylename" runat="server" class="form-control" placeholder="Title"></asp:TextBox>
+                    </div>
+                </div>--%>
+
+                <div class="form-inline">
+                    <label class="control-label col-md-3 col-sm-3" for="Category">Upload Image1:</label>
+                    <div class="col-md-4">
+                        <%--<input class="btn-bs-file btn btn-lg btn-info" id="filebutton" name="filebutton" class="input-file" type="file" accept="image/gif, image/jpeg, image/png" onchange="readURL(this);" required="true">--%>
+                        <asp:FileUpload ID="img1" runat="server" class="btn-bs-file btn btn-lg btn-info" />
+                        <asp:RequiredFieldValidator ID="rfvimg1" runat="server" ForeColor="Red" ErrorMessage="Select Image1" ControlToValidate="img1" Display="Dynamic" ValidationGroup="Addprdct"></asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="revimg1" ValidationExpression="([a-zA-Z0-9\s_\\.\-:])+(.png|.jpg|.jpeg)$"
+                            ControlToValidate="img1" runat="server" ForeColor="Red" ErrorMessage="Please select only Image file."
+                            Display="Dynamic" ValidationGroup="Addprdct" />
+                        <br />
+                        <%--<img id="cwt" src="#" alt="your image" />--%>
                     </div>
                 </div>
 
                 <div class="form-inline">
-                    <label class="control-label col-md-3 col-sm-3" for="Category">Upload Image:</label>
+                    <label class="control-label col-md-3 col-sm-3" for="Category">Upload Image2:</label>
                     <div class="col-md-4">
-                        <input class="btn-bs-file btn btn-lg btn-info" id="filebutton" name="filebutton" class="input-file" type="file" accept="image/gif, image/jpeg, image/png" onchange="readURL(this);" required="true">
-
+                        <%--<input class="btn-bs-file btn btn-lg btn-info" id="filebutton" name="filebutton" class="input-file" type="file" accept="image/gif, image/jpeg, image/png" onchange="readURL(this);" required="true">--%>
+                        <asp:FileUpload ID="img2" runat="server" class="btn-bs-file btn btn-lg btn-info" />
+                        <asp:RequiredFieldValidator ID="rfvimg2" runat="server" ForeColor="Red" ErrorMessage="Select Image" ControlToValidate="img2" Display="Dynamic" ValidationGroup="Addprdct"></asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="revimg2" ValidationExpression="([a-zA-Z0-9\s_\\.\-:])+(.png|.jpg|.jpeg)$"
+                            ControlToValidate="img2" runat="server" ForeColor="Red" ErrorMessage="Please select only Image file."
+                            Display="Dynamic" ValidationGroup="Addprdct" />
                         <br />
-                        <img id="cwt" src="#" alt="your image" />
+                        <%--<img id="cwt" src="#" alt="your image" />--%>
                     </div>
                 </div>
 
@@ -134,70 +159,25 @@
         </div>
     </div>
 
-
-    <script type="text/javascript">
-
-        function insert() {
-
-            debugger
-            {
-                var id = document.getElementById("id").value;
-                var category = document.getElementById("model_category").value;
-                var subcat = document.getElementById("sub_category").value;
-                var cost = document.getElementById("price").value;
-
-                // Returns successful data submission message when the entered information is stored in database.
-                var data = "{'Name': '" + name + "', 'Email': '" + email + "', 'Mobile': '" + mobile + "', 'Message': '" + message + "'}";
-                // AJAX code to submit form.
-                $.ajax
-                    ({
-                        type: "POST",
-                        url: "SendMail.aspx/Mail",
-                        contentType: "application/json; charset=utf-8",
-                        data: data,
-                        cache: false,
-                        success: function (data) {
-                            if (data.d == 1) {
-                                alert("Failed,Try again");
-                                clearData();
-                            }
-                            else {
-                                alert("Message Sent Succefully");
-                                clearData();
-
-                            }
-                        }
-                    });
-            }
-
-
-        }
-    </script>
-
-
-
-
-
-
-
+    <asp:Label ID="lblmodel" runat="server"></asp:Label>
 
     <h1>&emsp;</h1>
     <div class="container-fluid" align="center" style="">
         <div class="row">
 
             <div class="col-md-3 col-sm-3 col-xs-6">
-                <button class="btn btn-primary btn-category">ADD</button>
+                <asp:Button ID="btnAdd" runat="server" Text="ADD" ValidationGroup="Addprdct" class="btn btn-primary btn-category" OnClick="btnAdd_Click" />
+                <%--<button class="btn btn-primary btn-category">ADD</button>--%>
             </div>
             <!-- <div class="col-md-3 col-sm-3 col-xs-6">
                        <button class="btn btn-primary btn-category">EDIT</button>
                    </div> -->
-            <div class="col-md-3 col-sm-3 col-xs-6">
+            <%--  <div class="col-md-3 col-sm-3 col-xs-6">
                 <button class="btn btn-primary btn-category">UPDATE</button>
             </div>
             <div class="col-md-3 col-sm-3 col-xs-6">
                 <button class="btn btn-primary btn-category">DELETE</button>
-            </div>
-
+            </div>--%>
         </div>
     </div>
 
@@ -282,7 +262,7 @@
 
 
     <script type="text/javascript" src="js/category.js"></script>
-    <script >
+    <script>
 
         populateCountries("model_category", "sub_category");
         // populateCountries("country2","state2"); 

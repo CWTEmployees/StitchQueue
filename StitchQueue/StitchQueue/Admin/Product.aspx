@@ -92,7 +92,7 @@
     </style>
 
 
-    <div class="container-fluid">
+  <%--  <div class="container-fluid">
         <h2 align="center">Products</h2>
         <br>
         <div class="container" style="margin: 0 auto;">
@@ -115,12 +115,12 @@
                 </div>
             </form>
         </div>
-    </div>
+    </div>--%>
 
 
 
 
-    <h1>&emsp;</h1>
+   <%-- <h1>&emsp;</h1>
     <div class="container-fluid" align="center" style="">
         <div class="row">
 
@@ -135,7 +135,7 @@
             </div>
 
         </div>
-    </div>
+    </div>--%>
 
     <style type="text/css">
         .btn-category {

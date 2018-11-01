@@ -27,7 +27,7 @@
                     <div class="account-wall">
                         <img class="profile-img" src="images/default-user.png"
                             alt="">
-                        <form class="form-signin" runat="server">
+                        <form class="reg" runat="server">
                             <asp:TextBox ID="firstname" runat="server" class="form-control" placeholder="First Name"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="rfvFname" runat="server" ValidationGroup="regist" ControlToValidate="firstname" ForeColor="Red" ErrorMessage="Enter FirstName" Display="Dynamic"></asp:RequiredFieldValidator>
                             <%--<input class="form-control" placeholder="First Name" type="text" id="inputFirstName" />--%>

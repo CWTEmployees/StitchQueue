@@ -80,6 +80,8 @@
 
 	</script>
     <!-- Modal for confirm -->
+    
+    <form id="cart" >
     <div class="modal fade" id="myModal-confirm" role="dialog">
         <div class="modal-dialog">
 
@@ -89,7 +91,7 @@
                     <button type="button" class="close" data-dismiss="modal">×</button>
                     <h3 class="cheque-text-head">Do You Really Want To Delete This?</h3>
                 </div>
-                <form method="post" action="">
+                
                     <div class="modal-body">
                         <div class="row">
                             <div class="col-md-12 col-sm-12 col-xs-12">
@@ -113,7 +115,7 @@
                             </div>
                         </div>
                     </div>
-                </form>
+               
             </div>
             <div class="modal-footer" style="border: none">
             </div>
@@ -163,13 +165,11 @@
 
 
                 <div class="order-text">
-                    <p class="home-hd" style="font-size: 22px;">“You would be eligible for 1st order discount, on more than INR 500”</p>
-                    <p>
-                        If you would like to get another product stitched along with this order, click on "Add More". Else, click on Schedule Pickup" to continue.
-                        <br>
-                        <strong>Note:</strong> “Additional cost will be added if the pattern consumes lots of time.”<br>
+                    <p class="home If you would like to get another product stitched along with this order, click on Add More. Else, click on Schedule Pickup to continue."
+
+                        <strong>Note:</strong> “Additional cost will be added if the pattern consumes lots of time.”<br/>
                         <strong>Note:</strong> The tailors will improvise on your final product based on the fabric design. For instance, borders will be used on sleeves unless specified. We highly recommend you to pre-wash your cotton dress materials.<br>
-                        <br>
+                        <br/>
                     </p>
                 </div>
 
@@ -312,8 +312,8 @@
 
                 <!-- <span class="btn btn-default btn-submit">SCHDULE PICKUP <input type="submit" name="s1"></span>  -->
 
-                <a href="AddressDetails.aspx" class="btn btn-default btn-submit">Proceed</a>
-                <%--<asp:Button ID="btncheck" runat="server" Text="Proceed" OnClick="btncheck_Click" />--%>
+                <%--<a href="AddressDetails.aspx" class="btn btn-default btn-submit">Proceed</a>--%>
+                <asp:Button ID="btnSubmit" runat="server" class="btn btn-default btn-submit" Text="Procees" OnClick="btnSubmit_Click" />
                 <a href="Home.aspx" class="btn btn-default btn-submit">ADD MORE</a>
                 <%--<span class="btn btn-default btn-submit">ADD MORE<input type="submit" name="s2"></span>--%>
             </div>
@@ -325,7 +325,7 @@
 
 
     <div style="clear: both"></div>
-
+</form>
     <br>
     <br>
 

@@ -9,7 +9,10 @@ using System.Data.SqlClient;
 using System.Configuration;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
-
+using System.Net;
+using System.Net.Mail;
+using System.IO;
+using System.Drawing;
 
 namespace StitchQueue
 {
@@ -46,6 +49,37 @@ namespace StitchQueue
         protected void prData_ItemCommand(object source, RepeaterCommandEventArgs e)
         {
             
+        }
+
+        protected void submit_Click(object sender, EventArgs e)
+        {
+            MailMessage msg = new MailMessage();
+            msg.From = new MailAddress("cwttest12@gmail.com");
+            msg.To.Add(txtemail.Text);
+            msg.Subject = "Customer Message";
+            msg.Body = string.Format("{0} {1}.<br/><br/> Email: {2} <br/><br/> PhoneNo: {3}<br/> <br/> Message: {4}<br/> <br/> Thank you", txtfirstname.Text, txtlastname.Text, txtemail.Text, txtphone.Text,txtmsg.Text);
+            if (fileimg.HasFile)
+            {
+                foreach (HttpPostedFile file in fileimg.PostedFiles)
+                {
+                    string fileName = Path.GetFileName(file.FileName);
+                    file.SaveAs(Server.MapPath("~/Email_Images/") + fileName);
+                    msg.Attachments.Add(new Attachment(file.InputStream, fileName));
+                }
+            }
+            msg.IsBodyHtml = true;
+            SmtpClient smtp = new SmtpClient();
+            smtp.Host = "smtp.gmail.com";
+            System.Net.NetworkCredential ntwd = new NetworkCredential();
+            ntwd.UserName = "cwttest12@gmail.com"; //Your Email ID  
+            ntwd.Password = "CWT@1234";              // Your Password  
+            smtp.UseDefaultCredentials = true;
+            smtp.Credentials = ntwd;
+            smtp.Port = 587;
+            smtp.EnableSsl = true;
+            smtp.Send(msg);
+            lblmsg.Text = "Message Sent Successfully";
+            lblmsg.ForeColor = System.Drawing.Color.ForestGreen;
         }
     }
 }

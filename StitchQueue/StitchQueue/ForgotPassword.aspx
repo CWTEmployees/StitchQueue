@@ -26,7 +26,7 @@
                     <div class="account-wall">
                         <img class="profile-img" src="Contents/images/default-user.png"
                             alt="">
-                        <form class="form-signin" runat="server">
+                        <form class="frgpass" runat="server">
                             <asp:TextBox ID="email" runat="server" class="form-control" placeholder="EmailId"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="frvfrgpass" runat="server" ValidationGroup="frgpass" ControlToValidate="email" ForeColor="Red" ErrorMessage="Enter Email Id" Display="Dynamic"></asp:RequiredFieldValidator>
                             <%--<input class="form-control" placeholder="Email" type="text" id="inputEmail" />--%>

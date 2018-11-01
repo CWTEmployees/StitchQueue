@@ -165,6 +165,18 @@ namespace StitchQueue
             Response.Redirect("Cart.aspx");
         }
 
+        protected void btnSubmit_Click(object sender, EventArgs e)
+        {
+            if(Session["User"] != null)
+            {
+                Response.Redirect("AddressDetails.aspx");
+            }
+            else
+            {
+                Response.Redirect("Login.aspx");
+            }
+        }
+
        
 
       

@@ -84,13 +84,18 @@
     <Content Include="Admin\css\widgets.css" />
     <Content Include="Admin\Discount.aspx" />
     <Content Include="Admin\images\c2.jpg" />
+    <Content Include="Admin\images\Chrysanthemum.jpg" />
     <Content Include="Admin\images\clone.jpg" />
     <Content Include="Admin\images\favicon.png" />
+    <Content Include="Admin\images\Jellyfish.jpg" />
     <Content Include="Admin\images\logo-old.png" />
     <Content Include="Admin\images\logo-white.png" />
     <Content Include="Admin\images\logo-white2.png" />
     <Content Include="Admin\images\logo.png" />
     <Content Include="Admin\images\menu1.jpg" />
+    <Content Include="Admin\images\Penguins.jpg" />
+    <Content Include="Admin\images\Thumbs.db" />
+    <Content Include="Admin\images\Tulips.jpg" />
     <Content Include="Admin\js\addon.js" />
     <Content Include="Admin\js\amcharts.js" />
     <Content Include="Admin\js\bootstrap.min.js" />
@@ -950,7 +955,6 @@
     <Content Include="kurti\sleeve\jquery.filer.min.js.download" />
     <Content Include="kurti\sleeve\jquery.min.js.download" />
     <Content Include="packages.config" />
-    <Content Include="Admin\images\Thumbs.db" />
     <Content Include="Admin\webfonts\fa-brands-400.eot" />
     <Content Include="Admin\webfonts\fa-brands-400.ttf" />
     <Content Include="Admin\webfonts\fa-brands-400.woff" />

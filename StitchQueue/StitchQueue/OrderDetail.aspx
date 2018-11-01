@@ -33,110 +33,110 @@
             color: #E40256;
         }
     </style>
-    <div class="container-fluid">
+    <form id="orderdetail">
+        <div class="container-fluid">
 
-        <div class="page-content">
-            <div class="process-container">
-                <div class="col-md-12 no-padding">
+            <div class="page-content">
+                <div class="process-container">
+                    <div class="col-md-12 no-padding">
 
-                    <div class="heading-contant">
-                        <h1 class="main-top-hed"><span class="pad-r">
-                            <img src="images/final_order.png" alt="1" class=""></span>Review your order</h1>
-                    </div>
-                    <br>
-                </div>
-
-                <div class="col-md-4">
-                    <h2 class="hed-add-col">ORDER REVIEW</h2>
-                    <!-- Start payment 1 -->
-                    <div class="panel panel-default">
-                        <!-- Toggle Heading -->
-
-                        <!-- Toggle Content -->
-                        <asp:GridView ID="product" runat="server" AutoGenerateColumns="False" GridLines="Horizontal" Width="200%" ShowFooter="True">
-                            <Columns>
-
-                                <asp:BoundField DataField="sno" HeaderText="Sno" Visible="False" />
-                                <asp:BoundField DataField="productid" HeaderText="ProductId" Visible="False" />
-                                <asp:ImageField DataImageUrlField="img" HeaderStyle-Height="50px" FooterStyle-Height="50px" FooterStyle-HorizontalAlign="Center">
-                                    <ItemStyle HorizontalAlign="Center" />
-                                    <ControlStyle Height="150px" Width="150px" />
-                                </asp:ImageField>
-                                <asp:ImageField DataImageUrlField="img2" HeaderStyle-Height="50px" FooterStyle-Height="50px" FooterStyle-HorizontalAlign="Center">
-                                    <ItemStyle HorizontalAlign="Center" />
-                                    <ControlStyle Height="150px" Width="150px" />
-                                </asp:ImageField>
-                                <asp:BoundField DataField="pname" HeaderText="ProductName" />
-                                <asp:BoundField DataField="price" HeaderText="Price" />
-
-
-                            </Columns>
-                        </asp:GridView>
+                        <div class="heading-contant">
+                            <h1 class="main-top-hed"><span class="pad-r">
+                                <img src="images/final_order.png" alt="1" class=""></span>Review your order</h1>
+                        </div>
+                        <br>
                     </div>
 
-                    <!-- End Add 3 -->
-                </div>
-
-
-                <div class="col-md-12 no-padding">
                     <div class="col-md-4">
-                        <h2 class="hed-add-col">ADDRESS DETAILS</h2>
+                        <h2 class="hed-add-col">ORDER REVIEW</h2>
+                        <!-- Start payment 1 -->
                         <div class="panel panel-default">
                             <!-- Toggle Heading -->
 
                             <!-- Toggle Content -->
-                            <div class="panel-collapse collapse in">
-                                <div class="panel-body">
-                                    <div class="payment-block">
+                            <asp:GridView ID="product" runat="server" AutoGenerateColumns="False" GridLines="Horizontal" Width="200%" ShowFooter="True">
+                                <Columns>
 
-                                        <!-- Start Add 1 -->
-                                        <div class="panel panel-default panel-box-border">
-                                            <!-- Toggle Heading -->
-                                            <div class="panel-heading">
-                                                <h4 class="panel-title" style="background: none !important; font-family: 'Montserrat', sans-serif;">PICKUP DETAILS
-                                                </h4>
-                                            </div>
-                                            <!-- Toggle Content -->
-                                            <asp:ListView ID="orderaddress" runat="server">
-                                                <ItemTemplate>
-                                                    <div id="collapse-1" class="panel-collapse collapse in">
-                                                        <div class="panel-body">
-                                                            <%--<a href="#" class="edit-block btn btn-block">Edit <i class="fa fa-edit"></i>--%>
+                                    <asp:BoundField DataField="sno" HeaderText="Sno" Visible="False" />
+                                    <asp:BoundField DataField="productid" HeaderText="ProductId" Visible="False" />
+                                    <asp:ImageField DataImageUrlField="img" HeaderStyle-Height="50px" FooterStyle-Height="50px" FooterStyle-HorizontalAlign="Center">
+                                        <ItemStyle HorizontalAlign="Center" />
+                                        <ControlStyle Height="150px" Width="150px" />
+                                    </asp:ImageField>
+                                    <asp:ImageField DataImageUrlField="img2" HeaderStyle-Height="50px" FooterStyle-Height="50px" FooterStyle-HorizontalAlign="Center">
+                                        <ItemStyle HorizontalAlign="Center" />
+                                        <ControlStyle Height="150px" Width="150px" />
+                                    </asp:ImageField>
+                                    <asp:BoundField DataField="pname" HeaderText="ProductName" />
+                                    <asp:BoundField DataField="price" HeaderText="Price" />
+
+
+                                </Columns>
+                            </asp:GridView>
+                        </div>
+
+                        <!-- End Add 3 -->
+                    </div>
+
+
+                    <div class="col-md-12 no-padding">
+                        <div class="col-md-4">
+                            <h2 class="hed-add-col">ADDRESS DETAILS</h2>
+                            <div class="panel panel-default">
+                                <!-- Toggle Heading -->
+
+                                <!-- Toggle Content -->
+                                <div class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <div class="payment-block">
+
+                                            <!-- Start Add 1 -->
+                                            <div class="panel panel-default panel-box-border">
+                                                <!-- Toggle Heading -->
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title" style="background: none !important; font-family: 'Montserrat', sans-serif;">PICKUP DETAILS
+                                                    </h4>
+                                                </div>
+                                                <!-- Toggle Content -->
+                                                <asp:ListView ID="orderaddress" runat="server">
+                                                    <ItemTemplate>
+                                                        <div id="collapse-1" class="panel-collapse collapse in">
+                                                            <div class="panel-body">
+                                                                <%--<a href="#" class="edit-block btn btn-block">Edit <i class="fa fa-edit"></i>--%>
                                                             </a>
                                                             <label><%# Eval("fullname") %></label>
-                                                            <p></p>
-                                                            <p style="margin-top: 5px; font-weight: bold; font-size: 16px; font-family: 'Montserrat', sans-serif;">Address:</p>
-                                                            <label><%# Eval("address1") %></label><br>
-                                                            <label><%# Eval("address2") %></label><br>
-                                                            <label><%# Eval("city") %></label><br>
-                                                            <label><%# Eval("state") %></label><br>
-                                                            <label><%# Eval("zip") %></label>
-                                                            <p style="margin-top: 5px; font-weight: bold; font-size: 16px; font-family: 'Montserrat', sans-serif;">Contact Details:</p>
-                                                            <label><%# Eval("mobile") %></label>
-                                                            <br />
-                                                            <label><%# Session["User"] %></label>
+                                                                <p></p>
+                                                                <p style="margin-top: 5px; font-weight: bold; font-size: 16px; font-family: 'Montserrat', sans-serif;">Address:</p>
+                                                                <label><%# Eval("address1") %></label><br>
+                                                                <label><%# Eval("address2") %></label><br>
+                                                                <label><%# Eval("city") %></label><br>
+                                                                <label><%# Eval("state") %></label><br>
+                                                                <label><%# Eval("zip") %></label>
+                                                                <p style="margin-top: 5px; font-weight: bold; font-size: 16px; font-family: 'Montserrat', sans-serif;">Contact Details:</p>
+                                                                <label><%# Eval("mobile") %></label>
+                                                                <br />
+                                                                <label><%# Session["User"] %></label>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                </ItemTemplate>
-                                            </asp:ListView>
-                                        </div>
-                                        <!-- End Add 1 -->
+                                                    </ItemTemplate>
+                                                </asp:ListView>
+                                            </div>
+                                            <!-- End Add 1 -->
 
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <style type="text/css">
+                        <style type="text/css">
             </style>
-                    <div class="col-md-4">
-                        <h2 class="hed-add-col">Shipping Method</h2>
-                        <!-- Start shipment 1 -->
-                        <div class="panel panel-default">
+                        <div class="col-md-4">
+                            <h2 class="hed-add-col">Shipping Method</h2>
+                            <!-- Start shipment 1 -->
+                            <div class="panel panel-default">
 
-                            <div class="panel-collapse collapse in">
-                                <div class="panel-body">
-                                    <form action="http://www.stitchmyfabric.com/checkout/place_order" method="post" accept-charset="utf-8" id="checkout-form">
+                                <div class="panel-collapse collapse in">
+                                    <div class="panel-body">
                                         <div class="shipping-block">
                                             <div class="alert alert-error" id="shipping_error_box" style="display: none"></div>
                                             <div id="shipping-methods">
@@ -155,70 +155,70 @@
                                             </div>
 
                                         </div>
-                                    </form>
-                                </div>
-                            </div>
-                            <!-- End shipment 1 -->
-                        </div>
-                        <!-- Start payment 1 -->
-                        <h2 class="hed-add-col">Payment Method</h2>
-                        <div class="panel panel-default">
-                            <!-- Toggle Heading -->
 
-                            <!-- Toggle Content -->
-                            <div class="panel-collapse collapse in">
-                                <div class="panel-body">
-                                    <div class="payment-block">
-                                        <p class="ship-payment-radio">
-                                            <label class="radio">
-                                                <input type="radio" name="module" value="twocheckout" checked="checked" id="twocheckout">
-                                                <span>Cash on Delivery</span>
-                                            </label>
-                                        </p>
-                                        <!--      <p class="ship-payment-radio">
+                                    </div>
+                                </div>
+                                <!-- End shipment 1 -->
+                            </div>
+                            <!-- Start payment 1 -->
+                            <h2 class="hed-add-col">Payment Method</h2>
+                            <div class="panel panel-default">
+                                <!-- Toggle Heading -->
+
+                                <!-- Toggle Content -->
+                                <div class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <div class="payment-block">
+                                            <p class="ship-payment-radio">
+                                                <label class="radio">
+                                                    <input type="radio" name="module" value="twocheckout" checked="checked" id="twocheckout">
+                                                    <span>Cash on Delivery</span>
+                                                </label>
+                                            </p>
+                                            <!--      <p class="ship-payment-radio">
                                 <label class="radio">
                                    <input type="radio" name="module" value="cod" id="cod">                        
                                    
                                    <span>Others</span>
                                 </label>
                             </p> -->
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- End payment 3 -->
-                        <%--<h2 class="hed-add-col">INSTRUCTIONS</h2>--%>
-                        <div class="panel panel-default">
-                            <!-- Toggle Heading -->
+                            <!-- End payment 3 -->
+                            <%--<h2 class="hed-add-col">INSTRUCTIONS</h2>--%>
+                            <div class="panel panel-default">
+                                <!-- Toggle Heading -->
 
-                            <!-- Toggle Content -->
+                                <!-- Toggle Content -->
 
-                            <div class="checkout-button">
-                                <asp:Button ID="btnPlace" runat="server" class="btn btn-primary btn-large btn-block after-review-butt" OnClick="btnPlace_Click" Text="Submit Order" /> 
-                                <%--<button id="process-order" class="btn btn-primary btn-large btn-block after-review-butt">Submit Order</button>--%>
-                            </div>
-                            <%--<div class="panel-collapse collapse in">
+                                <div class="checkout-button">
+                                    <asp:Button ID="btnPlace" runat="server" class="btn btn-primary btn-large btn-block after-review-butt" OnClick="btnPlace_Click" Text="Submit Order" />
+                                    <%--<button id="process-order" class="btn btn-primary btn-large btn-block after-review-butt">Submit Order</button>--%>
+                                </div>
+                                <%--<div class="panel-collapse collapse in">
                                 <div class="panel-body">
                                     <div class="order-instruction-block">
                                         <textarea name="shipping_notes" cols="40" rows="10" style="height: 100px; width: 100%; padding: 5px;"></textarea>
                                     </div>
                                 </div>
                             </div>--%>
+                            </div>
                         </div>
+
+
+
+
                     </div>
 
 
 
-
                 </div>
-
-
-
             </div>
         </div>
-    </div>
 
-    </div>
+        </div>
 
 
     <!-- 
@@ -352,4 +352,5 @@
   }
 </style>
  -->
+    </form>
 </asp:Content>

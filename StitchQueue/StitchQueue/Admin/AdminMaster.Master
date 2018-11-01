@@ -62,7 +62,15 @@
                         Add User
                     </a>
                 </li>
-                <li>
+
+                 <li>
+                    <a href="Category.aspx">
+                        <i class="fa fa-list-alt"></i>
+                        Add Product
+                    </a>
+                </li>
+
+              <%--  <li>
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
                         <i class="fa fa-list-alt"></i>
                         Categories
@@ -80,7 +88,7 @@
                         
                        
                     </ul>
-                </li>
+                </li>--%>
 
                 
                
