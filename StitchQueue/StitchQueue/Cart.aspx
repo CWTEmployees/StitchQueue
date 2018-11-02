@@ -179,7 +179,7 @@
                     <div class="order-bg">
 
                         
-                        <asp:GridView ID="product" runat="server" AutoGenerateColumns="False" GridLines="Horizontal" ShowFooter="True" OnRowDeleting="product_RowDeleting">
+                        <asp:GridView ID="product" runat="server" Visible="false"  AutoGenerateColumns="False" GridLines="Horizontal" ShowFooter="True" OnRowDeleting="product_RowDeleting">
                             <Columns>
 
                                 <asp:BoundField DataField="sno" HeaderText="Sno" Visible="False" />
@@ -201,6 +201,29 @@
                             </Columns>
                         </asp:GridView>
 
+                           <asp:GridView ID="fittinggrid" runat="server" Visible="false" AutoGenerateColumns="False" GridLines="Horizontal" ShowFooter="True">
+                            <Columns>
+
+                                <asp:BoundField DataField="sno" HeaderText="Sno" Visible="False" />
+                                <asp:BoundField DataField="productid" HeaderText="ProductId" Visible="False" />
+                                <asp:ImageField DataImageUrlField="img" HeaderStyle-Height="50px" FooterStyle-Height="50px" FooterStyle-HorizontalAlign="Center">
+                                    <ItemStyle HorizontalAlign="Center" />
+                                    <ControlStyle Height="150px" Width="150px" />
+                                </asp:ImageField>
+                              
+                                <asp:BoundField DataField="pname" HeaderText="ProductName" />
+                                <asp:BoundField DataField="price" HeaderText="Price" />
+                                <asp:BoundField DataField="pquantity" HeaderText="Quantity" />
+                                <asp:BoundField DataField="totalprice" HeaderText="Total Price" />
+                    
+               
+
+
+                                <asp:CommandField DeleteText="Remove" ShowDeleteButton="True">
+                                    <ItemStyle HorizontalAlign="Center" />
+                                </asp:CommandField>
+                            </Columns>
+                        </asp:GridView>
 
 
                     </div>

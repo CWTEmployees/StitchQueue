@@ -48,6 +48,29 @@
 
                 </td>
             </tr>
+
+             <tr>
+                <td class="auto-style2">
+
+                    <asp:GridView ID="FittingInvoice" runat="server" AutoGenerateColumns="False" Height="192px" Width="830px" ShowFooter="True" FooterStyle-HorizontalAlign="Justify" GridLines="Horizontal" HorizontalAlign="Center">
+
+
+                        <Columns>
+                            <asp:BoundField DataField="productid" HeaderText="Product ID"></asp:BoundField>
+                            <asp:BoundField DataField="pname" HeaderText="Product Name"></asp:BoundField>
+                            <asp:BoundField DataField="price" HeaderText="Price"></asp:BoundField>
+                            <asp:BoundField DataField="totalprice" HeaderText="Total Price"></asp:BoundField>
+                        </Columns>
+                        <FooterStyle Wrap="True" />
+
+
+                        <HeaderStyle Wrap="True" />
+
+
+                    </asp:GridView>
+
+                </td>
+            </tr>
             <%--<tr>
                     <td style="text-align: right">Grand Total:<asp:Label ID="lblGrangTotal" runat="server"></asp:Label>
                     </td>

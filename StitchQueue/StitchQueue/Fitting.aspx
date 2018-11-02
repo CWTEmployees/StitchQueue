@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
 
     <link href='http://fonts.googleapis.com/css?family=Buenard:700' rel='stylesheet' type='text/css'>
@@ -90,42 +90,58 @@
             </p>
 
             <!--1st column-->
-           
-            <div class="col-md-3  col-md-offset-2 col-sm-6 col-xs-6 fitting_click_active">
-                <div class="fitting_col-ert btn-radio">
-                    <img src="images/fitting_kurti.png" alt="Blouse Image" class="fitting_blouse_image">
-                    <input type="checkbox" class="hidden">
-                    <p class="fitting_heading_wrks_text mt_30 mt_0">
-                        Kurta Side Shaping &amp; sleeves
-                    </p>
-                    <p class="fitting_product_heading_details">
-                        <b>500.00/- Onwards</b>
-                    </p>
-                </div>
-                <!--End of 1st col fitting_col-ert-radio-->
+            <asp:ListView ID="fitting" runat="server" OnItemCommand="fitting_ItemCommand">
+                <ItemTemplate>
+                    <div class="col-md-3  col-md-offset-2 col-sm-6 col-xs-6 fitting_click_active">
+                        <div class="fitting_col-ert btn-radio">
+                            <img src="<%# Eval("Image") %>" alt="Blouse Image" class="fitting_blouse_image">
+                            <div class="middle">
 
-                <div class="col-md-12 mt_30 text-center">
-                    <div class="number-of-item">
-                        <div class="input-group number-spinner">
-                            <span class="input-group-btn data-dwn">
-                                <button class="btn btn-default btn-info" data-dir="dwn" type="button" onclick="adjust_price(&#39;3&#39;,&#39;500.00&#39;)"><span class="glyphicon glyphicon-minus"></span></button>
-                            </span>
-                            <input name="data[Alternation][quantity_3]" class="form-control text-center myquantity" value="0" min="0" max="40" data-attr="500.00" type="text" id="AlternationQuantity3">
-                            <span class="input-group-btn data-up">
-                                <button class="btn btn-default btn-info" data-dir="up" type="button" onclick="adjust_price(&#39;3&#39;,&#39;0.00&#39;)"><span class="glyphicon glyphicon-plus"></span></button>
-                            </span>
+
+                                <asp:Button ID="btnfitting" runat="server" CssClass="text" Text="ADD TO CART" CommandName="fittingcart" CommandArgument='<%# Eval("FittingId") %>' />
+
+                            </div>
+                            <input type="checkbox" class="hidden">
+                            <p class="fitting_heading_wrks_text mt_30 mt_0">
+                                <%# Eval("FittingName") %>
+                            </p>
+                            <p class="fitting_product_heading_details">
+                                <b><%# Eval("Price") %>/- Onwards</b>
+                            </p>
+                        </div>
+                        <!--End of 1st col fitting_col-ert-radio-->
+
+                        <div class="col-md-12 mt_30 text-center">
+                            <div class="number-of-item">
+                                <div class="input-group number-spinner">
+                                    <%--<span class="input-group-btn data-dwn">
+                                        <button class="btn btn-default btn-info" data-dir="dwn" type="button" onclick="adjust_price(&#39;3&#39;,&#39;500.00&#39;)"><span class="glyphicon glyphicon-minus"></span></button>
+                                    </span>--%>
+                                    <asp:DropDownList ID="dropfitt" class="form-control text-center myquantity" runat="server">
+                                        <asp:ListItem>1</asp:ListItem>
+                                        <asp:ListItem>2</asp:ListItem>
+                                        <asp:ListItem>3</asp:ListItem>
+                                        <asp:ListItem>4</asp:ListItem>
+                                        <asp:ListItem>5</asp:ListItem>
+                                        <asp:ListItem>6</asp:ListItem>
+                                    </asp:DropDownList>
+                                    <%--<input name="data[Alternation][quantity_3]" class="form-control text-center myquantity" value="0" min="0" max="40" data-attr="500.00" type="text" id="AlternationQuantity3">--%>
+                                    <%--<span class="input-group-btn data-up">
+                                        <button class="btn btn-default btn-info" data-dir="up" type="button" onclick="adjust_price(&#39;3&#39;,&#39;0.00&#39;)"><span class="glyphicon glyphicon-plus"></span></button>
+                                    </span>--%>
+                                </div>
+
+                            </div>
                         </div>
 
                     </div>
-                </div>
-
-            </div>
-
+                </ItemTemplate>
+            </asp:ListView>
 
 
 
             <!--2nd column-->
-            <div class="col-md-3   col-sm-6 col-xs-6 fitting_click_active">
+            <%-- <div class="col-md-3   col-sm-6 col-xs-6 fitting_click_active">
                 <div class="fitting_col-ert btn-radio">
                     <img src="images/fitting_bottom.png" alt="fitting_kurti" class="fitting_blouse_image">
                     <input type="checkbox" class="hidden">
@@ -152,10 +168,10 @@
 
                     </div>
                 </div>
-            </div>
+            </div>--%>
 
             <!--3rd column-->
-            <div class="col-md-3   col-sm-6 col-xs-6 fitting_click_active">
+            <%-- <div class="col-md-3   col-sm-6 col-xs-6 fitting_click_active">
                 <div class="fitting_col-ert btn-radio">
                     <img src="images/fitting_roughing_final.png" alt="roughing_works" class="fitting_blouse_image">
                     <input type="checkbox" class="hidden">
@@ -181,9 +197,7 @@
 
                     </div>
                 </div>
-            </div>
-
-
+            </div>--%>
         </div>
         <!--End of container Col-3 Fitting_click_acive-->
     </div>
@@ -195,11 +209,11 @@
     <br>
     <br>
 
-    <div class="col-md-12 col-sm-12 col-xs-12 mt_30 text-center">
+    <%--  <div class="col-md-12 col-sm-12 col-xs-12 mt_30 text-center">
 
         <div class="form-wizard-buttons">
             <p>Rs:- <span class="red_clr_fnt"><b><i class="fa fa-inr"></i><span id="pricevalue">0</span></b></span></p>
             <button type="submit" class="btn enble contunie">Continue </button>
         </div>
-    </div>
+    </div>--%>
 </asp:Content>

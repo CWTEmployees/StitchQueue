@@ -154,7 +154,12 @@
 
             <br>
             <br>
-            <table class="table table-striped">
+
+            <asp:GridView ID="GridView1" runat="server"></asp:GridView>
+
+
+
+          <%--  <table class="table table-striped">
                 <thead class="head">
                     <tr>
                         <th>S.no.</th>
@@ -235,7 +240,7 @@
 
                     </tr>
                 </tbody>
-            </table>
+            </table>--%>
 
 
         </div>

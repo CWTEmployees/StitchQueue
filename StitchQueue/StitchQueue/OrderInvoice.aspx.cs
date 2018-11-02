@@ -42,7 +42,16 @@ namespace StitchQueue
             GridInvoice.DataSource = dt;
             GridInvoice.DataBind();
             GridInvoice.FooterRow.Cells[0].Text = "Total Amount";
-            GridInvoice.FooterRow.Cells[1].Text = grandtotal().ToString();
+            GridInvoice.FooterRow.Cells[1].Text = cartgrandtotal().ToString();
+            con.Close();
+
+
+            DataTable dt1 = new DataTable();
+            dt1 = (DataTable)Session["fittingitems"];
+            FittingInvoice.DataSource = dt1;
+            FittingInvoice.DataBind();
+            FittingInvoice.FooterRow.Cells[0].Text = "Total Amount";
+            FittingInvoice.FooterRow.Cells[1].Text = grandtotal().ToString();
             con.Close();
 
         }
@@ -74,7 +83,7 @@ namespace StitchQueue
 
         }
 
-        public decimal grandtotal()
+        public decimal cartgrandtotal()
         {
             DataTable dt = new DataTable();
             dt = (DataTable)Session["buyitems"];
@@ -84,6 +93,23 @@ namespace StitchQueue
             while (i < nrow)
             {
                 gtotal = gtotal + Convert.ToDecimal(dt.Rows[i]["price"].ToString());
+
+                i = i + 1;
+            }
+            return gtotal;
+        }
+
+
+        public decimal grandtotal()
+        {
+            DataTable dt = new DataTable();
+            dt = (DataTable)Session["fittingitems"];
+            int nrow = dt.Rows.Count;
+            int i = 0;
+            decimal gtotal = 0;
+            while (i < nrow)
+            {
+                gtotal = gtotal + Convert.ToDecimal(dt.Rows[i]["totalprice"].ToString());
 
                 i = i + 1;
             }

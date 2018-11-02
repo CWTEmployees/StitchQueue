@@ -54,7 +54,7 @@
                             <!-- Toggle Heading -->
 
                             <!-- Toggle Content -->
-                            <asp:GridView ID="product" runat="server" AutoGenerateColumns="False" GridLines="Horizontal" Width="200%" ShowFooter="True">
+                            <asp:GridView ID="product" runat="server" Visible="false" AutoGenerateColumns="False" GridLines="Horizontal" Width="200%" ShowFooter="True">
                                 <Columns>
 
                                     <asp:BoundField DataField="sno" HeaderText="Sno" Visible="False" />
@@ -73,6 +73,41 @@
 
                                 </Columns>
                             </asp:GridView>
+                        </div>
+
+                        <!-- End Add 3 -->
+                    </div>
+                    <br />
+                    <br />
+
+                     <div class="col-md-4">
+                        <h2 class="hed-add-col">ORDER REVIEW</h2>
+                        <!-- Start payment 1 -->
+                        <div class="panel panel-default">
+                            <!-- Toggle Heading -->
+
+                            <!-- Toggle Content -->
+                           <asp:GridView ID="fittinggrid" runat="server" Visible="false" AutoGenerateColumns="False" GridLines="Horizontal" ShowFooter="True">
+                            <Columns>
+
+                                <asp:BoundField DataField="sno" HeaderText="Sno" Visible="False" />
+                                <asp:BoundField DataField="productid" HeaderText="ProductId" Visible="False" />
+                                <asp:ImageField DataImageUrlField="img" HeaderStyle-Height="50px" FooterStyle-Height="50px" FooterStyle-HorizontalAlign="Center">
+                                    <ItemStyle HorizontalAlign="Center" />
+                                    <ControlStyle Height="150px" Width="150px" />
+                                </asp:ImageField>
+                              
+                                <asp:BoundField DataField="pname" HeaderText="ProductName" />
+                                <asp:BoundField DataField="price" HeaderText="Price" />
+                                <asp:BoundField DataField="pquantity" HeaderText="Quantity" />
+                                <asp:BoundField DataField="totalprice" HeaderText="Total Price" />
+                    
+               
+
+
+                               
+                            </Columns>
+                        </asp:GridView>
                         </div>
 
                         <!-- End Add 3 -->
