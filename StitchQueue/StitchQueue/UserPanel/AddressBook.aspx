@@ -21,7 +21,7 @@
                     <div class="content row m-top-50" style="border: 1px solid #ccc; padding: 20px;">
                         <div class="row padding-bottom-30">
                             <div class="col-md-2 col-sm-2 address-block add_more_address" data-type="pickup">
-                                <button id="Mybtn" class="btn btn-primary" style="font-size: 20px;">
+                                <button id="Mybtn" class="btn btn-primary" style="font-size: 20px;margin-left: 0px;">
                                     <span style="font-size: 120px;">+</span><br>
                                     ADD ADDRESS
                                 </button>

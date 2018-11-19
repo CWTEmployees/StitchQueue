@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <!--Video Section-->
-    <form id="home">
+    <form id="home" >
         <section class="content-section video-section" style="margin-top: 70px;">
             <div class="pattern-overlay">
                 <a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=hYFGeusWLS8',containment:'.video-section', quality:'large', autoPlay:true, mute:true, opacity:1}">bg</a>
@@ -68,26 +68,26 @@
                     </p>
                 </div>
 
-                <p style="color: #000; text-align: center; font-family: 'Montserrat', sans-serif;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+       
 
-
+               
 
 
                 <div class="row row-centered">
                     <asp:ListView ID="Data" runat="server" OnItemCommand="Data_ItemCommand">
                         <ItemTemplate>
-                            <div class="col-md-3 col-sm-3 col-xs-12 col-centered service_div" style="margin-right: 20px">
+                           <div class="col-md-3 col-sm-3 col-xs-12 col-centered service_div" style="margin-right: 20px">
 
                                 <div class="card">
-                                    <img src="<%# Eval("Images") %>" alt="Card Back" style="height: 200px; width: 200%" class="img-responsive">
-                                    <img src="<%# Eval("Images2") %>" class="img-top img-responsive" style="height: 200px; width: 200%" alt="Card Front" width="auto">
+                                    <img src="<%# Eval("Images") %>" alt="Card Back" class="img-responsive">
+                                    <img src="<%# Eval("Images2") %>" class="img-top img-responsive"  alt="Card Front" width="auto">
                                 </div>
                                 <!-- <img src="images/salwar.jpg" class="img-responsive"> -->
                                 <div class="middle">
-
-
-                                    <asp:Button ID="addcart" runat="server" CssClass="text" Text="ADD TO CART" CommandName="addtocart" CommandArgument='<%# Eval("ProductId") %>' />
-
+                                   
+                                    
+                                        <asp:Button ID="addcart" runat="server" CssClass="text" Text="Stitch Now" CommandName="addtocart" CommandArgument='<%# Eval("ProductId") %>' />
+                                    
                                 </div>
                                 <br>
                                 <p><%# Eval("ProductName") %></p>
@@ -106,8 +106,8 @@
                         <img src="images/kurti2.jpg" class="img-top img-responsive" alt="Card Front" width="auto">
                     </div>
                     <div class="middle">
-                        <a href="SelectDesign.aspx">
-                            <div class="text">ADD TO CART</div>
+                        <a href="SelectDesign">
+                            <div class="text">Stitch Now</div>
                         </a>
                     </div>
                     <br>
@@ -119,8 +119,8 @@
                         <img src="images/anarkali2.jpg" class="img-top img-responsive" alt="Card Front" width="auto">
                     </div>
                     <div class="middle">
-                        <a href="SelectDesign.aspx">
-                            <div class="text">ADD TO CART</div>
+                        <a href="SelectDesign">
+                            <div class="text">Stitch Now</div>
                         </a>
                     </div>
                     <br>
@@ -136,8 +136,8 @@
                         <img src="images/blouse2.jpg" class="img-top img-responsive" alt="Card Front" width="auto">
                     </div>
                     <div class="middle">
-                        <a href="SelectDesign.aspx">
-                            <div class="text">ADD TO CART</div>
+                        <a href="SelectDesign">
+                            <div class="text">Stitch Now</div>
                         </a>
                     </div>
                     <br>
@@ -149,8 +149,8 @@
                         <img src="images/bottom2.jpg" class="img-top img-responsive" alt="Card Front" width="auto">
                     </div>
                     <div class="middle">
-                        <a href="SelectDesign.aspx">
-                            <div class="text">ADD TO CART</div>
+                        <a href="SelectDesign">
+                            <div class="text">Stitch Now</div>
                         </a>
                     </div>
                     <br>
@@ -162,8 +162,8 @@
                         <img src="images/embroidery2.jpg" class="img-top img-responsive" alt="Card Front" width="auto">
                     </div>
                     <div class="middle">
-                        <a href="SelectDesign.aspx">
-                            <div class="text">ADD TO CART</div>
+                        <a href="SelectDesign">
+                            <div class="text">Stitch Now</div>
                         </a>
                     </div>
                     <br>
@@ -416,87 +416,149 @@
 
         <section id="" style="background: #F9F9F9;">
             <div class="container">
-                <div class="row wow fadeInUp" style="visibility: visible; animation-name: none;">
-                    <p class="header_text">
-                        Enquiry now
+                                    <div class="row wow fadeInUp" style="visibility: visible; animation-name: none;">
+                        <p class="header_text">
+                            Enquiry now
                         <br>
-                        <img src="./images/hr_line2.png" alt="heding image" width="100">
-                    </p>
-                </div>
-                <br>
-                <div class="row-centered">
-                    <div class="col-md-3 col-sm-3 col-xs-12 col-centered">
-                        <!--<label for="contact_name">Name:</label>-->
-                        <%--<input type="text" id="contact_name" name="name" class="form-control input-text" placeholder="Firstname">--%>
-                        <asp:TextBox ID="txtfirstname" runat="server" class="form-control input-text" placeholder="FirstName"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="rfvName" runat="server" Display="Dynamic" ErrorMessage="Please Enter FirstName" ControlToValidate="txtfirstname" ForeColor="Red" ValidationGroup="contactus"></asp:RequiredFieldValidator>
-                        <span class="error">This field is required</span>
+                            <img src="./images/hr_line2.png" alt="heding image" width="100">
+                        </p>
                     </div>
-                    <!-- Email -->
-                    <div class="col-md-3 col-sm-3 col-xs-12 col-centered">
+                    <br>
+                    <div class="row-centered">
+                        <div class="col-md-3 col-sm-3 col-xs-12 col-centered">
+                            <!--<label for="contact_name">Name:</label>-->
+                            <input type="text" id="contact_name" name="name" class="form-control input-text" placeholder="Firstname">
+                            <span class="error">This field is required</span>
+                        </div>
+                        <!-- Email -->
+                        <div class="col-md-3 col-sm-3 col-xs-12 col-centered">
 
-                        <!--<label for="contact_name">Name:</label>-->
-                        <%--<input type="text" id="contact_lname" name="lname" class="form-control input-text" placeholder="Lastname">--%>
-                        <asp:TextBox ID="txtlastname" runat="server" class="form-control input-text" placeholder="LastName"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" Display="Dynamic" ErrorMessage="Please Enter Lastname" ControlToValidate="txtlastname" ForeColor="Red" ValidationGroup="contactus"></asp:RequiredFieldValidator>
-                        <span class="error">This field is required</span>
+                            <!--<label for="contact_name">Name:</label>-->
+                            <input type="text" id="contact_lname" name="lname" class="form-control input-text" placeholder="Lastname">
+                            <span class="error">This field is required</span>
 
+                        </div>
                     </div>
-                </div>
-                <div class="row-centered">
-                    <div class="col-md-3 col-sm-3 col-xs-12 col-centered">
-                        <!--<label for="contact_website">Website:</label>-->
-                        <%--<input type="digits" id="contact_phone" name="phone" class="form-control input-text" placeholder="Mobile Number">--%>
-                        <asp:TextBox ID="txtphone" runat="server" class="form-control input-text" placeholder="Mobile Number"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="rfvphone" runat="server" Display="Dynamic" ErrorMessage="Please Enter Phone No" ControlToValidate="txtphone" ForeColor="Red" ValidationGroup="contactus"></asp:RequiredFieldValidator>
-                        <asp:RegularExpressionValidator ID="revphone" runat="server" Display="Dynamic" ControlToValidate="txtphone" ErrorMessage="Enter 10 Digit Only" ValidationExpression="[0-9]{10}" ForeColor="Red" ValidationGroup="contactus"></asp:RegularExpressionValidator>
-                        <span class="error">A valid phone Number is required</span>
+                    <div class="row-centered">
+                        <div class="col-md-3 col-sm-3 col-xs-12 col-centered">
+                            <!--<label for="contact_website">Website:</label>-->
+                            <input type="digits" id="contact_phone" name="phone" class="form-control input-text" placeholder="Mobile Number">
+                            <span class="error">A valid phone Number is required</span>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-12 col-centered">
+                            <!--<label for="contact_email">Email:</label>-->
+                            <input type="email" id="contact_email" name="email" class="form-control input-text" placeholder="Email Address">
+                            <span class="error">A valid email address is required</span>
+                        </div>
                     </div>
-                    <div class="col-md-3 col-sm-3 col-xs-12 col-centered">
-                        <!--<label for="contact_email">Email:</label>-->
-                        <%--<input type="email" id="contact_email" name="email" class="form-control input-text" placeholder="Email Address">--%>
-                        <asp:TextBox ID="txtemail" runat="server" class="form-control input-text" placeholder="Email Address"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="rfvemail" runat="server" Display="Dynamic" ErrorMessage="Please Enter Email Id" ControlToValidate="txtemail" ForeColor="Red" ValidationGroup="contactus"></asp:RequiredFieldValidator>
-                        <asp:RegularExpressionValidator ID="revEmail" runat="server" Display="Dynamic" ForeColor="Red" ValidationGroup="contactus" ControlToValidate="txtemail" ErrorMessage="Invald Email" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
-                        <%--<input type="email" name="Email" placeholder="Email" required="">--%>
-                        <span class="error">A valid email address is required</span>
-                    </div>
-                </div>
-                <div class="row-centered">
-                    <div class="col-md-6 col-sm-6 col-xs-12 col-centered">
+                    <div class="row-centered">
+                        <div class="col-md-6 col-sm-6 col-xs-12 col-centered" style="width: none !important; overflow: none !important;">
 
-                        <%--<textarea id="contact_message" name="message" placeholder="Message(atleast 50 chars)" class="form-control area" minlength="50" maxlength="500"></textarea>--%>
-                        <asp:TextBox ID="txtmsg" runat="server" placeholder="Message(atleast 50 chars)" class="form-control area" TextMode="MultiLine"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="rfvmessage" runat="server" Display="Dynamic" ErrorMessage="Please Enter Message" ControlToValidate="txtmsg" ForeColor="Red" ValidationGroup="contactus"></asp:RequiredFieldValidator><br />
-                        <span class="error">This field is required</span>
-                        <br>
-                        <div id="text">
-                            <%--<input type="file" id="contact_image" name="image" onchange="preview_images();" multiple />--%>
-                            <asp:FileUpload ID="fileimg" runat="server" AllowMultiple="true" />
-                            <span class="error">This field is required</span><br>
-                            <div class="row" id="image_preview"></div>
+                            <textarea id="contact_message" name="message" placeholder="Message(atleast 50 chars)" class="form-control area" minlength="50" maxlength="500"></textarea>
+                            <span class="error">This field is required</span>
                             <br>
+                            <div id="text">
+                                <input type="file" id="contact_image" name="image" onchange="preview_images();" multiple />
+                                <span class="error">This field is required</span><br>
+                                <div class="row" id="image_preview"></div>
+                                <br>
+                            </div>
+
+                            <div id="contact_submit">
+                                <button type="submit" class="btn btn-default btn-enquiry" style="margin-right: 90px;">Submit</button>
+                            </div>
+
+
+                            <p>&emsp;</p>
+
                         </div>
-
-                        <asp:Label ID="lblmsg" runat="server"></asp:Label>
-
-
-                        <div id="contact_submit">
-                            <asp:Button ID="submit" runat="server" class="btn btn-default btn-enquiry" Text="Submit" ValidationGroup="contactus" OnClick="submit_Click" />
-                            <%--<button type="submit" class="btn btn-default btn-enquiry" style="margin-right: 90px;">Submit</button>--%>
-                        </div>
-
-
-                        <p>&emsp;</p>
-
                     </div>
-                </div>
-
+			
+        
             </div>
         </section>
 
 
-    </form>
+        </form>
+    
+    <link rel="stylesheet" type="text/css" href="css/contact2.css">
 
-    <link rel="stylesheet" type="text/css" href="../css/contact2.css">
+
+
+<script>
+$('#add_more').click(function() {
+          "use strict";
+          $(this).before($("<div/>", {
+            id: 'filediv'
+          }).fadeIn('slow').append(
+            $("<input/>", {
+              name: 'file[]',
+              type: 'file',
+              id: 'file',
+              multiple: 'multiple',
+              accept: 'image/*'
+            })
+          ));
+        });
+
+        $('#upload').click(function(e) {
+          "use strict";
+          e.preventDefault();
+
+          if (window.filesToUpload.length === 0 || typeof window.filesToUpload === "undefined") {
+            alert("No files are selected.");
+            return false;
+          }
+
+          // Now, upload the files below...
+          // https://developer.mozilla.org/en-US/docs/Using_files_from_web_applications#Handling_the_upload_process_for_a_file.2C_asynchronously
+        });
+
+        deletePreview = function (ele, i) {
+          "use strict";
+          try {
+            $(ele).parent().remove();
+            window.filesToUpload.splice(i, 1);
+          } catch (e) {
+            console.log(e.message);
+          }
+        }
+
+        $("#file").on('change', function() {
+          "use strict";
+
+          // create an empty array for the files to reside.
+          window.filesToUpload = [];
+
+          if (this.files.length >= 1) {
+            $("[id^=previewImg]").remove();
+            $.each(this.files, function(i, img) {
+              var reader = new FileReader(),
+                newElement = $("<div id='previewImg" + i + "' class='previewBox'><img /></div>"),
+                deleteBtn = $("<span class='delete' onClick='deletePreview(this, " + i + ")'>X</span>").prependTo(newElement),
+                preview = newElement.find("img");
+
+              reader.onloadend = function() {
+                preview.attr("src", reader.result);
+                preview.attr("alt", img.name);
+              };
+
+              try {
+                window.filesToUpload.push(document.getElementById("file").files[i]);
+              } catch (e) {
+                console.log(e.message);
+              }
+
+              if (img) {
+                reader.readAsDataURL(img);
+              } else {
+                preview.src = "";
+              }
+
+              newElement.appendTo("#filediv");
+            });
+          }
+        });
+</script>
 </asp:Content>
+

@@ -113,7 +113,8 @@
                                         align-items: center;
                                     }
                                 }
-                            </style>
+								                       
+							</style>
 
 
                             <div class="col-md-6 col-sm-12 zero-padding" style="border: 1px solid #eee;">

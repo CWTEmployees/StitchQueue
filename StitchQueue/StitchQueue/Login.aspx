@@ -5,13 +5,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/popup.css">
     <link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" type="text/css" href="css/contact2.css">
 </head>
 <body>
     <!-- The Modal -->
@@ -24,7 +23,7 @@
 
                 <div class="col-sm-6 col-md-4 col-md-offset-4">
                     <div class="modal-header">
-                        <span class="close">&times;</span>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
                         <h1 class="text-center login-title">Sign in to continue</h1>
                     </div>
 

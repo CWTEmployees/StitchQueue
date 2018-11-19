@@ -79,6 +79,23 @@
 
 
 	</script>
+	<style>
+		.footer2 ul {
+
+    margin-left: 35px;
+
+}
+		h3 {
+
+   
+    text-align: left;
+		}
+		section {
+
+    margin: 0px 0;
+
+}
+		</style>
     <!-- Modal for confirm -->
     
     <form id="cart" >
@@ -201,7 +218,7 @@
                             </Columns>
                         </asp:GridView>
 
-                           <asp:GridView ID="fittinggrid" runat="server" Visible="false" AutoGenerateColumns="False" GridLines="Horizontal" ShowFooter="True">
+                           <asp:GridView ID="fittinggrid" runat="server" Visible="false" OnRowDeleting="fittinggrid_RowDeleting" AutoGenerateColumns="False" GridLines="Horizontal" ShowFooter="True" >
                             <Columns>
 
                                 <asp:BoundField DataField="sno" HeaderText="Sno" Visible="False" />

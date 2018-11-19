@@ -37,22 +37,53 @@ namespace StitchQueue
 
             lblOrderDate.Text = DateTime.Now.ToShortDateString();
 
-            DataTable dt = new DataTable();
-            dt = (DataTable)Session["buyitems"];
-            GridInvoice.DataSource = dt;
-            GridInvoice.DataBind();
-            GridInvoice.FooterRow.Cells[0].Text = "Total Amount";
-            GridInvoice.FooterRow.Cells[1].Text = cartgrandtotal().ToString();
-            con.Close();
+
+            if (Session["fittingitems"] == null)
+            {
+
+                DataTable dt = new DataTable();
+                dt = (DataTable)Session["buyitems"];
+                GridInvoice.DataSource = dt;
+                GridInvoice.DataBind();
+                GridInvoice.FooterRow.Cells[0].Text = "Total Amount";
+                GridInvoice.FooterRow.Cells[1].Text = cartgrandtotal().ToString();
+                con.Close();
+            }
+            else
+            {
+                DataTable dt1 = new DataTable();
+                dt1 = (DataTable)Session["fittingitems"];
+                FittingInvoice.DataSource = dt1;
+                FittingInvoice.DataBind();
+                FittingInvoice.FooterRow.Cells[0].Text = "Total Amount";
+                FittingInvoice.FooterRow.Cells[1].Text = grandtotal().ToString();
+                con.Close();
+            }
 
 
-            DataTable dt1 = new DataTable();
-            dt1 = (DataTable)Session["fittingitems"];
-            FittingInvoice.DataSource = dt1;
-            FittingInvoice.DataBind();
-            FittingInvoice.FooterRow.Cells[0].Text = "Total Amount";
-            FittingInvoice.FooterRow.Cells[1].Text = grandtotal().ToString();
-            con.Close();
+
+            if (Session["buyitems"] == null)
+            {
+                DataTable dt1 = new DataTable();
+                dt1 = (DataTable)Session["fittingitems"];
+                FittingInvoice.DataSource = dt1;
+                FittingInvoice.DataBind();
+                FittingInvoice.FooterRow.Cells[0].Text = "Total Amount";
+                FittingInvoice.FooterRow.Cells[1].Text = grandtotal().ToString();
+                con.Close();
+            }
+            else
+            {
+                DataTable dt = new DataTable();
+                dt = (DataTable)Session["buyitems"];
+                GridInvoice.DataSource = dt;
+                GridInvoice.DataBind();
+                GridInvoice.FooterRow.Cells[0].Text = "Total Amount";
+                GridInvoice.FooterRow.Cells[1].Text = cartgrandtotal().ToString();
+                con.Close();
+            }
+         
+
 
         }
         public override void VerifyRenderingInServerForm(Control control)

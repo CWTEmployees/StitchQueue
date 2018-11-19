@@ -34,6 +34,7 @@
                 margin-bottom: 0;
                 width: 100px !important;
                 height: 40px !important;
+				margin-bottom: 20px;
             }
 
         .input-file {
@@ -121,8 +122,8 @@
                         <%--<input type="text" name="mobile" class="form-control" id="mobile" placeholder="Mobile Number">--%>
                     </div>
                 </div>
-                <div class="form-inline">
-                    <label class="control-label col-md-3 col-sm-3 col-xs-3" for="altnumer">Alternative Contact</label>
+                <div class="form-inline" style="margin-left: -195px;">
+                    <label class="control-label col-md-4 col-sm-3 col-xs-3" for="altnumer">Alternative Contact</label>
                     <div class="col-sm-4">
                         <asp:TextBox ID="txtalternativcontact" runat="server" class="form-control" placeholder="Alternative Contact"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="rfvAltMob" runat="server" ForeColor="Red" ValidationGroup="regist" ControlToValidate="txtalternativcontact" ErrorMessage="Enter alternative Mobile Number" Display="Dynamic"></asp:RequiredFieldValidator>

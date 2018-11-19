@@ -163,7 +163,7 @@
            <div class="container-fluid">
                <div class="row">
 
-                   <div class="col-md-3 col-sm-3 col-xs-6">
+                   <div class="col-md-3 col-sm-3 col-xs-6" style="margin-left: 60px;">
                        <button class="btn btn-primary btn-category">ADD</button>
                    </div>
                    <!-- <div class="col-md-3 col-sm-3 col-xs-6">

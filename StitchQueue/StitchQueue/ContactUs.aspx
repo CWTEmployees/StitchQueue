@@ -123,7 +123,7 @@
     <div class="container-fluid">
         <div class="row">
 
-            <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="col-lg-12 col-md-12 col-sm-12" style="margin-top: 70px;">
                 <!-- <h1 class="heading h2-text-aline"><span class="home-hd">Reach</span> Us</h1> -->
                 <p>&emsp;</p>
                 <div class="row wow fadeInUp" style="visibility: visible; animation-name: none;">

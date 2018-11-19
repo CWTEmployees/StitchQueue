@@ -44,6 +44,23 @@
             text-transform: capitalize;
             line-height: 28px;
         }
+		.col-md-offset-2 {
+
+    margin-left: 5.66666667%;
+    margin-top: 25px;
+
+}
+		@media (min-width: 320px) and (max-width: 480px) {
+  
+.col-xs-6 {
+
+    width: 100%;
+
+}
+			.fitting_col-ert {margin-right:40px;}
+  
+}
+		
     </style>
 
 

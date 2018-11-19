@@ -22,10 +22,24 @@ namespace StitchQueue
         {
             DataTable dt = new DataTable();
             dt = (DataTable)Session["buyitems"];
+            
             if (dt != null)
             {
 
                 clbl.Text = dt.Rows.Count.ToString();
+            }
+            else
+            {
+                clbl.Text = "0";
+            }
+
+
+            DataTable dtfitting = new DataTable();
+            dtfitting = (DataTable)Session["fittingitems"];
+            if (dtfitting != null)
+            {
+
+                clbl.Text = dtfitting.Rows.Count.ToString();
             }
             else
             {
@@ -40,7 +54,7 @@ namespace StitchQueue
 
                 DataTable dt1 = new DataTable();
                 da.Fill(dt1);
-                lblUser.Text = "Hii " + dt1.Rows[0]["First_Name"].ToString();
+                lblUser.Text = "Hi " + dt1.Rows[0]["First_Name"].ToString();
                 con.Close();
 
             }

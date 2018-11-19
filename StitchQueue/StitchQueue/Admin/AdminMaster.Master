@@ -44,7 +44,7 @@
                  <nav id="sidebar">
             <div class="sidebar-header">
                 <h1>
-                    <a href="index.html"><img src="./images/logo-white.png" width="200"></a>
+                    <a href="http://stitchq.in/Home.aspx" target="_blank"><img src="./images/logo-white.png" width="200"></a>
                 </h1>
                 <span><img src="./images/logo-white.png" width="70"></span>
             </div>
@@ -62,15 +62,7 @@
                         Add User
                     </a>
                 </li>
-
-                 <li>
-                    <a href="Category.aspx">
-                        <i class="fa fa-list-alt"></i>
-                        Add Product
-                    </a>
-                </li>
-
-              <%--  <li>
+                <li>
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
                         <i class="fa fa-list-alt"></i>
                         Categories
@@ -88,7 +80,7 @@
                         
                        
                     </ul>
-                </li>--%>
+                </li>
 
                 
                

@@ -21,8 +21,6 @@ namespace StitchQueue
                 if (!IsPostBack)
                 {
                     fittingcart();
-                    
-
                 }
             }
 
@@ -32,23 +30,13 @@ namespace StitchQueue
                 if (!IsPostBack)
                 {
                     cart();
-
-                    
-
                 }
             }
-           
-
-
-          
-
-
-
-
-
-
         }
 
+
+
+        //Stitching Cart System Start//
 
         public void cart()
         {
@@ -172,7 +160,7 @@ namespace StitchQueue
             DataTable dt = new DataTable();
             dt = (DataTable)Session["buyitems"];
 
-            for (int i = 0; i <= dt.Rows.Count-1 ; i++)
+            for (int i = 0; i <= dt.Rows.Count - 1; i++)
             {
                 int sr;
                 int sr1;
@@ -190,14 +178,19 @@ namespace StitchQueue
                 }
             }
 
-            for (int i = 1 ; i <= dt.Rows.Count; i++)
+            for (int i = 1; i <= dt.Rows.Count; i++)
             {
-                dt.Rows[i-1]["sno"] = i;
+                dt.Rows[i - 1]["sno"] = i;
                 dt.AcceptChanges();
             }
             Session["buyitems"] = dt;
             Response.Redirect("Cart.aspx");
         }
+
+        //Stitching Cart System End//
+
+
+        //Fitting Cart System Start //
 
         public void fittingcart()
         {
@@ -308,9 +301,45 @@ namespace StitchQueue
             }
             return gtotal;
         }
+        
+
+        protected void fittinggrid_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+            DataTable dt1 = new DataTable();
+            dt1 = (DataTable)Session["fittingitems"];
+
+            for (int i = 0; i <= dt1.Rows.Count - 1; i++)
+            {
+                int sr;
+                int sr1;
+                string dtdata;
+                sr = Convert.ToInt32(dt1.Rows[i]["sno"].ToString());
+                TableCell cell = fittinggrid.Rows[e.RowIndex].Cells[0];
+                dtdata = sr.ToString();
+                sr1 = Convert.ToInt32(sr);
+
+                if (sr == sr1)
+                {
+                    dt1.Rows[i].Delete();
+                    dt1.AcceptChanges();
+                    break;
+                }
+            }
+
+            for (int i = 1; i <= dt1.Rows.Count; i++)
+            {
+                dt1.Rows[i - 1]["sno"] = i;
+                dt1.AcceptChanges();
+            }
+            Session["fittingitems"] = dt1;
+            Response.Redirect("Cart.aspx");
+        }
+
+        //Fitting Cart System End//
+
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
-            if(Session["User"] != null)
+            if (Session["User"] != null)
             {
                 Response.Redirect("AddressDetails.aspx");
             }

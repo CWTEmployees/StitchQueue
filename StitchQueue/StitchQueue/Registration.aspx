@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/popup.css">
     <link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" type="text/css" href="css/contact2.css">
 </head>
 <body onload="createCaptcha()">
 
@@ -43,12 +44,12 @@
 
                             <asp:TextBox ID="email" runat="server" class="form-control" placeholder="EmailId"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="rfvEmailId" ErrorMessage="Enter Email ID" ControlToValidate="email" runat="server" ForeColor="Red" ValidationGroup="regist" Display="Dynamic" />
-                            <asp:RegularExpressionValidator ID="rfvEmail" runat="server" ValidationExpression="\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ControlToValidate="email" ErrorMessage="Invalid Email Format" ForeColor="Red" Display="Dynamic" ValidationGroup="regist"></asp:RegularExpressionValidator>
+                            <asp:RegularExpressionValidator ID="rfvEmail" runat="server" ValidationExpression="\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ControlToValidate="email"  ErrorMessage="Invalid Email Format" ForeColor="Red" Display="Dynamic" ValidationGroup="regist"></asp:RegularExpressionValidator>
                             <%--<input class="form-control" placeholder="EmailId" type="text" id="inputEmailId" />--%>
 
-                            <asp:TextBox ID="password" runat="server" class="form-control" placeholder="Password"></asp:TextBox>
+                            <asp:TextBox ID="password" runat="server" class="form-control" placeholder="Password" TextMode="Password"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="rfvpwd" runat="server" ForeColor="Red" ValidationGroup="regist" ControlToValidate="password" ErrorMessage="Enter Password" Display="Dynamic"></asp:RequiredFieldValidator>
-                            <asp:RegularExpressionValidator ID="revpwd" runat="server" ErrorMessage="Password length must be between 7 to 10 characters" Display="Dynamic" ControlToValidate="password" ValidationGroup="regist" ValidationExpression="^[a-zA-Z0-9'@&#.\s]{7,10}$" />
+                            <asp:RegularExpressionValidator ID="revpwd" runat="server" ErrorMessage="Password length must be between 6 to 10 characters" Display="Dynamic" ControlToValidate="password" ValidationGroup="regist" ValidationExpression="^[a-zA-Z0-9'@&#.\s]{6,10}$" />
                             <%--<input class="form-control" placeholder="Password" type="text" id="inputPassword" />--%>
 
                             <asp:TextBox ID="CPassword" runat="server" class="form-control" placeholder="Confirm Password"></asp:TextBox>
@@ -145,7 +146,7 @@ window.onclick = function(event) {
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
-    <script type="text/javascript" src="./js/Captcha.js"></script>
+    <script type="text/javascript" src="js/Captcha.js"></script>
 
     <script type="text/javascript">
         $(window).load(function () {

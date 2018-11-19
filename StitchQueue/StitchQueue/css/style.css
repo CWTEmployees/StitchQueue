@@ -363,6 +363,17 @@ and (max-device-width : 480px)
     }
 
 }
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+{
+   .navbar-brand
+    {
+        width: 200px !important;
+        margin-left: -50px !important;
+        margin-top:-5px !important;
+    }
+}
 
 
 
@@ -877,7 +888,7 @@ and (max-device-width : 1024px)
    margin-left: 405px !important;
     margin-top: -145px !important;
   }
-  @media only screen 
+   @media only screen 
   and (min-device-width : 320px) 
   and (max-device-width : 480px) 
   {
@@ -1257,6 +1268,7 @@ and (min-width : 1824px)
        margin-top: -135px !important;
      }
 }
+
 
 
 

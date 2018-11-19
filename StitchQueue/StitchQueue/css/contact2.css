@@ -12,9 +12,9 @@
   }
   .form-control
   {
-     -moz-box-shadow: inset -3px -3px 10px #eee;
-   -webkit-box-shadow: inset -3px -3px 10px #eee;
-   box-shadow: inset -3px -3px 10px #eee;
+     -moz-box-shadow: inset -3px -3px 10px #eee !important;
+   -webkit-box-shadow: inset -3px -3px 10px #eee !important;
+   box-shadow: inset -3px -3px 10px #eee !important;
    border-radius: 15px !important;
   }
    .btn-enquiry

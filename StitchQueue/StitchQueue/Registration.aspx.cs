@@ -48,9 +48,9 @@ namespace StitchQueue
                 throw;
             }
         }
-        
 
-      
+
+
 
         private Boolean checkemail()
         {
@@ -76,6 +76,7 @@ namespace StitchQueue
 
         protected void reg_Click(object sender, EventArgs e)
         {
+            //DateTime date = DateTime.Now;
             if (checkemail() == true)
             {
 
@@ -94,12 +95,13 @@ namespace StitchQueue
                 }
                 else
                 {
-                    SqlCommand cmd = new SqlCommand("insert into Customer_Registration (First_Name,Last_Name,Mobile_No,Email_Id,Password) values ('" + firstname.Text + "','" + lastname.Text + "','" + mobile.Text + "','" + email.Text + "','" + password.Text + "')", con);
-                    cmd.Parameters.AddWithValue("@First_Name", firstname.Text);
-                    cmd.Parameters.AddWithValue("@Last_Name", lastname.Text);
-                    cmd.Parameters.AddWithValue("@Mobile_No", mobile.Text);
-                    cmd.Parameters.AddWithValue("@Email_Id", email.Text);
-                    cmd.Parameters.AddWithValue("@Password", password.Text);
+                    SqlCommand cmd = new SqlCommand("insert into Customer_Registration (First_Name,Last_Name,Mobile_No,Email_Id,Password,DateofBirth) values (@firstname,@lastname,@mobile,@email,@pass,@date)", con);
+                    cmd.Parameters.AddWithValue("@firstname", firstname.Text);
+                    cmd.Parameters.AddWithValue("@lastname", lastname.Text);
+                    cmd.Parameters.AddWithValue("@mobile", mobile.Text);
+                    cmd.Parameters.AddWithValue("@email", email.Text);
+                    cmd.Parameters.AddWithValue("@pass", password.Text);
+                    cmd.Parameters.AddWithValue("@date", DateTime.Now );
                     cmd.ExecuteScalar();
 
                     reglbl.Text = "Thankyou For Registration";
@@ -122,7 +124,7 @@ namespace StitchQueue
             }
         }
 
-      
+
 
 
     }
