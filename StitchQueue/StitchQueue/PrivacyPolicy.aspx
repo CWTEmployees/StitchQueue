@@ -28,12 +28,12 @@
 </style>
 
 
-<br><br>
+<br/><br/>
 
 <section id="privacypolicy">
     <div class="container-fluid">
       <div class="row wow fadeInUp" style="visibility: visible; animation-name: none;">
-         <p class="header_text">Privacy Policy <br><img src="./images/hr_line2.png" alt="heding image" width="100"></p>
+         <p class="header_text">Privacy Policy <br/><img src="./images/hr_line2.png" alt="heding image" width="100"></p>
        </div> 
         <div class="container">
 
@@ -47,7 +47,7 @@
             <li>Although we have taken all kinds of security measures for the protection of personal information, we cannot guarantee complete protection. You provide all personal information at your own risk.</li>
           </ol>
 
-        <br>
+        <br/>
        <h4 class="page_h4"><strong>GRIEVANCE</strong></h4>
 
        <ol class="sub_ul">

@@ -71,6 +71,7 @@
     <Content Include="AboutUs.aspx" />
     <Content Include="AddressDetails.aspx" />
     <Content Include="Admin\Addons.aspx" />
+    <Content Include="Admin\AddProduct.aspx" />
     <Content Include="Admin\AddUser.aspx" />
     <Content Include="Admin\Category.aspx" />
     <Content Include="Admin\ChangePassword.aspx" />
@@ -116,6 +117,7 @@
     <Content Include="Admin\js\SimpleChart.js" />
     <Content Include="Admin\js\simplyCountdown.js" />
     <Content Include="Admin\js\skycons.js" />
+    <Content Include="Admin\MainProduct.aspx" />
     <Content Include="Admin\Notification.aspx" />
     <Content Include="Admin\Order.aspx" />
     <Content Include="Admin\PartnerDetails.aspx" />
@@ -1028,6 +1030,13 @@
     <Compile Include="Admin\Addons.aspx.designer.cs">
       <DependentUpon>Addons.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\AddProduct.aspx.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddProduct.aspx.designer.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\AddUser.aspx.cs">
       <DependentUpon>AddUser.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1062,6 +1071,13 @@
     </Compile>
     <Compile Include="Admin\Discount.aspx.designer.cs">
       <DependentUpon>Discount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MainProduct.aspx.cs">
+      <DependentUpon>MainProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\MainProduct.aspx.designer.cs">
+      <DependentUpon>MainProduct.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Notification.aspx.cs">
       <DependentUpon>Notification.aspx</DependentUpon>

@@ -199,7 +199,7 @@ section {
                         <li><a href="Cart" class="go_to_cart"><i class="fa fa-shopping-cart"></i>CART<span class="cart_count"><asp:Label ID="clbl" runat="server" Text=""></asp:Label></span></a></li>
                         <li><%if (Session["user"] == null)
                               { %>
-                            <a href="Login">
+                            <a href="Login.aspx">
                                 <p>SIGN IN</p>
                             </a>
                             <% }

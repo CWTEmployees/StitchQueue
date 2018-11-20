@@ -123,56 +123,20 @@
                 <div class="form-inline">
                     <label class="control-label col-md-3 col-sm-3" for="Category">Upload Image:</label>
                     <div class="col-md-4">
-                        <input class="btn-bs-file btn btn-lg btn-info" id="filebutton" name="filebutton" class="input-file" type="file" accept="image/gif, image/jpeg, image/png" onchange="readURL(this);" required="true">
+                        <asp:FileUpload ID="addimg" runat="server" class="btn-bs-file btn btn-lg btn-info" />
+                        <%--<input class="btn-bs-file btn btn-lg btn-info" id="filebutton" name="filebutton" class="input-file" type="file" accept="image/gif, image/jpeg, image/png" onchange="readURL(this);" required="true"/>--%>
 
                         <br />
-                        <img id="cwt" src="#" alt="your image" />
+                        <%--<img id="cwt" src="#" alt="your image" />--%>
                     </div>
                 </div>
 
             </form>
         </div>
     </div>
+    <asp:Label ID="prodlbl" runat="server" Text=""></asp:Label>
 
-
-    <script type="text/javascript">
-
-        function insert() {
-
-            debugger
-            {
-                var id = document.getElementById("id").value;
-                var category = document.getElementById("model_category").value;
-                var subcat = document.getElementById("sub_category").value;
-                var cost = document.getElementById("price").value;
-
-                // Returns successful data submission message when the entered information is stored in database.
-                var data = "{'Name': '" + name + "', 'Email': '" + email + "', 'Mobile': '" + mobile + "', 'Message': '" + message + "'}";
-                // AJAX code to submit form.
-                $.ajax
-                    ({
-                        type: "POST",
-                        url: "SendMail.aspx/Mail",
-                        contentType: "application/json; charset=utf-8",
-                        data: data,
-                        cache: false,
-                        success: function (data) {
-                            if (data.d == 1) {
-                                alert("Failed,Try again");
-                                clearData();
-                            }
-                            else {
-                                alert("Message Sent Succefully");
-                                clearData();
-
-                            }
-                        }
-                    });
-            }
-
-
-        }
-    </script>
+  
 
 
 
@@ -186,17 +150,18 @@
         <div class="row">
 
             <div class="col-md-3 col-sm-3 col-xs-6">
-                <button class="btn btn-primary btn-category">ADD</button>
+                <asp:Button ID="btnAdd" runat="server" class="btn btn-primary btn-category" Text="ADD" OnClick="btnAdd_Click"  />
+                <%--<button class="btn btn-primary btn-category">ADD</button>--%>
             </div>
             <!-- <div class="col-md-3 col-sm-3 col-xs-6">
                        <button class="btn btn-primary btn-category">EDIT</button>
                    </div> -->
-            <div class="col-md-3 col-sm-3 col-xs-6">
+            <%--<div class="col-md-3 col-sm-3 col-xs-6">
                 <button class="btn btn-primary btn-category">UPDATE</button>
             </div>
             <div class="col-md-3 col-sm-3 col-xs-6">
                 <button class="btn btn-primary btn-category">DELETE</button>
-            </div>
+            </div>--%>
 
         </div>
     </div>

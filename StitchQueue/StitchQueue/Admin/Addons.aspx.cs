@@ -5,12 +5,17 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
-
+using System.Data.SqlClient;
+using System.Configuration;
+using System.Text;
+using System.Drawing;
+using System.IO;
 
 namespace StitchQueue.Admin
 {
     public partial class Addons : System.Web.UI.Page
     {
+        SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbconnection"].ConnectionString);
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -100,6 +105,42 @@ namespace StitchQueue.Admin
                 drpSubModel.DataTextField = "SubModelName";
                 drpSubModel.DataValueField = "SubModelId";
                 drpSubModel.DataBind();
+            }
+        }
+
+        protected void btnAdd_Click(object sender, EventArgs e)
+        {
+            var status = '1';
+            if (addimg.HasFile)
+            {
+                string _fileext = Path.GetExtension(addimg.FileName);
+                if (_fileext.ToLower() == ".png" || _fileext.ToLower() == ".jpg" || _fileext.ToLower() == ".bmp" || _fileext.ToLower() == ".jpeg")
+                {
+
+                    string filename = Path.GetFileName(addimg.FileName);
+                    addimg.SaveAs(Server.MapPath("~/images/" + filename));
+
+                    SqlCommand cmd = new SqlCommand("insert into Addon (AddOnId,DesignName,ProductId,StyleName,Price,Images,Status) values (@DId,@dName,@pId,@stylename,@price,@proimg,@sts)", con);
+
+                    cmd.Parameters.AddWithValue("@DId", modelid.Text);
+                    cmd.Parameters.AddWithValue("@dName", drpSubModel.SelectedItem.ToString());
+                    cmd.Parameters.AddWithValue("@pId", drpModel.SelectedValue);
+                    cmd.Parameters.AddWithValue("@stylename", txtstylename.Text);
+                    cmd.Parameters.AddWithValue("@price", txtprice.Text);
+                    cmd.Parameters.AddWithValue("@proimg", "images/" + addimg.FileName);
+                    cmd.Parameters.AddWithValue("@sts", status);
+
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+                    prodlbl.Text = "Product Added Successfully";
+                    prodlbl.ForeColor = System.Drawing.Color.ForestGreen;
+                    con.Close();
+                }
+                else
+                {
+                    prodlbl.Text = "Select Only .png,.jpeg,.jpg<br/>or.bmp Files";
+                    prodlbl.ForeColor = System.Drawing.Color.Red;
+                }
             }
         }
     }
