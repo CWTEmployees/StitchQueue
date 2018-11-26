@@ -39,7 +39,7 @@ namespace StitchQueue.Admin
                     cmd.Parameters.AddWithValue("@pName", pName.Text);
                     cmd.Parameters.AddWithValue("@pPrice", txtprice.Text);
                     //cmd.Parameters.AddWithValue("@imgname", addimg.FileName);
-                    cmd.Parameters.AddWithValue("@proimg", "images/" + addimg.FileName);
+                    cmd.Parameters.AddWithValue("@proimg", "../images/" + addimg.FileName);
                     cmd.Parameters.AddWithValue("@sts", status);
 
                     con.Open();

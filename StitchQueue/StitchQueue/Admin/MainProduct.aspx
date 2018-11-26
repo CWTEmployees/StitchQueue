@@ -27,17 +27,12 @@
             <asp:Label ID ="lblName" runat="server" Text='<%#Bind("ProductName") %>'></asp:Label>
             </ItemTemplate>
             <EditItemTemplate>
-            <asp:TextBox ID="txtName" runat="server" Text='<%#Bind("ProductName") %>' MaxLength="50"></asp:TextBox>
+            <asp:TextBox ID="txtName" runat="server" Text='<%#Bind("ProductName") %>'></asp:TextBox>
             <asp:RequiredFieldValidator ID="rfvtxtName" runat="server" Text="*" ToolTip="Enter name" ControlToValidate="txtName"></asp:RequiredFieldValidator>
             <asp:RegularExpressionValidator ID="revtxtName" runat="server" Text="*" ToolTip="Enter alphabate " ControlToValidate="txtName" ValidationExpression="^[a-zA-Z'.\s]{1,40}$"></asp:RegularExpressionValidator>
            
             </EditItemTemplate>
-            <FooterTemplate>
-            <asp:TextBox ID="txtNewName" runat="server" MaxLength="50"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="rfvtxtNewName" runat="server" Text="*" ToolTip="Enter name" ControlToValidate="txtNewName"></asp:RequiredFieldValidator>
-            <asp:RegularExpressionValidator ID="revtxtNewName" runat="server" Text="*" ToolTip="Enter alphabate " ControlToValidate="txtNewName" ValidationExpression="^[a-zA-Z'.\s]{1,40}$"></asp:RegularExpressionValidator>
           
-            </FooterTemplate>
             </asp:TemplateField>
            
             <asp:TemplateField>
@@ -46,16 +41,12 @@
             <asp:Label ID="lblPrice" runat ="server" Text='<%#Bind("Price") %>'></asp:Label>
             </ItemTemplate>
             <EditItemTemplate>
-            <asp:TextBox ID ="txtPrice" runat="server" Text='<%#Bind("Price") %>' MaxLength="2"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="rfvtxtAge" runat="server" Text="*" ToolTip="Enter age" ControlToValidate="txtAge"></asp:RequiredFieldValidator>
-            <asp:RegularExpressionValidator ID="revtxtAge" runat="server" Text="*" ToolTip="Enter numeric value" ControlToValidate="txtAge" ValidationExpression="^[0-9]+$"></asp:RegularExpressionValidator>
+            <asp:TextBox ID ="txtPrice" runat="server" Text='<%#Bind("Price") %>'></asp:TextBox>
+            <asp:RequiredFieldValidator ID="rfvtxtAge" runat="server" Text="*" ToolTip="Enter age" ControlToValidate="txtPrice"></asp:RequiredFieldValidator>
+            <asp:RegularExpressionValidator ID="revtxtAge" runat="server" Text="*" ToolTip="Enter numeric value" ControlToValidate="txtPrice" ValidationExpression="^[0-9]+$"></asp:RegularExpressionValidator>
           
             </EditItemTemplate>
-            <FooterTemplate>
-            <asp:TextBox ID="txtNewPrice" runat="server" MaxLength="2"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="rfvtxtNewAge" runat="server" Text="*" ToolTip="Enter age" ControlToValidate="txtNewPrice"></asp:RequiredFieldValidator>
-            <%--<asp:RegularExpressionValidator ID="revNewtxtAge" runat="server" Text="*" ToolTip="Enter numeric value" ControlToValidate="txtNewPrice" ValidationExpression="^[0-9]+$"></asp:RegularExpressionValidator>--%>
-            </FooterTemplate>
+          
             </asp:TemplateField>
  
            
@@ -70,14 +61,10 @@
             <asp:Image ID="imgPhoto" Width="100px" Height="100px" runat="server"  ImageUrl='<%#Bind("Images") %>' />
             </ItemTemplate>
             <EditItemTemplate>
-            <asp:FileUpload ID="fuPhoto" runat="server" ToolTip="select Employee Photo"/>
-            <asp:RegularExpressionValidator ID="revfuPhoto" runat="server" Text="*" ToolTip="Image formate only" ControlToValidate="fuPhoto" ValidationExpression="[a-zA-Z0_9].*\b(.jpeg|.JPEG|.jpg|.JPG|.jpe|.JPE|.png|.PNG|.mpp|.MPP|.gif|.GIF)\b"></asp:RegularExpressionValidator>
+            <asp:FileUpload ID="image" runat="server" ToolTip="select Employee Photo"/>
+            <asp:RegularExpressionValidator ID="revfuPhoto" runat="server" Text="*" ToolTip="Image formate only" ControlToValidate="image" ValidationExpression="[a-zA-Z0_9].*\b(.jpeg|.JPEG|.jpg|.JPG|.jpe|.JPE|.png|.PNG|.mpp|.MPP|.gif|.GIF)\b"></asp:RegularExpressionValidator>
             </EditItemTemplate>
-            <FooterTemplate>
-            <asp:FileUpload ID="fuNewPhoto" runat="server" ToolTip="select Employee Photo"/>
-            <asp:RequiredFieldValidator ID="rfvfuNewPhoto" runat="server" ErrorMessage="*" ToolTip="Select Photo" ControlToValidate="fuNewPhoto"></asp:RequiredFieldValidator>
-            <asp:RegularExpressionValidator ID="revfuNewPhoto" runat="server" Text="*" ToolTip="Image formate only" ControlToValidate="fuNewPhoto" ValidationExpression="[a-zA-Z0_9].*\b(.jpeg|.JPEG|.jpg|.JPG|.jpe|.JPE|.png|.PNG|.mpp|.MPP|.gif|.GIF)\b"></asp:RegularExpressionValidator>
-            </FooterTemplate>
+        
             </asp:TemplateField>
  
             <asp:TemplateField>
