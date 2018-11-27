@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-   <style type="text/css">
+    <style type="text/css">
         .form-inline {
             width: 100%;
         }
@@ -82,23 +82,21 @@
                 </div>
 
 
-                <div class="form-inline" runat="server" id="divModel">   
+                <div class="form-inline" runat="server" id="divModel">
                     <label class="control-label col-md-3 col-sm-3" for="Category">Model Category:</label>
                     <div class="col-sm-4">
                         <!-- <select id="category" name ="category" class="form-control" placeholder="Category*"></select> -->
                         <asp:DropDownList ID="drpModel" OnSelectedIndexChanged="drpModel_SelectedIndexChanged" class="form-control input-lg" AutoPostBack="true" runat="server">
-                            
                         </asp:DropDownList>
                         <%--<select class="form-control input-lg" id="model_category" name="model_category"></select>--%>
                     </div>
                 </div>
 
-                <div class="form-inline" runat="server" id="divSubModel" visible="false">
+                <div class="form-inline" runat="server" id="divSubModel">
                     <label class="control-label col-md-3 col-sm-3" for="Category">Sub Category:</label>
                     <div class="col-sm-4">
                         <!-- <select name ="sub_category" id ="sub_category" class="form-control" placeholder="Sub category"></select> -->
-                       <asp:DropDownList ID="drpSubModel" AutoPostBack="true" runat="server" class="form-control input-lg">
-                            
+                        <asp:DropDownList ID="drpSubModel" AutoPostBack="true" runat="server" class="form-control input-lg">
                         </asp:DropDownList>
                         <%--<select class="form-control input-lg" name="sub_category" id="sub_category"></select>--%>
                     </div>
@@ -125,18 +123,20 @@
                     <div class="col-md-4">
                         <asp:FileUpload ID="addimg" runat="server" class="btn-bs-file btn btn-lg btn-info" />
                         <%--<input class="btn-bs-file btn btn-lg btn-info" id="filebutton" name="filebutton" class="input-file" type="file" accept="image/gif, image/jpeg, image/png" onchange="readURL(this);" required="true"/>--%>
-
+                        <asp:RegularExpressionValidator ID="revfuPhoto" runat="server" Display="Dynamic" Text="*Invalid format" ForeColor="Red" ToolTip="Image formate only" ControlToValidate="addimg" ValidationExpression="[a-zA-Z0_9].*\b(.jpeg|.JPEG|.jpg|.JPG|.jpe|.JPE|.png|.PNG|.mpp|.MPP|.gif|.GIF)\b"></asp:RegularExpressionValidator>
                         <br />
                         <%--<img id="cwt" src="#" alt="your image" />--%>
                     </div>
                 </div>
+
+               
 
             </form>
         </div>
     </div>
     <asp:Label ID="prodlbl" runat="server" Text=""></asp:Label>
 
-  
+
 
 
 
@@ -150,7 +150,7 @@
         <div class="row">
 
             <div class="col-md-3 col-sm-3 col-xs-6">
-                <asp:Button ID="btnAdd" runat="server" class="btn btn-primary btn-category" Text="ADD" OnClick="btnAdd_Click"  />
+                <asp:Button ID="btnAdd" runat="server" class="btn btn-primary btn-category" Text="ADD" OnClick="btnAdd_Click" />
                 <%--<button class="btn btn-primary btn-category">ADD</button>--%>
             </div>
             <!-- <div class="col-md-3 col-sm-3 col-xs-6">
@@ -162,7 +162,6 @@
             <div class="col-md-3 col-sm-3 col-xs-6">
                 <button class="btn btn-primary btn-category">DELETE</button>
             </div>--%>
-
         </div>
     </div>
 
@@ -247,7 +246,7 @@
 
 
     <script type="text/javascript" src="js/category.js"></script>
-    <script >
+    <script>
 
         populateCountries("model_category", "sub_category");
         // populateCountries("country2","state2"); 

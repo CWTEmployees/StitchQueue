@@ -7,7 +7,7 @@
             AutoGenerateColumns="False" onrowdeleting="Product_RowDeleting"
             OnRowCancelingEdit="Product_RowCancelingEdit" OnRowEditing="Product_RowEditing"
             OnRowUpdating="Product_RowUpdating" CellPadding="4"
-            EnableModelValidation="True" GridLines="None" Width="1297px"
+            EnableModelValidation="True" GridLines="None" 
              
             onselectedindexchanged="Product_SelectedIndexChanged" >
             
@@ -62,7 +62,7 @@
             </ItemTemplate>
             <EditItemTemplate>
             <asp:FileUpload ID="image" runat="server" ToolTip="select Employee Photo"/>
-            <asp:RegularExpressionValidator ID="revfuPhoto" runat="server" Text="*" ToolTip="Image formate only" ControlToValidate="image" ValidationExpression="[a-zA-Z0_9].*\b(.jpeg|.JPEG|.jpg|.JPG|.jpe|.JPE|.png|.PNG|.mpp|.MPP|.gif|.GIF)\b"></asp:RegularExpressionValidator>
+            <asp:RegularExpressionValidator ID="revfuPhoto" runat="server" Text="*Invalid" ForeColor="Red" ToolTip="Image formate only" ControlToValidate="image" ValidationExpression="[a-zA-Z0_9].*\b(.jpeg|.JPEG|.jpg|.JPG|.jpe|.JPE|.png|.PNG|.mpp|.MPP|.gif|.GIF)\b"></asp:RegularExpressionValidator>
             </EditItemTemplate>
         
             </asp:TemplateField>

@@ -152,8 +152,8 @@
     <div class="container-fluid">
         <div class="col-sm-6">
 
-            <br>
-            <br>
+            <br/>
+            <br/>
             <table class="table table-striped">
                 <thead class="head">
                     <tr>

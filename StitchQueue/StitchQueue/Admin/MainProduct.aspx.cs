@@ -28,7 +28,7 @@ namespace StitchQueue.Admin
 
         public void FillGridView()
         {
-            
+
             SqlCommand cmd = new SqlCommand("select * from Product", con);
             con.Open();
             cmd.ExecuteNonQuery();
@@ -37,15 +37,16 @@ namespace StitchQueue.Admin
             da.Fill(dt);
             Product.DataSource = dt;
             Product.DataBind();
-            
+            con.Close();
         }
 
         protected void Product_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
             Label Pid = Product.Rows[e.RowIndex].FindControl("lblId") as Label;
-            
+
             SqlCommand cmd = new SqlCommand("delete from Product where ProductId= @Pid", con);
             cmd.Parameters.AddWithValue("@Pid", Pid.Text);
+            con.Open();
             cmd.ExecuteNonQuery();
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
@@ -53,12 +54,11 @@ namespace StitchQueue.Admin
             Product.EditIndex = -1;
             Product.DataSource = dt;
             Product.DataBind();
+            con.Close();
 
 
-            //Image imgPhoto = Product.Rows[e.RowIndex].FindControl("imgPhoto") as Image;
-            //File.Delete(Server.MapPath(imgPhoto.ImageUrl));
             FillGridView();
-            
+
 
         }
 
@@ -84,17 +84,23 @@ namespace StitchQueue.Admin
             FileUpload fuPhoto = Product.Rows[e.RowIndex].FindControl("image") as FileUpload;
 
 
-          
-                string filename = Path.GetFileName(fuPhoto.FileName);
-                fuPhoto.SaveAs(Server.MapPath("~/images/" + filename));
 
+
+            if(fuPhoto.FileName != "")
+            {
                 SqlCommand cmd = new SqlCommand("Update Product set ProductName=@pname, Images=@img, Price=@price where ProductId=@pid", con);
 
                 cmd.Parameters.AddWithValue("@pid", Pid.Text);
                 cmd.Parameters.AddWithValue("@pname", Pname.Text);
                 cmd.Parameters.AddWithValue("@price", Pprice.Text);
-                cmd.Parameters.AddWithValue("@img", "../images/" + fuPhoto.FileName);
-                
+
+
+                fuPhoto.SaveAs(Server.MapPath("~/images/") + Path.GetFileName(fuPhoto.FileName));
+                String Image = "../images/" + Path.GetFileName(fuPhoto.FileName);
+                cmd.Parameters.AddWithValue("@img", Image);
+
+
+                con.Open();
                 cmd.ExecuteNonQuery();
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
@@ -102,9 +108,31 @@ namespace StitchQueue.Admin
                 Product.EditIndex = -1;
                 Product.DataSource = dt;
                 Product.DataBind();
-                FillGridView();
-                
+                con.Close();
+            }
+            else
+            {
+                SqlCommand cmd = new SqlCommand("Update Product set ProductName=@pname, Price=@price where ProductId=@pid", con);
+
+                cmd.Parameters.AddWithValue("@pid", Pid.Text);
+                cmd.Parameters.AddWithValue("@pname", Pname.Text);
+                cmd.Parameters.AddWithValue("@price", Pprice.Text);
+
+
+                con.Open();
+                cmd.ExecuteNonQuery();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+
+                Product.EditIndex = -1;
+                Product.DataSource = dt;
+                Product.DataBind();
+                con.Close();
+            }
             
+            FillGridView();
+
+
 
 
 

@@ -57,7 +57,15 @@
                     <form class="form-inline" action="">
                       <div class="form-group">
                         <label for="product">Select date:</label>&emsp;
-                        <select class="form-control" required="true">
+                        <asp:DropDownList ID="drpordstatus" class="form-control" AutoPostBack="true" runat="server">
+                            <asp:ListItem>Order placed</asp:ListItem>
+                            <asp:ListItem>Ready for Pickup</asp:ListItem>
+                            <asp:ListItem>In Stitching</asp:ListItem>
+                            <asp:ListItem>Stitching Completed</asp:ListItem>
+                            <asp:ListItem>Ready For delivery</asp:ListItem>
+                            <asp:ListItem>Delivered</asp:ListItem>
+                        </asp:DropDownList>
+                        <%--<select class="form-control" required="true">
                             <option selected disabled value="">Select..</option>
                             <option>Order placed</option>
                             <option>Ready for Pickup</option>
@@ -65,10 +73,11 @@
                             <option>Stitching Completed</option>
                             <option>Ready For delivery</option>
                             <option>Delivered</option>
-                        </select>
+                        </select>--%>
                         <!-- <input type="date" name="bday" class="form-control" id="product" placeholder="ENTER PRODUCT CATEGORY" required> -->
                       </div>
-                      <button type="submit" class="btn btn-primary button6 shap">Submit</button>
+                        <%--<asp:Button ID="btnshow" runat="server" Text="Submit" class="btn btn-primary button6 shap" OnClick="btnshow_Click" />--%>
+                      <%--<button type="submit" class="btn btn-primary button6 shap">Submit</button>--%>
 
                     </form>
                    <!--  <p>&emsp;</p>
@@ -82,7 +91,35 @@
         
             <br><br>
                 <div class="table-responsive">
-            <table class="table table-striped">
+                    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" CellPadding="4" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None">
+                        <AlternatingRowStyle BackColor="White" />
+                        <Columns>
+                            <asp:BoundField DataField="OrderId" HeaderText="OrderId" SortExpression="OrderId" />
+                            <asp:BoundField DataField="CustomerName" HeaderText="CustomerName" SortExpression="CustomerName" />
+                            <asp:BoundField DataField="MobileNo" HeaderText="MobileNo" SortExpression="MobileNo" />
+                            <asp:BoundField DataField="Address" HeaderText="Address" SortExpression="Address" />
+                            <asp:BoundField DataField="Vendor" HeaderText="Vendor" SortExpression="Vendor" />
+                            <asp:BoundField DataField="OrderStatus" HeaderText="OrderStatus" SortExpression="OrderStatus" />
+                            <asp:BoundField DataField="PickupPerson" HeaderText="PickupPerson" SortExpression="PickupPerson" />
+                            <asp:BoundField DataField="PickupDate" HeaderText="PickupDate" SortExpression="PickupDate" />
+                            <asp:BoundField DataField="DeliveryPerson" HeaderText="DeliveryPerson" SortExpression="DeliveryPerson" />
+                            <asp:BoundField DataField="DeliverySate" HeaderText="DeliverySate" SortExpression="DeliverySate" />
+                        </Columns>
+                        <EditRowStyle BackColor="#2461BF" />
+                        <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                        <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                        <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+                        <RowStyle BackColor="#EFF3FB" />
+                        <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
+                        <SortedAscendingCellStyle BackColor="#F5F7FB" />
+                        <SortedAscendingHeaderStyle BackColor="#6D95E1" />
+                        <SortedDescendingCellStyle BackColor="#E9EBEF" />
+                        <SortedDescendingHeaderStyle BackColor="#4870BE" />
+                    </asp:GridView>
+
+
+
+           <%-- <table class="table table-striped">
                 <thead class="head">
                     <tr>
                         <th>Order ID</th>
@@ -322,7 +359,12 @@
                         <td><button class="btn btn-info">Save</button></td>
                     </tr>
                 </tbody>
-            </table>
+            </table>--%>
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:StitchQueueConnectionString3 %>" SelectCommand="SELECT [OrderId], [CustomerName], [MobileNo], [Address], [Vendor], [OrderStatus], [PickupPerson], [PickupDate], [DeliveryPerson], [DeliverySate] FROM [Orders] WHERE ([OrderStatus] = @OrderStatus)">
+                        <SelectParameters>
+                            <asp:ControlParameter ControlID="drpordstatus" Name="OrderStatus" PropertyName="SelectedValue" Type="String" />
+                        </SelectParameters>
+                    </asp:SqlDataSource>
            </div>
 
             </div>

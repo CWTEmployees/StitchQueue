@@ -27,6 +27,19 @@ namespace StitchQueue.Admin
 
         private void GetModel()
         {
+            //con.Open();
+            //SqlCommand cmd = new SqlCommand("select * from Product", con);
+            //cmd.CommandType = CommandType.Text;
+            //drpModel.DataSource = cmd.ExecuteReader();
+            //drpModel.DataTextField = "ProductName";
+            //drpModel.DataValueField = "ProductId";
+            //drpModel.DataBind();
+            //drpModel.Items.Insert(0, new ListItem("--Selet Model--", "0"));
+
+
+
+
+
             DataTable Modeldt = new DataTable();
             Modeldt.Columns.Add("ModelId", typeof(int));
             Modeldt.Columns.Add("ModelName");
@@ -46,6 +59,17 @@ namespace StitchQueue.Admin
 
         protected void drpModel_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //int drpModelId = Convert.ToInt32(drpModel.SelectedValue);
+            //con.Open();
+            //SqlCommand cmd = new SqlCommand("select * from Design where ProductId =" + drpModelId, con);
+            //cmd.CommandType = CommandType.Text;
+            //drpSubModel.DataSource = cmd.ExecuteReader();
+            //drpSubModel.DataTextField = "DesignName";
+            //drpSubModel.DataValueField = "DesignId";
+            //drpSubModel.DataBind();
+            //drpSubModel.Items.Insert(0, new ListItem("--Select Submodel--", "0"));
+
+
             if (int.Parse(drpModel.SelectedValue) > 0)
             {
                 divSubModel.Visible = true;
@@ -53,6 +77,8 @@ namespace StitchQueue.Admin
                 SubModeldt.Columns.Add("SubModelId", typeof(int));
                 SubModeldt.Columns.Add("ModelId", typeof(int));
                 SubModeldt.Columns.Add("SubModelName");
+
+
 
                 if (drpModel.SelectedValue == "1")
                 {
@@ -105,37 +131,30 @@ namespace StitchQueue.Admin
         protected void btnAdd_Click(object sender, EventArgs e)
         {
             var status = '1';
-            if (addimg.HasFile)
-            {
-                string _fileext = Path.GetExtension(addimg.FileName);
-                if (_fileext.ToLower() == ".png" || _fileext.ToLower() == ".jpg" || _fileext.ToLower() == ".bmp" || _fileext.ToLower() == ".jpeg")
-                {
 
-                    string filename = Path.GetFileName(addimg.FileName);
-                    addimg.SaveAs(Server.MapPath("~/images/" + filename));
 
-                    SqlCommand cmd = new SqlCommand("insert into Design (DesignId,DesignName,ProductId,StyleName,Price,Images,Status) values (@DId,@dName,@pId,@stylename,@price,@proimg,@sts)", con);
+            string filename = Path.GetFileName(addimg.FileName);
+            addimg.SaveAs(Server.MapPath("~/images/" + filename));
 
-                    cmd.Parameters.AddWithValue("@DId", modelid.Text);
-                    cmd.Parameters.AddWithValue("@dName", drpSubModel.SelectedItem.ToString());
-                    cmd.Parameters.AddWithValue("@pId", drpModel.SelectedValue);
-                    cmd.Parameters.AddWithValue("@stylename", txtstylename.Text);
-                    cmd.Parameters.AddWithValue("@price", txtprice.Text);
-                    cmd.Parameters.AddWithValue("@proimg", "images/" + addimg.FileName);
-                    cmd.Parameters.AddWithValue("@sts", status);
+            
 
-                    con.Open();
-                    cmd.ExecuteNonQuery();
-                    prodlbl.Text = "Product Added Successfully";
-                    prodlbl.ForeColor = System.Drawing.Color.ForestGreen;
-                    con.Close();
-                }
-                else
-                {
-                    prodlbl.Text = "Select Only .png,.jpeg,.jpg<br/>or.bmp Files";
-                    prodlbl.ForeColor = System.Drawing.Color.Red;
-                }
-            }
+            SqlCommand cmd = new SqlCommand("insert into Design (DesignId,DesignName,ProductId,StyleName,Price,Images,Status) values (@DId,@dName,@pId,@stylename,@price,@proimg,@proimg2,@sts)", con);
+
+            cmd.Parameters.AddWithValue("@DId", modelid.Text);
+            cmd.Parameters.AddWithValue("@dName", drpSubModel.SelectedItem.ToString());
+            cmd.Parameters.AddWithValue("@pId", drpModel.SelectedValue);
+            cmd.Parameters.AddWithValue("@stylename", txtstylename.Text);
+            cmd.Parameters.AddWithValue("@price", txtprice.Text);
+            cmd.Parameters.AddWithValue("@proimg", "../images/" + addimg.FileName);
+            
+            cmd.Parameters.AddWithValue("@sts", status);
+
+            con.Open();
+            cmd.ExecuteNonQuery();
+            prodlbl.Text = "Product Added Successfully";
+            prodlbl.ForeColor = System.Drawing.Color.ForestGreen;
+            con.Close();
+
 
 
 
