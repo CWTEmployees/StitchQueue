@@ -61,11 +61,11 @@ namespace StitchQueue.Admin
         {
             //int drpModelId = Convert.ToInt32(drpModel.SelectedValue);
             //con.Open();
-            //SqlCommand cmd = new SqlCommand("select * from Design where ProductId =" + drpModelId, con);
+            //SqlCommand cmd = new SqlCommand("select DISTINCT DesignName  from Design where ProductId =" + drpModelId, con);
             //cmd.CommandType = CommandType.Text;
             //drpSubModel.DataSource = cmd.ExecuteReader();
             //drpSubModel.DataTextField = "DesignName";
-            //drpSubModel.DataValueField = "DesignId";
+            ////drpSubModel.DataValueField = "DesignId";
             //drpSubModel.DataBind();
             //drpSubModel.Items.Insert(0, new ListItem("--Select Submodel--", "0"));
 
@@ -96,28 +96,28 @@ namespace StitchQueue.Admin
 
                 if (drpModel.SelectedValue == "3")
                 {
-                    SubModeldt.Rows.Add(5, 2, "Front");
-                    SubModeldt.Rows.Add(6, 2, "Back");
-                    SubModeldt.Rows.Add(7, 2, "Sleeve");
+                    SubModeldt.Rows.Add(5, 3, "Front");
+                    SubModeldt.Rows.Add(6, 3, "Back");
+                    SubModeldt.Rows.Add(7, 3, "Sleeve");
                 }
 
                 if (drpModel.SelectedValue == "4")
                 {
-                    SubModeldt.Rows.Add(8, 2, "Bottoms");
+                    SubModeldt.Rows.Add(8, 4, "Bottoms");
 
                 }
 
                 if (drpModel.SelectedValue == "5")
                 {
-                    SubModeldt.Rows.Add(9, 2, "Front");
-                    SubModeldt.Rows.Add(10, 2, "Back");
-                    SubModeldt.Rows.Add(11, 2, "Sleeve");
-                    SubModeldt.Rows.Add(12, 2, "Bottoms");
+                    SubModeldt.Rows.Add(9, 5, "Front");
+                    SubModeldt.Rows.Add(10, 5, "Back");
+                    SubModeldt.Rows.Add(11, 5, "Sleeve");
+                    SubModeldt.Rows.Add(12, 5, "Bottoms");
                 }
 
                 if (drpModel.SelectedValue == "6")
                 {
-                    SubModeldt.Rows.Add(13, 2, "Dress Model");
+                    SubModeldt.Rows.Add(13, 6, "Dress Model");
 
                 }
                 drpSubModel.DataSource = SubModeldt;

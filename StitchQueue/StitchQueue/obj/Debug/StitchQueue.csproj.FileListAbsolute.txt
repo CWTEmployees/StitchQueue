@@ -51,7 +51,6 @@ D:\Bhavesh Bambhaniya\Git\StitchQueue\StitchQueue\StitchQueue\bin\AjaxControlToo
 D:\Bhavesh Bambhaniya\Git\StitchQueue\StitchQueue\StitchQueue\bin\itextsharp.dll
 D:\Bhavesh Bambhaniya\Git\StitchQueue\StitchQueue\StitchQueue\bin\itextsharp.xmlworker.dll
 D:\Bhavesh Bambhaniya\Git\StitchQueue\StitchQueue\StitchQueue\bin\itextsharp.xml
-D:\Bhavesh Bambhaniya\Git\StitchQueue\StitchQueue\StitchQueue\obj\Debug\StitchQueue.csprojResolveAssemblyReference.cache
 D:\Bhavesh\3-11-2018 Work\StitchQueue\StitchQueue\bin\StitchQueue.dll
 D:\Bhavesh\3-11-2018 Work\StitchQueue\StitchQueue\bin\StitchQueue.pdb
 D:\Bhavesh\3-11-2018 Work\StitchQueue\StitchQueue\bin\AjaxControlToolkit.dll
@@ -75,3 +74,4 @@ F:\Bhavesh\3-11-2018 Work\StitchQueue\StitchQueue\bin\System.Net.Http.Formatting
 F:\Bhavesh\3-11-2018 Work\StitchQueue\StitchQueue\obj\Debug\StitchQueue.csprojResolveAssemblyReference.cache
 F:\Bhavesh\3-11-2018 Work\StitchQueue\StitchQueue\obj\Debug\StitchQueue.dll
 F:\Bhavesh\3-11-2018 Work\StitchQueue\StitchQueue\obj\Debug\StitchQueue.pdb
+D:\Bhavesh Bambhaniya\Git\StitchQueue\StitchQueue\StitchQueue\obj\Debug\StitchQueue.csprojResolveAssemblyReference.cache

@@ -52,7 +52,7 @@
             <ul class="list-unstyled components">
                 <li>
                     <a href="PartnerDetails.aspx">
-                        <i class="fa fa-handshake-o" aria-hidden="true"></i>
+                        <i class="fa fa-users" aria-hidden="true"></i>
                         Partner Details
                     </a>
                 </li>
@@ -87,14 +87,14 @@
 
                   <li>
                     <a href="MainProduct.aspx">
-                        <i class="fa fa-product-hunt"></i>
+                        <i class="fab fa-product-hunt"></i>
                         Main Product
                     </a>
                 </li> 
                
                 <li>
                     <a href="Product.aspx">
-                        <i class="fa fa-product-hunt"></i>
+                        <i class="fab fa-product-hunt"></i>
                         Product
                     </a>
                 </li> 
