@@ -20,16 +20,37 @@ namespace StitchQueue.Admin
             
         }
 
-        
+        public void FillGridView()
+        {
+
+            SqlCommand cmd = new SqlCommand("SELECT OrderId, CustomerName, MobileNo, Address, Vendor, OrderStatus, PickupPerson, PickupDate, DeliveryPerson, DeliveryDate FROM Orders WHERE OrderStatus= @OrderStatus", con);
+
+
+
+            con.Open();
+
+            cmd.Parameters.AddWithValue("@OrderStatus", drpordstatus.SelectedValue);
+            
+
+            cmd.ExecuteNonQuery();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            OrderGrid.DataSource = dt;
+            OrderGrid.DataBind();
+            con.Close();
+        }
 
         protected void OrderGrid_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
         {
             OrderGrid.EditIndex = -1;
+            FillGridView();
         }
 
         protected void OrderGrid_RowEditing(object sender, GridViewEditEventArgs e)
         {
             OrderGrid.EditIndex = e.NewEditIndex;
+            FillGridView();
         }
 
         protected void OrderGrid_RowUpdating(object sender, GridViewUpdateEventArgs e)
@@ -61,6 +82,8 @@ namespace StitchQueue.Admin
             OrderGrid.DataSource = dt;
             OrderGrid.DataBind();
             con.Close();
+
+            FillGridView();
         }
 
         protected void OrderGrid_SelectedIndexChanged(object sender, EventArgs e)
@@ -71,7 +94,7 @@ namespace StitchQueue.Admin
         protected void btnshow_Click(object sender, EventArgs e)
         {
             OrderGrid.Visible = true;
-            
+            FillGridView();
         }
 
         

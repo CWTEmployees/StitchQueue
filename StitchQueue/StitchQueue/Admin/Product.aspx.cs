@@ -24,6 +24,29 @@ namespace StitchQueue.Admin
             }
         }
 
+        public void FillGridView()
+        {
+
+            SqlCommand cmd = new SqlCommand("SELECT Design.DesignId,Product.ProductId,Design.DesignName,Design.StyleName,Design.Price,Design.Images FROM Design LEFT JOIN Product ON Design.ProductId = Product.ProductId where Design.DesignName=@DesignName And Product.ProductId=@ProductId", con);
+
+
+
+            con.Open();
+
+            cmd.Parameters.AddWithValue("@ProductId", drpModel.SelectedValue);
+            cmd.Parameters.AddWithValue("@DesignName", drpSubModel.SelectedValue);
+
+            cmd.ExecuteNonQuery();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            DesignGrid.DataSource = dt;
+            DesignGrid.DataBind();
+            con.Close();
+        }
+
+        
+
         private void GetModel()
         {
             con.Open();
@@ -133,6 +156,7 @@ namespace StitchQueue.Admin
         protected void btnshow_Click(object sender, EventArgs e)
         {
             DesignGrid.Visible = true;
+            FillGridView();
         }
 
         protected void DesignGrid_RowDeleting(object sender, GridViewDeleteEventArgs e)
@@ -150,22 +174,27 @@ namespace StitchQueue.Admin
             DesignGrid.DataSource = dt;
             DesignGrid.DataBind();
             con.Close();
+
+            FillGridView();
         }
 
         protected void DesignGrid_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
         {
             DesignGrid.EditIndex = -1;
+            FillGridView();
         }
 
         protected void DesignGrid_RowEditing(object sender, GridViewEditEventArgs e)
         {
             DesignGrid.EditIndex = e.NewEditIndex;
+            FillGridView();
         }
 
         protected void DesignGrid_RowUpdating(object sender, GridViewUpdateEventArgs e)
         {
-            Label Pid = DesignGrid.Rows[e.RowIndex].FindControl("lblId") as Label;
-            TextBox Pname = DesignGrid.Rows[e.RowIndex].FindControl("txtName") as TextBox;
+            Label Did = DesignGrid.Rows[e.RowIndex].FindControl("lblDesignId") as Label;
+            Label Dname = DesignGrid.Rows[e.RowIndex].FindControl("lblDesignName") as Label;
+            TextBox Dstylename = DesignGrid.Rows[e.RowIndex].FindControl("txtStyleName") as TextBox;
             TextBox Pprice = DesignGrid.Rows[e.RowIndex].FindControl("txtPrice") as TextBox;
             FileUpload fuPhoto = DesignGrid.Rows[e.RowIndex].FindControl("image") as FileUpload;
 
@@ -174,10 +203,11 @@ namespace StitchQueue.Admin
 
             if (fuPhoto.FileName != "")
             {
-                SqlCommand cmd = new SqlCommand("Update Product set ProductName=@pname, Images=@img, Price=@price where ProductId=@pid", con);
+                SqlCommand cmd = new SqlCommand("Update Design set DesignName=@Dname,StyleName=@Dstylename, Images=@img, Price=@price where DesignId=@Did", con);
 
-                cmd.Parameters.AddWithValue("@pid", Pid.Text);
-                cmd.Parameters.AddWithValue("@pname", Pname.Text);
+                cmd.Parameters.AddWithValue("@Did", Did.Text);
+                cmd.Parameters.AddWithValue("@Dname", Dname.Text);
+                cmd.Parameters.AddWithValue("@Dstylename", Dstylename.Text);
                 cmd.Parameters.AddWithValue("@price", Pprice.Text);
 
 
@@ -198,10 +228,11 @@ namespace StitchQueue.Admin
             }
             else
             {
-                SqlCommand cmd = new SqlCommand("Update Product set ProductName=@pname, Price=@price where ProductId=@pid", con);
+                SqlCommand cmd = new SqlCommand("Update Design set DesignName=@Dname,StyleName=@Dstylename, Price=@price where DesignId=@Did", con);
 
-                cmd.Parameters.AddWithValue("@pid", Pid.Text);
-                cmd.Parameters.AddWithValue("@pname", Pname.Text);
+                cmd.Parameters.AddWithValue("@Did", Did.Text);
+                cmd.Parameters.AddWithValue("@Dname", Dname.Text);
+                cmd.Parameters.AddWithValue("@Dstylename", Dstylename.Text);
                 cmd.Parameters.AddWithValue("@price", Pprice.Text);
 
 
@@ -215,6 +246,8 @@ namespace StitchQueue.Admin
                 DesignGrid.DataBind();
                 con.Close();
             }
+
+            FillGridView();
         }
 
         protected void DesignGrid_SelectedIndexChanged(object sender, EventArgs e)

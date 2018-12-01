@@ -87,9 +87,9 @@
         <div class="col-md-12 col-sm-12">
 
             <br/>
-            <br>
+            <br/>
             <div class="table-responsive">
-                <asp:GridView ID="OrderGrid" runat="server" Visible="false" AllowPaging="True" DataSourceID="SqlDataSource1"  AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None"
+                <asp:GridView ID="OrderGrid" runat="server" Visible="false" AllowPaging="True"  AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None"
                     ShowHeaderWhenEmpty="True"
                     OnRowCancelingEdit="OrderGrid_RowCancelingEdit" OnRowEditing="OrderGrid_RowEditing"
                     OnRowUpdating="OrderGrid_RowUpdating"
@@ -212,11 +212,11 @@
                     <SortedDescendingHeaderStyle BackColor="#4870BE" />
                 </asp:GridView>
 
-                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:StitchQueueConnectionString3 %>" SelectCommand="SELECT [OrderId], [CustomerName], [MobileNo], [Address], [Vendor], [OrderStatus], [PickupPerson], [PickupDate], [DeliveryPerson], [DeliveryDate] FROM [Orders] WHERE ([OrderStatus] = @OrderStatus)">
+               <%-- <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:StitchQueueConnectionString3 %>" SelectCommand="SELECT [OrderId], [CustomerName], [MobileNo], [Address], [Vendor], [OrderStatus], [PickupPerson], [PickupDate], [DeliveryPerson], [DeliveryDate] FROM [Orders] WHERE ([OrderStatus] = @OrderStatus)">
                     <SelectParameters>
                         <asp:ControlParameter ControlID="drpordstatus" Name="OrderStatus" PropertyName="SelectedValue" Type="String" />
                     </SelectParameters>
-                </asp:SqlDataSource>
+                </asp:SqlDataSource>--%>
 
 
                 <%-- <table class="table table-striped">

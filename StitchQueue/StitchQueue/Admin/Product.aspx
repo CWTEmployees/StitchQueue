@@ -160,7 +160,7 @@
             <br />
             <br />
 
-            <asp:GridView ID="DesignGrid" runat="server" AutoGenerateColumns="False" Visible="false" CellPadding="4" DataKeyNames="DesignId" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None"
+            <asp:GridView ID="DesignGrid" runat="server" AutoGenerateColumns="False" Visible="false" CellPadding="4" DataKeyNames="DesignId" ForeColor="#333333" GridLines="None"
                 ShowHeaderWhenEmpty="True"
                 OnRowDeleting="DesignGrid_RowDeleting"
                 OnRowCancelingEdit="DesignGrid_RowCancelingEdit" OnRowEditing="DesignGrid_RowEditing"
@@ -194,8 +194,8 @@
                         </ItemTemplate>
                         <EditItemTemplate>
                             <asp:TextBox ID="txtStyleName" runat="server" Text='<%#Bind("StyleName") %>'></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="rfvtxtName" runat="server" Text="*" ToolTip="Enter name" ControlToValidate="txtName"></asp:RequiredFieldValidator>
-                            <asp:RegularExpressionValidator ID="revtxtName" runat="server" Text="*" ToolTip="Enter alphabate " ControlToValidate="txtName" ValidationExpression="^[a-zA-Z'.\s]{1,40}$"></asp:RegularExpressionValidator>
+                            <asp:RequiredFieldValidator ID="rfvtxtName" runat="server" Text="*" ToolTip="Enter name" ControlToValidate="txtStyleName"></asp:RequiredFieldValidator>
+                            <asp:RegularExpressionValidator ID="revtxtName" runat="server" Text="*" ToolTip="Enter alphabate " ControlToValidate="txtStyleName" ValidationExpression="^[a-zA-Z'.\s]{1,40}$"></asp:RegularExpressionValidator>
 
                         </EditItemTemplate>
 
@@ -260,12 +260,13 @@
                 <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
             </asp:GridView>
 
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:StitchQueueConnectionString4 %>" SelectCommand="SELECT [DesignId], [DesignName], [StyleName], [Price], [Images] FROM [Design] WHERE (([ProductId] = @ProductId) AND ([DesignName] = @DesignName))">
+
+            <%--<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:StitchQueueConnectionString4 %>" SelectCommand="SELECT [DesignId], [DesignName], [StyleName], [Price], [Images] FROM [Design] WHERE (([ProductId] = @ProductId) AND ([DesignName] = @DesignName))">
                 <SelectParameters>
                     <asp:ControlParameter ControlID="drpModel" Name="ProductId" PropertyName="SelectedValue" Type="Int32" />
                     <asp:ControlParameter ControlID="drpSubModel" Name="DesignName" PropertyName="SelectedValue" Type="String" />
                 </SelectParameters>
-            </asp:SqlDataSource>
+            </asp:SqlDataSource>--%>
 
 
 
