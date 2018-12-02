@@ -73,13 +73,13 @@
         <div class="container" style="margin: 0 auto;">
             <form class="form-horizontal" action="#" id="category_insert" method="post">
 
-                <div class="form-inline">
+               <%-- <div class="form-inline">
                     <label class="control-label col-md-3 col-sm-3 col-xs-3" for="id">Model Id:</label>
                     <div class="col-sm-4">
                         <asp:TextBox ID="modelid" runat="server" class="form-control" placeholder="Enter Model Id"></asp:TextBox>
-                        <%--<input type="text" name="id" class="form-control" id="id" placeholder="Enter Model Id">--%>
+                        <input type="text" name="id" class="form-control" id="id" placeholder="Enter Model Id">
                     </div>
-                </div>
+                </div>--%>
 
 
                 <div class="form-inline" runat="server" id="divModel">
@@ -123,7 +123,7 @@
                     <div class="col-md-4">
                         <asp:FileUpload ID="addimg" runat="server" class="btn-bs-file btn btn-lg btn-info" />
                         <%--<input class="btn-bs-file btn btn-lg btn-info" id="filebutton" name="filebutton" class="input-file" type="file" accept="image/gif, image/jpeg, image/png" onchange="readURL(this);" required="true"/>--%>
-                        <asp:RegularExpressionValidator ID="revfuPhoto" runat="server" Display="Dynamic" Text="*Invalid format" ForeColor="Red" ToolTip="Image formate only" ControlToValidate="addimg" ValidationExpression="[a-zA-Z0_9].*\b(.jpeg|.JPEG|.jpg|.JPG|.jpe|.JPE|.png|.PNG|.mpp|.MPP|.gif|.GIF)\b"></asp:RegularExpressionValidator>
+                        <asp:RegularExpressionValidator ID="revfuPhoto" runat="server" Display="Dynamic" Text="*Invalid format" ForeColor="Red" ControlToValidate="addimg" ValidationExpression="[a-zA-Z0_9].*\b(.jpeg|.JPEG|.jpg|.JPG|.jpe|.JPE|.png|.PNG)\b" ValidationGroup="design"></asp:RegularExpressionValidator>
                         <br />
                         <%--<img id="cwt" src="#" alt="your image" />--%>
                     </div>
@@ -150,7 +150,7 @@
         <div class="row">
 
             <div class="col-md-3 col-sm-3 col-xs-6">
-                <asp:Button ID="btnAdd" runat="server" class="btn btn-primary btn-category" Text="ADD" OnClick="btnAdd_Click" />
+                <asp:Button ID="btnAdd" runat="server" class="btn btn-primary btn-category" ValidationGroup="Design" Text="ADD" OnClick="btnAdd_Click" />
                 <%--<button class="btn btn-primary btn-category">ADD</button>--%>
             </div>
             <!-- <div class="col-md-3 col-sm-3 col-xs-6">

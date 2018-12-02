@@ -76,13 +76,12 @@
 
             <form class="form-horizontal">
 
-                <div class="form-inline">
+                <%--<div class="form-inline">
                     <label class="control-label col-md-3 col-sm-3 col-xs-3" for="id">Model Id:</label>
                     <div class="col-sm-4">
                         <asp:TextBox ID="modelid" runat="server" class="form-control" placeholder="Enter Model Id"></asp:TextBox>
-                        <%--<input type="text" name="id" class="form-control" id="id" placeholder="Enter Model Id"/>--%>
                     </div>
-                </div>
+                </div>--%>
 
 
                 <!--   <div class="form-inline">

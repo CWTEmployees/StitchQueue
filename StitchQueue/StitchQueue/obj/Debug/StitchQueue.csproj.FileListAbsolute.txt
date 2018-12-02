@@ -75,3 +75,14 @@ F:\Bhavesh\3-11-2018 Work\StitchQueue\StitchQueue\obj\Debug\StitchQueue.csprojRe
 F:\Bhavesh\3-11-2018 Work\StitchQueue\StitchQueue\obj\Debug\StitchQueue.dll
 F:\Bhavesh\3-11-2018 Work\StitchQueue\StitchQueue\obj\Debug\StitchQueue.pdb
 D:\Bhavesh Bambhaniya\Git\StitchQueue\StitchQueue\StitchQueue\obj\Debug\StitchQueue.csprojResolveAssemblyReference.cache
+E:\Bhavesh Bambhaniya\Git\StitchQueue\StitchQueue\StitchQueue\bin\StitchQueue.dll.config
+E:\Bhavesh Bambhaniya\Git\StitchQueue\StitchQueue\StitchQueue\bin\StitchQueue.dll
+E:\Bhavesh Bambhaniya\Git\StitchQueue\StitchQueue\StitchQueue\bin\StitchQueue.pdb
+E:\Bhavesh Bambhaniya\Git\StitchQueue\StitchQueue\StitchQueue\bin\AjaxControlToolkit.dll
+E:\Bhavesh Bambhaniya\Git\StitchQueue\StitchQueue\StitchQueue\bin\itextsharp.dll
+E:\Bhavesh Bambhaniya\Git\StitchQueue\StitchQueue\StitchQueue\bin\itextsharp.xmlworker.dll
+E:\Bhavesh Bambhaniya\Git\StitchQueue\StitchQueue\StitchQueue\bin\Newtonsoft.Json.dll
+E:\Bhavesh Bambhaniya\Git\StitchQueue\StitchQueue\StitchQueue\bin\itextsharp.xml
+E:\Bhavesh Bambhaniya\Git\StitchQueue\StitchQueue\StitchQueue\obj\Debug\StitchQueue.csprojResolveAssemblyReference.cache
+E:\Bhavesh Bambhaniya\Git\StitchQueue\StitchQueue\StitchQueue\obj\Debug\StitchQueue.dll
+E:\Bhavesh Bambhaniya\Git\StitchQueue\StitchQueue\StitchQueue\obj\Debug\StitchQueue.pdb

@@ -345,6 +345,8 @@ namespace StitchQueue
         protected void btnPlace_Click(object sender, EventArgs e)
         {
             Response.Redirect("OrderInvoice.aspx");
+
+
         }
 
        

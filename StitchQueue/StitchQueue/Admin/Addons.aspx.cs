@@ -120,9 +120,9 @@ namespace StitchQueue.Admin
                     string filename = Path.GetFileName(addimg.FileName);
                     addimg.SaveAs(Server.MapPath("~/images/" + filename));
 
-                    SqlCommand cmd = new SqlCommand("insert into Addon (AddOnId,DesignName,ProductId,StyleName,Price,Images,Status) values (@DId,@dName,@pId,@stylename,@price,@proimg,@sts)", con);
+                    SqlCommand cmd = new SqlCommand("insert into Addon (DesignName,ProductId,StyleName,Price,Images,Status) values (@dName,@pId,@stylename,@price,@proimg,@sts)", con);
 
-                    cmd.Parameters.AddWithValue("@DId", modelid.Text);
+                    //cmd.Parameters.AddWithValue("@DId", modelid.Text);
                     cmd.Parameters.AddWithValue("@dName", drpSubModel.SelectedItem.ToString());
                     cmd.Parameters.AddWithValue("@pId", drpModel.SelectedValue);
                     cmd.Parameters.AddWithValue("@stylename", txtstylename.Text);

@@ -138,9 +138,9 @@ namespace StitchQueue.Admin
 
             
 
-            SqlCommand cmd = new SqlCommand("insert into Design (DesignId,DesignName,ProductId,StyleName,Price,Images,Status) values (@DId,@dName,@pId,@stylename,@price,@proimg,@proimg2,@sts)", con);
+            SqlCommand cmd = new SqlCommand("insert into Design (DesignName,ProductId,StyleName,Price,Images,Status) values (@dName,@pId,@stylename,@price,@proimg,@sts)", con);
 
-            cmd.Parameters.AddWithValue("@DId", modelid.Text);
+            //cmd.Parameters.AddWithValue("@DId", modelid.Text);
             cmd.Parameters.AddWithValue("@dName", drpSubModel.SelectedItem.ToString());
             cmd.Parameters.AddWithValue("@pId", drpModel.SelectedValue);
             cmd.Parameters.AddWithValue("@stylename", txtstylename.Text);
