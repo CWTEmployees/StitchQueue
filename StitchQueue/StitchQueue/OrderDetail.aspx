@@ -80,34 +80,34 @@
                     <br />
                     <br />
 
-                     <div class="col-md-4">
+                    <div class="col-md-4">
                         <h2 class="hed-add-col">ORDER REVIEW</h2>
                         <!-- Start payment 1 -->
                         <div class="panel panel-default">
                             <!-- Toggle Heading -->
 
                             <!-- Toggle Content -->
-                           <asp:GridView ID="fittinggrid" runat="server" Visible="false" AutoGenerateColumns="False" GridLines="Horizontal" ShowFooter="True">
-                            <Columns>
+                            <asp:GridView ID="fittinggrid" runat="server" Visible="false" AutoGenerateColumns="False" Width="200%" GridLines="Horizontal" ShowFooter="True">
+                                <Columns>
 
-                                <asp:BoundField DataField="sno" HeaderText="Sno" Visible="False" />
-                                <asp:BoundField DataField="productid" HeaderText="ProductId" Visible="False" />
-                                <asp:ImageField DataImageUrlField="img" HeaderStyle-Height="50px" FooterStyle-Height="50px" FooterStyle-HorizontalAlign="Center">
-                                    <ItemStyle HorizontalAlign="Center" />
-                                    <ControlStyle Height="150px" Width="150px" />
-                                </asp:ImageField>
-                              
-                                <asp:BoundField DataField="pname" HeaderText="ProductName" />
-                                <asp:BoundField DataField="price" HeaderText="Price" />
-                                <asp:BoundField DataField="pquantity" HeaderText="Quantity" />
-                                <asp:BoundField DataField="totalprice" HeaderText="Total Price" />
-                    
-               
+                                    <asp:BoundField DataField="sno" HeaderText="Sno" Visible="False" />
+                                    <asp:BoundField DataField="productid" HeaderText="ProductId" Visible="False" />
+                                    <asp:ImageField DataImageUrlField="img" HeaderStyle-Height="50px" FooterStyle-Height="50px" FooterStyle-HorizontalAlign="Center">
+                                        <ItemStyle HorizontalAlign="Center" />
+                                        <ControlStyle Height="150px" Width="150px" />
+                                    </asp:ImageField>
+
+                                    <asp:BoundField DataField="pname" HeaderText="ProductName" />
+                                    <asp:BoundField DataField="price" HeaderText="Price" />
+                                    <asp:BoundField DataField="pquantity" HeaderText="Quantity" />
+                                    <asp:BoundField DataField="totalprice" HeaderText="Total Price" />
 
 
-                               
-                            </Columns>
-                        </asp:GridView>
+
+
+
+                                </Columns>
+                            </asp:GridView>
                         </div>
 
                         <!-- End Add 3 -->
@@ -128,6 +128,39 @@
                                             <!-- Start Add 1 -->
                                             <div class="panel panel-default panel-box-border">
                                                 <!-- Toggle Heading -->
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title" style="background: none !important; font-family: 'Montserrat', sans-serif;">Order Id
+                                                    </h4>
+                                                </div>
+                                                <table class="auto-style1" border="1">
+
+
+                                                    <tr>
+                                                        <td class="auto-style2">Order Id:
+                                                        <asp:Label ID="lblOrderId" runat="server"></asp:Label>
+
+                                                        </td>
+                                                    </tr>
+                                                </table>
+
+
+                                                <br />
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title" style="background: none !important; font-family: 'Montserrat', sans-serif;">Order Date
+                                                    </h4>
+                                                </div>
+                                                <table class="auto-style1" border="1">
+
+
+                                                    <tr>
+                                                        <td class="auto-style2">Order Id:
+                                                        <asp:Label ID="lblOrderDate" runat="server"></asp:Label>
+
+                                                        </td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
                                                 <div class="panel-heading">
                                                     <h4 class="panel-title" style="background: none !important; font-family: 'Montserrat', sans-serif;">PICKUP DETAILS
                                                     </h4>

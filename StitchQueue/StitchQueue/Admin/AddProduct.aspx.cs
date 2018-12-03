@@ -29,7 +29,7 @@ namespace StitchQueue.Admin
             string filename = Path.GetFileName(addimg.FileName);
             addimg.SaveAs(Server.MapPath("~/images/" + filename));
 
-            string filename2 = Path.GetFileName(addimg.FileName);
+            string filename2 = Path.GetFileName(addimg2.FileName);
             addimg2.SaveAs(Server.MapPath("~/images/" + filename2));
 
             SqlCommand cmd = new SqlCommand("insert into Product (ProductId,ProductName,Price,Images,Images2,Status) values (@pId,@pName,@pPrice,@proimg,@proimg2,@sts)", con);

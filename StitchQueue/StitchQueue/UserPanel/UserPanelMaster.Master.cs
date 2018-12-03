@@ -14,6 +14,12 @@ namespace StitchQueue.UserPanel
 
         }
 
+        //protected void lgout_Click(object sender, EventArgs e)
+        //{
+        //    Session.Remove("User");
+        //    Response.Redirect("Home.aspx");
+        //}
+
         
     }
 }

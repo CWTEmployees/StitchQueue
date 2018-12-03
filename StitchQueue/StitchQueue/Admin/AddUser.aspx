@@ -110,6 +110,7 @@
                     <label class="control-label col-md-3 col-sm-3 col-xs-3" for="firmname">Firm name</label>
                     <div class="col-sm-4">
                         <asp:TextBox ID="txtFirmname" runat="server" class="form-control" placeholder="Firm name"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="rfvfirm" runat="server" ForeColor="Red" ValidationGroup="regist" ControlToValidate="txtFirmname" ErrorMessage="Enter Firm Name" Display="Dynamic"></asp:RequiredFieldValidator>
                         <%--<input type="text" name="firmname" class="form-control" id="firmname" placeholder="Firm name">--%>
                     </div>
                 </div>
@@ -174,7 +175,6 @@
                     <label class="control-label col-md-3 col-sm-3"></label>
                     <label class="control-label col-md-2 col-sm-2">
                         <asp:CheckBox ID="isactive" runat="server" Text="Is Active" />
-
                         <%--<input type="checkbox" value="">
                         &nbsp;&nbsp;Is Active</label>--%>
                 </div>

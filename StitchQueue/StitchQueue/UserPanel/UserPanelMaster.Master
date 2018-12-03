@@ -161,8 +161,8 @@
                                 <li><a href="OrderHistory.aspx">ORDER HISTORY</a></li>
                                 <li class="divider"></li>
                                 <li><a href="SizzingProfile.aspx">SIZING PROFILE</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">SIGN OUT</a></li>
+                                <%--<li class="divider"></li>
+                                <li><a href="#"><asp:Button ID="lgout" runat="server" Text="Sign Out" OnClick="lgout_Click" /></a></li>--%>
                             </ul>
                         </li>
 

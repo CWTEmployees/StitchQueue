@@ -58,6 +58,15 @@ namespace StitchQueue.Admin {
         protected global::System.Web.UI.WebControls.TextBox txtFirmname;
         
         /// <summary>
+        /// rfvfirm control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvfirm;
+        
+        /// <summary>
         /// txtMobile control.
         /// </summary>
         /// <remarks>

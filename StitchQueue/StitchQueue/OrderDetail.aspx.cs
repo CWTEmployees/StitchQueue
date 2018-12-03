@@ -16,6 +16,26 @@ namespace StitchQueue
         SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbconnection"].ConnectionString);
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            String pass = "abcdefghijklmnopqrstuvwxyz123456789";
+            Random r = new Random();
+            char[] mypass = new char[10];
+            for (int i = 0; i < 10; i++)
+            {
+                mypass[i] = pass[(int)(35 * r.NextDouble())];
+
+            }
+            String orderid;
+            orderid = "Stitch" + new string(mypass);
+
+            lblOrderId.Text = orderid;
+
+            Session["orderid"] = lblOrderId.Text;
+
+            lblOrderDate.Text = DateTime.Now.ToShortDateString();
+
+            Session["orderdate"] = lblOrderDate.Text;
+
             if (!IsPostBack)
             {
                 DataTable dt = new DataTable();
@@ -46,7 +66,7 @@ namespace StitchQueue
                 dr["zip"] = ds.Tables[0].Rows[0]["Zipcode"].ToString();
                 dr["mobile"] = ds.Tables[0].Rows[0]["Mobile"].ToString();
 
-
+                Session["pickupdetail"] = dt;
 
 
 
@@ -342,14 +362,119 @@ namespace StitchQueue
             return gtotal;
         }
 
+
+
         protected void btnPlace_Click(object sender, EventArgs e)
         {
+
+            var orderstatus = "Order placed";
+
+
+
+
+
+            //if (Session["fittingitems"] == null)
+            //{
+            //    DataTable dt;
+            //    dt = (DataTable)Session["pickupdetail"];
+            //    dt = (DataTable)Session["buyitems"];
+                
+            //    for (int i = 0; i <= dt.Rows.Count - 1; i++)
+            //    {
+
+            //        SqlConnection scon = new SqlConnection(ConfigurationManager.ConnectionStrings["dbconnection"].ConnectionString);
+            //        String updatepass = "insert into Orders(OrderId,OrderStatus,OrderDate,ProductDes,MobileNo,Address,TotalAmount,CustomerName,Email_Id) values('" + lblOrderId.Text + "','" + orderstatus + "','" + lblOrderDate.Text + "','" + dt.Rows[i]["pname"].ToString() +"','" + dt.Rows[i]["mobile"].ToString() + "','" + dt.Rows[i]["address1"].ToString() + "','" + dt.Rows[i]["totalprice"].ToString() + "','" + dt.Rows[i]["fullname"].ToString() + "','" + Session["User"].ToString() + "')";
+
+
+            //        scon.Open();
+            //        SqlCommand cmd1 = new SqlCommand();
+            //        cmd1.CommandText = updatepass;
+            //        cmd1.Connection = scon;
+            //        cmd1.ExecuteNonQuery();
+            //        scon.Close();
+
+            //    }
+            //}
+            //else
+            //{
+            //    DataTable dt;
+            //    dt = (DataTable)Session["fittingitems"];
+            //    dt = (DataTable)Session["pickupdetail"];
+                
+                
+            //    for (int i = 0; i <= dt.Rows.Count - 1; i++)
+            //    {
+
+            //        SqlConnection scon = new SqlConnection(ConfigurationManager.ConnectionStrings["dbconnection"].ConnectionString);
+            //        String updatepass = "insert into Orders(OrderId,OrderStatus,OrderDate,ProductDes,MobileNo,Address,TotalAmount,CustomerName,Email_Id) values('" + lblOrderId.Text + "','" + orderstatus + "','" + lblOrderDate.Text + "','" + dt.Rows[i]["pname"].ToString() + "','" + dt.Rows[i]["mobile"].ToString() + "','" + dt.Rows[i]["address1"].ToString() + "','" + dt.Rows[i]["totalprice"].ToString() + "','" + dt.Rows[i]["fullname"].ToString() + "','" + Session["User"].ToString() + "')";
+
+
+            //        scon.Open();
+            //        SqlCommand cmd1 = new SqlCommand();
+            //        cmd1.CommandText = updatepass;
+            //        cmd1.Connection = scon;
+            //        cmd1.ExecuteNonQuery();
+            //        scon.Close();
+
+            //    }
+            //}
+
+
+
+            //if (Session["buyitems"] == null)
+            //{
+            //    DataTable dt;
+            //    dt = (DataTable)Session["pickupdetail"];
+            //    dt = (DataTable)Session["fittingitems"];
+                
+            //    for (int i = 0; i <= dt.Rows.Count - 1; i++)
+            //    {
+
+            //        SqlConnection scon = new SqlConnection(ConfigurationManager.ConnectionStrings["dbconnection"].ConnectionString);
+            //        String updatepass = "insert into Orders(OrderId,OrderStatus,OrderDate,ProductDes,MobileNo,Address,TotalAmount,CustomerName,Email_Id) values('" + lblOrderId.Text + "','" + orderstatus + "','" + lblOrderDate.Text + "','" + dt.Rows[i]["pname"].ToString() + "','" + dt.Rows[i]["mobile"].ToString() + "','" + dt.Rows[i]["address1"].ToString() + "','" + dt.Rows[i]["price"].ToString() + "','" + dt.Rows[i]["fullname"].ToString() + "','" + Session["User"].ToString() + "')";
+
+
+            //        scon.Open();
+            //        SqlCommand cmd1 = new SqlCommand();
+            //        cmd1.CommandText = updatepass;
+            //        cmd1.Connection = scon;
+            //        cmd1.ExecuteNonQuery();
+            //        scon.Close();
+
+            //    }
+            //}
+            //else
+            //{
+            //    DataTable dt;
+            //    dt = (DataTable)Session["pickupdetail"];
+            //    dt = (DataTable)Session["buyitems"];
+                
+            //    for (int i = 0; i <= dt.Rows.Count - 1; i++)
+            //    {
+
+            //        SqlConnection scon = new SqlConnection(ConfigurationManager.ConnectionStrings["dbconnection"].ConnectionString);
+            //        String updatepass = "insert into Orders(OrderId,OrderStatus,OrderDate,ProductDes,MobileNo,Address,TotalAmount,CustomerName,Email_Id) values('" + lblOrderId.Text + "','" + orderstatus + "','" + lblOrderDate.Text + "','" + dt.Rows[i]["pname"].ToString() + "','" + dt.Rows[i]["mobile"].ToString() + "','" + dt.Rows[i]["address1"].ToString() + "','" + dt.Rows[i]["price"].ToString() + "','" + dt.Rows[i]["fullname"].ToString() + "','" + Session["User"].ToString() + "')";
+
+
+            //        scon.Open();
+            //        SqlCommand cmd1 = new SqlCommand();
+            //        cmd1.CommandText = updatepass;
+            //        cmd1.Connection = scon;
+            //        cmd1.ExecuteNonQuery();
+            //        scon.Close();
+
+            //    }
+            //}
+
             Response.Redirect("OrderInvoice.aspx");
+
+
+
 
 
         }
 
-       
+
 
     }
 }

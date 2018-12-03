@@ -20,22 +20,22 @@ namespace StitchQueue
         SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbconnection"].ConnectionString);
         protected void Page_Load(object sender, EventArgs e)
         {
-            con.Open();
-            String pass = "abcdefghijklmnopqrstuvwxyz123456789";
-            Random r = new Random();
-            char[] mypass = new char[10];
-            for (int i = 0; i < 10; i++)
-            {
-                mypass[i] = pass[(int)(35 * r.NextDouble())];
+            //con.Open();
+            //String pass = "abcdefghijklmnopqrstuvwxyz123456789";
+            //Random r = new Random();
+            //char[] mypass = new char[10];
+            //for (int i = 0; i < 10; i++)
+            //{
+            //    mypass[i] = pass[(int)(35 * r.NextDouble())];
 
-            }
-            String orderid;
-            orderid = "Order" + new string(mypass);
+            //}
+            //String orderid;
+            //orderid = "Order" + new string(mypass);
 
-            lblOrderId.Text = orderid;
+            lblOrderId.Text = Session["orderid"].ToString();
 
 
-            lblOrderDate.Text = DateTime.Now.ToShortDateString();
+            lblOrderDate.Text = Session["orderdate"].ToString(); ;
 
 
             if (Session["fittingitems"] == null)

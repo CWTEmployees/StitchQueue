@@ -110,7 +110,8 @@
                     <div class="col-md-4">
                         <asp:FileUpload ID="addimg" runat="server" class="btn-bs-file btn btn-lg btn-info" />
                         <%--<input class="btn-bs-file btn btn-lg btn-info" id="filebutton" name="filebutton" class="input-file" type="file" accept="image/gif, image/jpeg, image/png" onchange="readURL(this);" required="true"/>--%>
-                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" Display="Dynamic" Text="*Invalid format" ForeColor="Red" ToolTip="Image formate only" ControlToValidate="addimg" ValidationExpression="[a-zA-Z0_9].*\b(.jpeg|.JPEG|.jpg|.JPG|.jpe|.JPE|.png|.PNG|.mpp|.MPP|.gif|.GIF)\b"></asp:RegularExpressionValidator>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ForeColor="Red" ValidationGroup="Addprdct" ControlToValidate="addimg" ErrorMessage="Enter Images"></asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ValidationGroup="Addprdct" Display="Dynamic" Text="*Invalid format" ForeColor="Red" ToolTip="Image formate only" ControlToValidate="addimg" ValidationExpression="[a-zA-Z0_9].*\b(.jpeg|.JPEG|.jpg|.JPG|.jpe|.JPE|.png|.PNG|.mpp|.MPP|.gif|.GIF)\b"></asp:RegularExpressionValidator>
                         <br />
                         <%--<img id="cwt" src="#" alt="your image" />--%>
                     </div>
@@ -120,8 +121,9 @@
                     <label class="control-label col-md-3 col-sm-3" for="Category">Upload Image:</label>
                     <div class="col-md-4">
                         <asp:FileUpload ID="addimg2" runat="server" class="btn-bs-file btn btn-lg btn-info" />
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ForeColor="Red" ValidationGroup="Addprdct" ControlToValidate="addimg2" ErrorMessage="Enter Images"></asp:RequiredFieldValidator>
                         <%--<input class="btn-bs-file btn btn-lg btn-info" id="filebutton" name="filebutton" class="input-file" type="file" accept="image/gif, image/jpeg, image/png" onchange="readURL(this);" required="true"/>--%>
-                        <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" Display="Dynamic" Text="*Invalid format" ForeColor="Red" ToolTip="Image formate only" ControlToValidate="addimg2" ValidationExpression="[a-zA-Z0_9].*\b(.jpeg|.JPEG|.jpg|.JPG|.jpe|.JPE|.png|.PNG|.mpp|.MPP|.gif|.GIF)\b"></asp:RegularExpressionValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ValidationGroup="Addprdct" Display="Dynamic" Text="*Invalid format" ForeColor="Red" ToolTip="Image formate only" ControlToValidate="addimg2" ValidationExpression="[a-zA-Z0_9].*\b(.jpeg|.JPEG|.jpg|.JPG|.jpe|.JPE|.png|.PNG|.mpp|.MPP|.gif|.GIF)\b"></asp:RegularExpressionValidator>
                         <br />
                         <%--<img id="cwt" src="#" alt="your image" />--%>
                     </div>
@@ -145,7 +147,7 @@
         <div class="row">
 
             <div class="col-md-3 col-sm-3 col-xs-6">
-                <asp:Button ID="btnAdd" runat="server" class="btn btn-primary btn-category" Text="ADD" OnClick="btnAdd_Click" />
+                <asp:Button ID="btnAdd" runat="server" class="btn btn-primary btn-category" ValidationGroup="Addprdct" Text="ADD" OnClick="btnAdd_Click" />
                 <%--<button class="btn btn-primary btn-category">ADD</button>--%>
             </div>
              <%--<div class="col-md-3 col-sm-3 col-xs-6">

@@ -51,7 +51,7 @@
                             <th>Address</th>
                             <th>Mobile</th>
                             <th>Categories</th>
-                            <th>Reset Password </th>
+                            <%--<th>Reset Password </th>--%>
                         </tr>
                     </thead>
                     <tbody>
@@ -63,7 +63,7 @@
                                     <td><%# Eval("Address") %></td>
                                     <td><%# Eval("Mobile") %></td>
                                     <td><%# Eval("UserType") %></td>
-                                    <td><a href="#">Reset password</a></td>
+                                    <%--<td><a href="#">Reset password</a></td>--%>
 
                                 </tr>
                             </ItemTemplate>

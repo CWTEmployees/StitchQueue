@@ -106,7 +106,7 @@
                 </li>
             
                
-                <li>
+               <%-- <li>
                     <a href="Discount.aspx">
                         <i class="fas fa-tags"></i>
                         Discounts
@@ -119,7 +119,7 @@
                         Notifications
                         <span class="badge badge-secondary float-md-right bg-danger">5 New</span>
                     </a>
-                </li>
+                </li>--%>
               
             </ul>
         </nav>
