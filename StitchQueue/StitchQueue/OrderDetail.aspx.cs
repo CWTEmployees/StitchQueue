@@ -367,7 +367,7 @@ namespace StitchQueue
         protected void btnPlace_Click(object sender, EventArgs e)
         {
 
-            var orderstatus = "Order placed";
+            //var orderstatus = "Order placed";
 
 
 

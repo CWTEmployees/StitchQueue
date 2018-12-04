@@ -14,6 +14,15 @@
 </head>
 <body onload="createCaptcha()">
 
+    <%--<style>
+        .close {
+            margin-top: -11px;
+            padding-top: 0px;
+            height: 37px;
+            background-color: transparent;
+            border: none;
+        }
+    </style>--%>
 
     <div id="myModal" class="modal fade" role="dialog">
         <div class="modal-dialog">
@@ -21,6 +30,7 @@
             <div class="modal-content">
                 <div class="col-sm-6 col-md-8 col-md-offset-3">
                     <div class="modal-header">
+                        <%--<asp:Button ID="lgnbtn" runat="server" class="close" Text="x" />--%>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                         <h1 class="text-center login-title">Sign up</h1>
                     </div>

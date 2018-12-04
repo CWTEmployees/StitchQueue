@@ -22,11 +22,10 @@ namespace StitchQueue
         {
             DataTable dt = new DataTable();
             dt = (DataTable)Session["buyitems"];
-            
             if (dt != null)
             {
-
-                clbl.Text = dt.Rows.Count.ToString();
+                
+                clbl.Text = dt.Rows.Count.ToString() ;
             }
             else
             {
@@ -44,7 +43,6 @@ namespace StitchQueue
             else
             {
                 clbl.Text = "0";
-
             }
 
             if (Session["User"] != null)
