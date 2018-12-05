@@ -126,181 +126,6 @@
     <Content Include="Admin\webfonts\fa-brands-400.svg" />
     <Content Include="Admin\webfonts\fa-regular-400.svg" />
     <Content Include="Admin\webfonts\fa-solid-900.svg" />
-    <Content Include="anarkali\addon\5-Days-deli.png" />
-    <Content Include="anarkali\addon\American-Crepe.png" />
-    <Content Include="anarkali\addon\animate.css" />
-    <Content Include="anarkali\addon\Backwithzip1.png" />
-    <Content Include="anarkali\addon\Binding-on-Neckline-and-Sle.png" />
-    <Content Include="anarkali\addon\bootstrap.min.css" />
-    <Content Include="anarkali\addon\Capture.png" />
-    <Content Include="anarkali\addon\font-awesome.min.css" />
-    <Content Include="anarkali\addon\Hemming-for-Dupatta1.png" />
-    <Content Include="anarkali\addon\jquery.filer-dragdropbox-theme.css" />
-    <Content Include="anarkali\addon\jquery.filer.css" />
-    <Content Include="anarkali\addon\responsive.css" />
-    <Content Include="anarkali\addon\style.css" />
-    <Content Include="anarkali\addon\Task-106-Add-Ons1.png" />
-    <Content Include="anarkali\addon\Tassels-with-Neck-Ties1.png" />
-    <Content Include="anarkali\addon\Waist with Normal Strings1.png" />
-    <Content Include="anarkali\addon\Waist-with-Elastic1..png" />
-    <Content Include="anarkali\addon\Waist-with-Normal-Strings1.png" />
-    <Content Include="anarkali\Anarkali.aspx" />
-    <Content Include="anarkali\AnarkaliAddon.aspx" />
-    <Content Include="anarkali\anarkali\animate.css" />
-    <Content Include="anarkali\anarkali\bootstrap.min.css" />
-    <Content Include="anarkali\anarkali\Capture.png" />
-    <Content Include="anarkali\anarkali\font-awesome.min.css" />
-    <Content Include="anarkali\anarkali\jquery.filer-dragdropbox-theme.css" />
-    <Content Include="anarkali\anarkali\jquery.filer.css" />
-    <Content Include="anarkali\anarkali\responsive.css" />
-    <Content Include="anarkali\anarkali\style.css" />
-    <Content Include="anarkali\anarkali\UTC131.png" />
-    <Content Include="anarkali\anarkali\UTC132.png" />
-    <Content Include="anarkali\anarkali\UTC133.png" />
-    <Content Include="anarkali\anarkali\UTC134.png" />
-    <Content Include="anarkali\anarkali\UTC135.png" />
-    <Content Include="anarkali\anarkali\UTC136.jpg" />
-    <Content Include="anarkali\anarkali\UTC136.png" />
-    <Content Include="anarkali\anarkali\UTC137.png" />
-    <Content Include="anarkali\anarkali\UTC225.png" />
-    <Content Include="anarkali\anarkali\UTC226.png" />
-    <Content Include="blouse\addons\American-Crepe.png" />
-    <Content Include="blouse\addons\animate.css" />
-    <Content Include="blouse\addons\Back-with-Hooks1.png" />
-    <Content Include="blouse\addons\Binding-on-Neckline-and-Sle.png" />
-    <Content Include="blouse\addons\bls-1.png" />
-    <Content Include="blouse\addons\bls-2.png" />
-    <Content Include="blouse\addons\bls-3.png" />
-    <Content Include="blouse\addons\bootstrap.min.css" />
-    <Content Include="blouse\addons\Capture.png" />
-    <Content Include="blouse\addons\deli.png" />
-    <Content Include="blouse\addons\font-awesome.min.css" />
-    <Content Include="blouse\addons\Front-with-Hooks1.png" />
-    <Content Include="blouse\addons\Hemming-for-Dupatta1.png" />
-    <Content Include="blouse\addons\jquery.filer-dragdropbox-theme.css" />
-    <Content Include="blouse\addons\jquery.filer.css" />
-    <Content Include="blouse\addons\responsive.css" />
-    <Content Include="blouse\addons\Side-with-Zip1.png" />
-    <Content Include="blouse\addons\style.css" />
-    <Content Include="blouse\addons\Task-106-Add-Ons1.png" />
-    <Content Include="blouse\addons\Task-106-Add-Ons2.png" />
-    <Content Include="blouse\addons\Tassels-with-Neck-Ties1.png" />
-    <Content Include="blouse\back\animate.css" />
-    <Content Include="blouse\back\Backless-with-straps.png" />
-    <Content Include="blouse\back\Backless-with-strings.png" />
-    <Content Include="blouse\back\Boat-Neck-with-Bar-keyhole.png" />
-    <Content Include="blouse\back\Boat-Neck-with-Circle.png" />
-    <Content Include="blouse\back\Boat-Neck-with-Daimond.png" />
-    <Content Include="blouse\back\Boat-Neck-with-dori.png" />
-    <Content Include="blouse\back\bootstrap.min.css" />
-    <Content Include="blouse\back\Broad-sweetheart-neck.png" />
-    <Content Include="blouse\back\Capture.png" />
-    <Content Include="blouse\back\Collared-back-with-strings.png" />
-    <Content Include="blouse\back\Collared-back.png" />
-    <Content Include="blouse\back\Crew-neck.png" />
-    <Content Include="blouse\back\font-awesome.min.css" />
-    <Content Include="blouse\back\Four-Strings.png" />
-    <Content Include="blouse\back\High-Collar-Halter-Back.png" />
-    <Content Include="blouse\back\jquery.filer-dragdropbox-theme.css" />
-    <Content Include="blouse\back\jquery.filer.css" />
-    <Content Include="blouse\back\Leaf-Neck.png" />
-    <Content Include="blouse\back\pot.png" />
-    <Content Include="blouse\back\Rectangle-neck.png" />
-    <Content Include="blouse\back\responsive.css" />
-    <Content Include="blouse\back\Round-neck-with-dori.png" />
-    <Content Include="blouse\back\Round-neck.png" />
-    <Content Include="blouse\back\Scalloped-neck-with-dori.png" />
-    <Content Include="blouse\back\Scalloped-neck.png" />
-    <Content Include="blouse\back\Slant-eye-keyhole.png" />
-    <Content Include="blouse\back\Square-neck.png" />
-    <Content Include="blouse\back\style.css" />
-    <Content Include="blouse\back\UTC225.png" />
-    <Content Include="blouse\back\UTC226.png" />
-    <Content Include="blouse\BlouseAddon.aspx" />
-    <Content Include="blouse\BlouseBack.aspx" />
-    <Content Include="blouse\BlouseFront.aspx" />
-    <Content Include="blouse\BlouseSleeve.aspx" />
-    <Content Include="blouse\front\10.png" />
-    <Content Include="blouse\front\11.png" />
-    <Content Include="blouse\front\12.png" />
-    <Content Include="blouse\front\14.png" />
-    <Content Include="blouse\front\19.png" />
-    <Content Include="blouse\front\22.png" />
-    <Content Include="blouse\front\3.png" />
-    <Content Include="blouse\front\44-%281%29.png" />
-    <Content Include="blouse\front\5.png" />
-    <Content Include="blouse\front\9.png" />
-    <Content Include="blouse\front\animate.css" />
-    <Content Include="blouse\front\bootstrap.min.css" />
-    <Content Include="blouse\front\Capture.png" />
-    <Content Include="blouse\front\Classic-Shirt-Collar.png" />
-    <Content Include="blouse\front\Collar-with-Deep-V-neck.png" />
-    <Content Include="blouse\front\Diamond-Neck1.png" />
-    <Content Include="blouse\front\font-awesome.min.css" />
-    <Content Include="blouse\front\Halter-neck1.png" />
-    <Content Include="blouse\front\High-collar-halter-neck.png" />
-    <Content Include="blouse\front\High-Collar-with-slant-keyh.png" />
-    <Content Include="blouse\front\jquery.filer-dragdropbox-theme.css" />
-    <Content Include="blouse\front\jquery.filer.css" />
-    <Content Include="blouse\front\responsive.css" />
-    <Content Include="blouse\front\Round-with-V-neck.png" />
-    <Content Include="blouse\front\Square-round-neck.png" />
-    <Content Include="blouse\front\style.css" />
-    <Content Include="blouse\front\UTC225.png" />
-    <Content Include="blouse\front\UTC226.png" />
-    <Content Include="blouse\sleeve\1.png" />
-    <Content Include="blouse\sleeve\3-4th-sleeves1.png" />
-    <Content Include="blouse\sleeve\6.png" />
-    <Content Include="blouse\sleeve\7.png" />
-    <Content Include="blouse\sleeve\8.png" />
-    <Content Include="blouse\sleeve\animate.css" />
-    <Content Include="blouse\sleeve\bootstrap.min.css" />
-    <Content Include="blouse\sleeve\Cap-sleeve1.png" />
-    <Content Include="blouse\sleeve\Capture.png" />
-    <Content Include="blouse\sleeve\font-awesome.min.css" />
-    <Content Include="blouse\sleeve\Half-sleeves1.png" />
-    <Content Include="blouse\sleeve\jquery.filer-dragdropbox-theme.css" />
-    <Content Include="blouse\sleeve\jquery.filer.css" />
-    <Content Include="blouse\sleeve\responsive.css" />
-    <Content Include="blouse\sleeve\Short-sleeve1.png" />
-    <Content Include="blouse\sleeve\style.css" />
-    <Content Include="blouse\sleeve\UTC225.png" />
-    <Content Include="blouse\sleeve\UTC226.png" />
-    <Content Include="bottom\addon\5-Days-deli.png" />
-    <Content Include="bottom\addon\American-Crepe.png" />
-    <Content Include="bottom\addon\animate.css" />
-    <Content Include="bottom\addon\Backwithzip1.png" />
-    <Content Include="bottom\addon\Binding-on-Neckline-and-Sle.png" />
-    <Content Include="bottom\addon\bootstrap.min.css" />
-    <Content Include="bottom\addon\Capture.png" />
-    <Content Include="bottom\addon\font-awesome.min.css" />
-    <Content Include="bottom\addon\Hemming-for-Dupatta1.png" />
-    <Content Include="bottom\addon\jquery.filer-dragdropbox-theme.css" />
-    <Content Include="bottom\addon\jquery.filer.css" />
-    <Content Include="bottom\addon\responsive.css" />
-    <Content Include="bottom\addon\style.css" />
-    <Content Include="bottom\addon\Task-106-Add-Ons1.png" />
-    <Content Include="bottom\addon\Tassels-with-Neck-Ties1.png" />
-    <Content Include="bottom\addon\Waist with Normal Strings1.png" />
-    <Content Include="bottom\addon\Waist-with-Elastic1..png" />
-    <Content Include="bottom\addon\Waist-with-Normal-Strings1.png" />
-    <Content Include="bottom\Bottom.aspx" />
-    <Content Include="bottom\BottomAddon.aspx" />
-    <Content Include="bottom\bottom\animate.css" />
-    <Content Include="bottom\bottom\bootstrap.min.css" />
-    <Content Include="bottom\bottom\Capture.png" />
-    <Content Include="bottom\bottom\churidar1.png" />
-    <Content Include="bottom\bottom\font-awesome.min.css" />
-    <Content Include="bottom\bottom\jquery.filer-dragdropbox-theme.css" />
-    <Content Include="bottom\bottom\jquery.filer.css" />
-    <Content Include="bottom\bottom\palazzo pants.png" />
-    <Content Include="bottom\bottom\Patiala1.png" />
-    <Content Include="bottom\bottom\responsive.css" />
-    <Content Include="bottom\bottom\Salwar1.png" />
-    <Content Include="bottom\bottom\Straight-Pant.png" />
-    <Content Include="bottom\bottom\style.css" />
-    <Content Include="bottom\bottom\UTC225.png" />
-    <Content Include="bottom\bottom\UTC226.png" />
     <Content Include="Captcha.aspx" />
     <Content Include="Cart.aspx" />
     <Content Include="ContactUs.aspx" />
@@ -421,38 +246,281 @@
     <Content Include="DesignImg\UTC137.png" />
     <Content Include="DesignImg\UTC225.png" />
     <Content Include="DesignImg\UTC226.png" />
-    <Content Include="Emboridey\addon\5-Days-deli.png" />
-    <Content Include="Emboridey\addon\American-Crepe.png" />
-    <Content Include="Emboridey\addon\animate.css" />
-    <Content Include="Emboridey\addon\Backwithzip1.png" />
-    <Content Include="Emboridey\addon\Binding-on-Neckline-and-Sle.png" />
-    <Content Include="Emboridey\addon\bootstrap.min.css" />
-    <Content Include="Emboridey\addon\Capture.png" />
-    <Content Include="Emboridey\addon\font-awesome.min.css" />
-    <Content Include="Emboridey\addon\Hemming-for-Dupatta1.png" />
-    <Content Include="Emboridey\addon\jquery.filer-dragdropbox-theme.css" />
-    <Content Include="Emboridey\addon\jquery.filer.css" />
-    <Content Include="Emboridey\addon\responsive.css" />
-    <Content Include="Emboridey\addon\style.css" />
-    <Content Include="Emboridey\addon\Task-106-Add-Ons1.png" />
-    <Content Include="Emboridey\addon\Tassels-with-Neck-Ties1.png" />
-    <Content Include="Emboridey\addon\Waist with Normal Strings1.png" />
-    <Content Include="Emboridey\addon\Waist-with-Elastic1..png" />
-    <Content Include="Emboridey\addon\Waist-with-Normal-Strings1.png" />
-    <Content Include="Emboridey\Emboridey.aspx" />
-    <Content Include="Emboridey\EmborideyAddon.aspx" />
-    <Content Include="Emboridey\emboridey\animate.css" />
-    <Content Include="Emboridey\emboridey\bootstrap.min.css" />
-    <Content Include="Emboridey\emboridey\Capture.png" />
-    <Content Include="Emboridey\emboridey\EXT6.png" />
-    <Content Include="Emboridey\emboridey\EXT7.png" />
-    <Content Include="Emboridey\emboridey\font-awesome.min.css" />
-    <Content Include="Emboridey\emboridey\jquery.filer-dragdropbox-theme.css" />
-    <Content Include="Emboridey\emboridey\jquery.filer.css" />
-    <Content Include="Emboridey\emboridey\responsive.css" />
-    <Content Include="Emboridey\emboridey\style.css" />
-    <Content Include="Emboridey\emboridey\UTC225.png" />
-    <Content Include="Emboridey\emboridey\UTC226.png" />
+    <Content Include="DesignModel\anarkali.aspx" />
+    <Content Include="DesignModel\anarkali.html" />
+    <Content Include="DesignModel\anarkali\addon\American-Crepe.png" />
+    <Content Include="DesignModel\anarkali\addon\Backwithzip1.png" />
+    <Content Include="DesignModel\anarkali\addon\Front-with-Hooks1.png" />
+    <Content Include="DesignModel\anarkali\addon\Hemming-for-Dupatta1.png" />
+    <Content Include="DesignModel\anarkali\addon\Side-with-Zip1.png" />
+    <Content Include="DesignModel\anarkali\addon\Task-106-Add-Ons1.png" />
+    <Content Include="DesignModel\anarkali\addon\Waist with Normal Strings1.png" />
+    <Content Include="DesignModel\anarkali\addon\Waist-with-Elastic1..png" />
+    <Content Include="DesignModel\anarkali\addon\Waist-with-Normal-Strings1.png" />
+    <Content Include="DesignModel\anarkali\anarkali\UTC131.png" />
+    <Content Include="DesignModel\anarkali\anarkali\UTC132.png" />
+    <Content Include="DesignModel\anarkali\anarkali\UTC133.png" />
+    <Content Include="DesignModel\anarkali\anarkali\UTC134.png" />
+    <Content Include="DesignModel\anarkali\anarkali\UTC135.png" />
+    <Content Include="DesignModel\anarkali\anarkali\UTC136.jpg" />
+    <Content Include="DesignModel\anarkali\anarkali\UTC136.png" />
+    <Content Include="DesignModel\anarkali\anarkali\UTC137.png" />
+    <Content Include="DesignModel\anarkali\anarkali\UTC225.png" />
+    <Content Include="DesignModel\anarkali\anarkali\UTC226.png" />
+    <Content Include="DesignModel\blouse.aspx" />
+    <Content Include="DesignModel\blouse.html" />
+    <Content Include="DesignModel\blouse\addons\American-Crepe.png" />
+    <Content Include="DesignModel\blouse\addons\Back-with-Hooks1.png" />
+    <Content Include="DesignModel\blouse\addons\bls-1.png" />
+    <Content Include="DesignModel\blouse\addons\bls-2.png" />
+    <Content Include="DesignModel\blouse\addons\bls-3.png" />
+    <Content Include="DesignModel\blouse\addons\Front-with-Hooks1.png" />
+    <Content Include="DesignModel\blouse\addons\Hemming-for-Dupatta1.png" />
+    <Content Include="DesignModel\blouse\addons\Side-with-Zip1.png" />
+    <Content Include="DesignModel\blouse\addons\Task-106-Add-Ons1.png" />
+    <Content Include="DesignModel\blouse\addons\Task-106-Add-Ons2.png" />
+    <Content Include="DesignModel\blouse\back\Backless-with-straps.png" />
+    <Content Include="DesignModel\blouse\back\Backless-with-strings.png" />
+    <Content Include="DesignModel\blouse\back\Boat-Neck-with-Bar-keyhole.png" />
+    <Content Include="DesignModel\blouse\back\Boat-Neck-with-Circle.png" />
+    <Content Include="DesignModel\blouse\back\Boat-Neck-with-Daimond.png" />
+    <Content Include="DesignModel\blouse\back\Boat-Neck-with-dori.png" />
+    <Content Include="DesignModel\blouse\back\Broad-sweetheart-neck.png" />
+    <Content Include="DesignModel\blouse\back\Collared-back-with-strings.png" />
+    <Content Include="DesignModel\blouse\back\Collared-back.png" />
+    <Content Include="DesignModel\blouse\back\Crew-neck.png" />
+    <Content Include="DesignModel\blouse\back\Four-Strings.png" />
+    <Content Include="DesignModel\blouse\back\High-Collar-Halter-Back.png" />
+    <Content Include="DesignModel\blouse\back\Leaf-Neck.png" />
+    <Content Include="DesignModel\blouse\back\pot.png" />
+    <Content Include="DesignModel\blouse\back\Rectangle-neck.png" />
+    <Content Include="DesignModel\blouse\back\Round-neck-with-dori.png" />
+    <Content Include="DesignModel\blouse\back\Round-neck.png" />
+    <Content Include="DesignModel\blouse\back\Scalloped-neck-with-dori.png" />
+    <Content Include="DesignModel\blouse\back\Scalloped-neck.png" />
+    <Content Include="DesignModel\blouse\back\Slant-eye-keyhole.png" />
+    <Content Include="DesignModel\blouse\back\Square-neck.png" />
+    <Content Include="DesignModel\blouse\back\UTC225.png" />
+    <Content Include="DesignModel\blouse\back\UTC226.png" />
+    <Content Include="DesignModel\blouse\front\10.png" />
+    <Content Include="DesignModel\blouse\front\11.png" />
+    <Content Include="DesignModel\blouse\front\12.png" />
+    <Content Include="DesignModel\blouse\front\14.png" />
+    <Content Include="DesignModel\blouse\front\19.png" />
+    <Content Include="DesignModel\blouse\front\22.png" />
+    <Content Include="DesignModel\blouse\front\3.png" />
+    <Content Include="DesignModel\blouse\front\44-%281%29.png" />
+    <Content Include="DesignModel\blouse\front\5.png" />
+    <Content Include="DesignModel\blouse\front\9.png" />
+    <Content Include="DesignModel\blouse\front\Classic-Shirt-Collar.png" />
+    <Content Include="DesignModel\blouse\front\Collar-with-Deep-V-neck.png" />
+    <Content Include="DesignModel\blouse\front\Diamond-Neck1.png" />
+    <Content Include="DesignModel\blouse\front\Halter-neck1.png" />
+    <Content Include="DesignModel\blouse\front\High-collar-halter-neck.png" />
+    <Content Include="DesignModel\blouse\front\High-Collar-with-slant-keyh.png" />
+    <Content Include="DesignModel\blouse\front\Round-with-V-neck.png" />
+    <Content Include="DesignModel\blouse\front\Square-round-neck.png" />
+    <Content Include="DesignModel\blouse\front\UTC225.png" />
+    <Content Include="DesignModel\blouse\front\UTC226.png" />
+    <Content Include="DesignModel\blouse\sleeve\1.png" />
+    <Content Include="DesignModel\blouse\sleeve\3-4th-sleeves1.png" />
+    <Content Include="DesignModel\blouse\sleeve\6.png" />
+    <Content Include="DesignModel\blouse\sleeve\7.png" />
+    <Content Include="DesignModel\blouse\sleeve\8.png" />
+    <Content Include="DesignModel\blouse\sleeve\Cap-sleeve1.png" />
+    <Content Include="DesignModel\blouse\sleeve\Capture.png" />
+    <Content Include="DesignModel\blouse\sleeve\Half-sleeves1.png" />
+    <Content Include="DesignModel\blouse\sleeve\Short-sleeve1.png" />
+    <Content Include="DesignModel\blouse\sleeve\UTC225.png" />
+    <Content Include="DesignModel\blouse\sleeve\UTC226.png" />
+    <Content Include="DesignModel\bottom.aspx" />
+    <Content Include="DesignModel\bottom.html" />
+    <Content Include="DesignModel\bottom\addon\American-Crepe.png" />
+    <Content Include="DesignModel\bottom\addon\Backwithzip1.png" />
+    <Content Include="DesignModel\bottom\addon\Hemming-for-Dupatta1.png" />
+    <Content Include="DesignModel\bottom\addon\Task-106-Add-Ons1.png" />
+    <Content Include="DesignModel\bottom\addon\Waist with Normal Strings1.png" />
+    <Content Include="DesignModel\bottom\addon\Waist-with-Elastic1..png" />
+    <Content Include="DesignModel\bottom\addon\Waist-with-Normal-Strings1.png" />
+    <Content Include="DesignModel\bottom\pant\churidar1.png" />
+    <Content Include="DesignModel\bottom\pant\palazzo pants.png" />
+    <Content Include="DesignModel\bottom\pant\Patiala1.png" />
+    <Content Include="DesignModel\bottom\pant\Salwar1.png" />
+    <Content Include="DesignModel\bottom\pant\Straight-Pant.png" />
+    <Content Include="DesignModel\bottom\pant\UTC225.png" />
+    <Content Include="DesignModel\bottom\pant\UTC226.png" />
+    <Content Include="DesignModel\css\bootstrap.min.css" />
+    <Content Include="DesignModel\css\jquery.toast.min.css" />
+    <Content Include="DesignModel\css\main.css" />
+    <Content Include="DesignModel\css\style.css" />
+    <Content Include="DesignModel\embordary.aspx" />
+    <Content Include="DesignModel\embordary.html" />
+    <Content Include="DesignModel\embordiry\addon\American-Crepe.png" />
+    <Content Include="DesignModel\embordiry\addon\Backwithzip1.png" />
+    <Content Include="DesignModel\embordiry\addon\Hemming-for-Dupatta1.png" />
+    <Content Include="DesignModel\embordiry\addon\Task-106-Add-Ons1.png" />
+    <Content Include="DesignModel\embordiry\addon\Waist with Normal Strings1.png" />
+    <Content Include="DesignModel\embordiry\addon\Waist-with-Elastic1..png" />
+    <Content Include="DesignModel\embordiry\addon\Waist-with-Normal-Strings1.png" />
+    <Content Include="DesignModel\embordiry\emboridey\EXT6.png" />
+    <Content Include="DesignModel\embordiry\emboridey\EXT7.png" />
+    <Content Include="DesignModel\embordiry\emboridey\UTC225.png" />
+    <Content Include="DesignModel\embordiry\emboridey\UTC226.png" />
+    <Content Include="DesignModel\js\bootstrap.min.js" />
+    <Content Include="DesignModel\js\jquery-2.1.3.min.js" />
+    <Content Include="DesignModel\js\jquery-3.2.1.min.js" />
+    <Content Include="DesignModel\js\jquery.min.js" />
+    <Content Include="DesignModel\js\jquery.toast.min.js" />
+    <Content Include="DesignModel\js\main.js" />
+    <Content Include="DesignModel\kurti.aspx" />
+    <Content Include="DesignModel\kurti.html" />
+    <Content Include="DesignModel\kurti\addon\American-Crepe.png" />
+    <Content Include="DesignModel\kurti\addon\Back-with-Hooks1.png" />
+    <Content Include="DesignModel\kurti\addon\Back-with-Zip1.png" />
+    <Content Include="DesignModel\kurti\addon\bls-1.png" />
+    <Content Include="DesignModel\kurti\addon\bls-2.png" />
+    <Content Include="DesignModel\kurti\addon\bls-3.png" />
+    <Content Include="DesignModel\kurti\addon\Front-with-Hooks1.png" />
+    <Content Include="DesignModel\kurti\addon\Hemming-for-Dupatta1.png" />
+    <Content Include="DesignModel\kurti\addon\Side-with-Zip1.png" />
+    <Content Include="DesignModel\kurti\addon\Task-106-Add-Ons1.png" />
+    <Content Include="DesignModel\kurti\addon\Task-106-Add-Ons2.png" />
+    <Content Include="DesignModel\kurti\back\Backless-with-straps.png" />
+    <Content Include="DesignModel\kurti\back\Backless-with-strings.png" />
+    <Content Include="DesignModel\kurti\back\Boat-Neck-with-Bar-keyhole.png" />
+    <Content Include="DesignModel\kurti\back\Boat-Neck-with-Circle.png" />
+    <Content Include="DesignModel\kurti\back\Boat-Neck-with-Daimond.png" />
+    <Content Include="DesignModel\kurti\back\Boat-Neck-with-dori.png" />
+    <Content Include="DesignModel\kurti\back\Broad-sweetheart-neck.png" />
+    <Content Include="DesignModel\kurti\back\Collared-back-with-strings.png" />
+    <Content Include="DesignModel\kurti\back\Collared-back.png" />
+    <Content Include="DesignModel\kurti\back\Crew-neck.png" />
+    <Content Include="DesignModel\kurti\back\Four-Strings.png" />
+    <Content Include="DesignModel\kurti\back\High-Collar-Halter-Back.png" />
+    <Content Include="DesignModel\kurti\back\Leaf-Neck.png" />
+    <Content Include="DesignModel\kurti\back\pot.png" />
+    <Content Include="DesignModel\kurti\back\Rectangle-neck.png" />
+    <Content Include="DesignModel\kurti\back\Round-neck-with-dori.png" />
+    <Content Include="DesignModel\kurti\back\Round-neck.png" />
+    <Content Include="DesignModel\kurti\back\Scalloped-neck-with-dori.png" />
+    <Content Include="DesignModel\kurti\back\Scalloped-neck.png" />
+    <Content Include="DesignModel\kurti\back\Slant-eye-keyhole.png" />
+    <Content Include="DesignModel\kurti\back\Square-neck.png" />
+    <Content Include="DesignModel\kurti\back\UTC225.png" />
+    <Content Include="DesignModel\kurti\back\UTC226.png" />
+    <Content Include="DesignModel\kurti\front\10.png" />
+    <Content Include="DesignModel\kurti\front\11.png" />
+    <Content Include="DesignModel\kurti\front\12.png" />
+    <Content Include="DesignModel\kurti\front\14.png" />
+    <Content Include="DesignModel\kurti\front\18.png" />
+    <Content Include="DesignModel\kurti\front\19.png" />
+    <Content Include="DesignModel\kurti\front\22.png" />
+    <Content Include="DesignModel\kurti\front\3.png" />
+    <Content Include="DesignModel\kurti\front\44-%281%29.png" />
+    <Content Include="DesignModel\kurti\front\5.png" />
+    <Content Include="DesignModel\kurti\front\9.png" />
+    <Content Include="DesignModel\kurti\front\Classic-Shirt-Collar.png" />
+    <Content Include="DesignModel\kurti\front\Collar-with-Deep-V-neck.png" />
+    <Content Include="DesignModel\kurti\front\Diamond-Neck1.png" />
+    <Content Include="DesignModel\kurti\front\Halter-neck1.png" />
+    <Content Include="DesignModel\kurti\front\High-collar-halter-neck.png" />
+    <Content Include="DesignModel\kurti\front\High-Collar-with-slant-keyh.png" />
+    <Content Include="DesignModel\kurti\front\Peter-Pan-Collar.png" />
+    <Content Include="DesignModel\kurti\front\Round-with-V-neck.png" />
+    <Content Include="DesignModel\kurti\front\Square-round-neck.png" />
+    <Content Include="DesignModel\kurti\front\UTC225.png" />
+    <Content Include="DesignModel\kurti\front\UTC226.png" />
+    <Content Include="DesignModel\kurti\sleeve\1.png" />
+    <Content Include="DesignModel\kurti\sleeve\3-4th-sleeves1.png" />
+    <Content Include="DesignModel\kurti\sleeve\6.png" />
+    <Content Include="DesignModel\kurti\sleeve\7.png" />
+    <Content Include="DesignModel\kurti\sleeve\8.png" />
+    <Content Include="DesignModel\kurti\sleeve\animate.css" />
+    <Content Include="DesignModel\kurti\sleeve\bootstrap.min.css" />
+    <Content Include="DesignModel\kurti\sleeve\Cap-sleeve1.png" />
+    <Content Include="DesignModel\kurti\sleeve\Capture.png" />
+    <Content Include="DesignModel\kurti\sleeve\font-awesome.min.css" />
+    <Content Include="DesignModel\kurti\sleeve\Half-sleeves1.png" />
+    <Content Include="DesignModel\kurti\sleeve\jquery.filer-dragdropbox-theme.css" />
+    <Content Include="DesignModel\kurti\sleeve\jquery.filer.css" />
+    <Content Include="DesignModel\kurti\sleeve\responsive.css" />
+    <Content Include="DesignModel\kurti\sleeve\Short-sleeve1.png" />
+    <Content Include="DesignModel\kurti\sleeve\style.css" />
+    <Content Include="DesignModel\kurti\sleeve\UTC225.png" />
+    <Content Include="DesignModel\kurti\sleeve\UTC226.png" />
+    <Content Include="DesignModel\salwar.aspx" />
+    <Content Include="DesignModel\salwar.html" />
+    <Content Include="DesignModel\salwar\addon\American-Crepe.png" />
+    <Content Include="DesignModel\salwar\addon\Backwithzip1.png" />
+    <Content Include="DesignModel\salwar\addon\Binding-on-Neckline-and-Sle.png" />
+    <Content Include="DesignModel\salwar\addon\Hemming-for-Dupatta1.png" />
+    <Content Include="DesignModel\salwar\addon\Task-106-Add-Ons1.png" />
+    <Content Include="DesignModel\salwar\addon\Tassels-with-Neck-Ties1.png" />
+    <Content Include="DesignModel\salwar\addon\Waist with Normal Strings1.png" />
+    <Content Include="DesignModel\salwar\addon\Waist-with-Elastic1..png" />
+    <Content Include="DesignModel\salwar\addon\Waist-with-Normal-Strings1.png" />
+    <Content Include="DesignModel\salwar\back\Backless-with-straps.png" />
+    <Content Include="DesignModel\salwar\back\Backless-with-strings.png" />
+    <Content Include="DesignModel\salwar\back\Boat-Neck-with-Bar-keyhole.png" />
+    <Content Include="DesignModel\salwar\back\Boat-Neck-with-Circle.png" />
+    <Content Include="DesignModel\salwar\back\Boat-Neck-with-Daimond.png" />
+    <Content Include="DesignModel\salwar\back\Boat-Neck-with-dori.png" />
+    <Content Include="DesignModel\salwar\back\Broad-sweetheart-neck.png" />
+    <Content Include="DesignModel\salwar\back\Collared-back-with-strings.png" />
+    <Content Include="DesignModel\salwar\back\Collared-back.png" />
+    <Content Include="DesignModel\salwar\back\Crew-neck.png" />
+    <Content Include="DesignModel\salwar\back\Four-Strings.png" />
+    <Content Include="DesignModel\salwar\back\High-Collar-Halter-Back.png" />
+    <Content Include="DesignModel\salwar\back\Leaf-Neck.png" />
+    <Content Include="DesignModel\salwar\back\pot.png" />
+    <Content Include="DesignModel\salwar\back\Rectangle-neck.png" />
+    <Content Include="DesignModel\salwar\back\Round-neck-with-dori.png" />
+    <Content Include="DesignModel\salwar\back\Round-neck.png" />
+    <Content Include="DesignModel\salwar\back\Scalloped-neck-with-dori.png" />
+    <Content Include="DesignModel\salwar\back\Scalloped-neck.png" />
+    <Content Include="DesignModel\salwar\back\Slant-eye-keyhole.png" />
+    <Content Include="DesignModel\salwar\back\Square-neck.png" />
+    <Content Include="DesignModel\salwar\back\UTC225.png" />
+    <Content Include="DesignModel\salwar\back\UTC226.png" />
+    <Content Include="DesignModel\salwar\bottom\churidar1.png" />
+    <Content Include="DesignModel\salwar\bottom\palazzo pants.png" />
+    <Content Include="DesignModel\salwar\bottom\Patiala1.png" />
+    <Content Include="DesignModel\salwar\bottom\Salwar1.png" />
+    <Content Include="DesignModel\salwar\bottom\Straight-Pant.png" />
+    <Content Include="DesignModel\salwar\bottom\UTC225.png" />
+    <Content Include="DesignModel\salwar\bottom\UTC226.png" />
+    <Content Include="DesignModel\salwar\front\10.png" />
+    <Content Include="DesignModel\salwar\front\11.png" />
+    <Content Include="DesignModel\salwar\front\12.png" />
+    <Content Include="DesignModel\salwar\front\14.png" />
+    <Content Include="DesignModel\salwar\front\18.png" />
+    <Content Include="DesignModel\salwar\front\19.png" />
+    <Content Include="DesignModel\salwar\front\22.png" />
+    <Content Include="DesignModel\salwar\front\3.png" />
+    <Content Include="DesignModel\salwar\front\44-%281%29.png" />
+    <Content Include="DesignModel\salwar\front\5.png" />
+    <Content Include="DesignModel\salwar\front\9.png" />
+    <Content Include="DesignModel\salwar\front\Classic-Shirt-Collar.png" />
+    <Content Include="DesignModel\salwar\front\Collar-with-Deep-V-neck.png" />
+    <Content Include="DesignModel\salwar\front\Diamond-Neck1.png" />
+    <Content Include="DesignModel\salwar\front\Halter-neck1.png" />
+    <Content Include="DesignModel\salwar\front\High-collar-halter-neck.png" />
+    <Content Include="DesignModel\salwar\front\High-Collar-with-slant-keyh.png" />
+    <Content Include="DesignModel\salwar\front\Peter-Pan-Collar.png" />
+    <Content Include="DesignModel\salwar\front\Round-with-V-neck.png" />
+    <Content Include="DesignModel\salwar\front\Square-round-neck.png" />
+    <Content Include="DesignModel\salwar\front\UTC225.png" />
+    <Content Include="DesignModel\salwar\front\UTC226.png" />
+    <Content Include="DesignModel\salwar\sleeve\1.png" />
+    <Content Include="DesignModel\salwar\sleeve\3-4th-sleeves1.png" />
+    <Content Include="DesignModel\salwar\sleeve\6.png" />
+    <Content Include="DesignModel\salwar\sleeve\7.png" />
+    <Content Include="DesignModel\salwar\sleeve\8.png" />
+    <Content Include="DesignModel\salwar\sleeve\Cap-sleeve1.png" />
+    <Content Include="DesignModel\salwar\sleeve\Half-sleeves1.png" />
+    <Content Include="DesignModel\salwar\sleeve\Short-sleeve1.png" />
+    <Content Include="DesignModel\salwar\sleeve\UTC225.png" />
+    <Content Include="DesignModel\salwar\sleeve\UTC226.png" />
     <Content Include="FAQ.aspx" />
     <Content Include="Fitting.aspx" />
     <Content Include="ForgotPassword.aspx" />
@@ -558,104 +626,6 @@
     <Content Include="js\testimonials.js" />
     <Content Include="js\upload_images.js" />
     <Content Include="js\video.js" />
-    <Content Include="kurti\addon\5-Days-deli.png" />
-    <Content Include="kurti\addon\American-Crepe.png" />
-    <Content Include="kurti\addon\animate.css" />
-    <Content Include="kurti\addon\Back-with-Zip1.png" />
-    <Content Include="kurti\addon\Binding-on-Neckline-and-Sle.png" />
-    <Content Include="kurti\addon\bootstrap.min.css" />
-    <Content Include="kurti\addon\Capture.png" />
-    <Content Include="kurti\addon\font-awesome.min.css" />
-    <Content Include="kurti\addon\jquery.filer-dragdropbox-theme.css" />
-    <Content Include="kurti\addon\jquery.filer.css" />
-    <Content Include="kurti\addon\logo.jpg" />
-    <Content Include="kurti\addon\responsive.css" />
-    <Content Include="kurti\addon\style.css" />
-    <Content Include="kurti\addon\Task-106-Add-Ons1.png" />
-    <Content Include="kurti\addon\Tassels with Neck Ties1.png" />
-    <Content Include="kurti\back\animate.css" />
-    <Content Include="kurti\back\Backless-with-straps.png" />
-    <Content Include="kurti\back\Backless-with-strings.png" />
-    <Content Include="kurti\back\Boat-Neck-with-Bar-keyhole.png" />
-    <Content Include="kurti\back\Boat-Neck-with-Circle.png" />
-    <Content Include="kurti\back\Boat-Neck-with-Daimond.png" />
-    <Content Include="kurti\back\Boat-Neck-with-dori.png" />
-    <Content Include="kurti\back\bootstrap.min.css" />
-    <Content Include="kurti\back\Broad-sweetheart-neck.png" />
-    <Content Include="kurti\back\Capture.png" />
-    <Content Include="kurti\back\Collared-back-with-strings.png" />
-    <Content Include="kurti\back\Collared-back.png" />
-    <Content Include="kurti\back\Crew-neck.png" />
-    <Content Include="kurti\back\font-awesome.min.css" />
-    <Content Include="kurti\back\Four-Strings.png" />
-    <Content Include="kurti\back\High-Collar-Halter-Back.png" />
-    <Content Include="kurti\back\jquery.filer-dragdropbox-theme.css" />
-    <Content Include="kurti\back\jquery.filer.css" />
-    <Content Include="kurti\back\Leaf-Neck.png" />
-    <Content Include="kurti\back\pot.png" />
-    <Content Include="kurti\back\Rectangle-neck.png" />
-    <Content Include="kurti\back\responsive.css" />
-    <Content Include="kurti\back\Round-neck-with-dori.png" />
-    <Content Include="kurti\back\Round-neck.png" />
-    <Content Include="kurti\back\Scalloped-neck-with-dori.png" />
-    <Content Include="kurti\back\Scalloped-neck.png" />
-    <Content Include="kurti\back\Slant-eye-keyhole.png" />
-    <Content Include="kurti\back\Square-neck.png" />
-    <Content Include="kurti\back\style.css" />
-    <Content Include="kurti\back\UTC225.png" />
-    <Content Include="kurti\back\UTC226.png" />
-    <Content Include="kurti\front\10.png" />
-    <Content Include="kurti\front\11.png" />
-    <Content Include="kurti\front\12.png" />
-    <Content Include="kurti\front\14.png" />
-    <Content Include="kurti\front\18.png" />
-    <Content Include="kurti\front\19.png" />
-    <Content Include="kurti\front\22.png" />
-    <Content Include="kurti\front\44-%281%29.png" />
-    <Content Include="kurti\front\5.png" />
-    <Content Include="kurti\front\9.png" />
-    <Content Include="kurti\front\animate.css" />
-    <Content Include="kurti\front\bootstrap.min.css" />
-    <Content Include="kurti\front\Capture.png" />
-    <Content Include="kurti\front\Classic-Shirt-Collar.png" />
-    <Content Include="kurti\front\Collar-with-Deep-V-neck.png" />
-    <Content Include="kurti\front\Diamond-Neck1.png" />
-    <Content Include="kurti\front\font-awesome.min.css" />
-    <Content Include="kurti\front\Halter-neck1.png" />
-    <Content Include="kurti\front\High-collar-halter-neck.png" />
-    <Content Include="kurti\front\High-Collar-with-slant-keyh.png" />
-    <Content Include="kurti\front\jquery.filer-dragdropbox-theme.css" />
-    <Content Include="kurti\front\jquery.filer.css" />
-    <Content Include="kurti\front\Peter-Pan-Collar.png" />
-    <Content Include="kurti\front\responsive.css" />
-    <Content Include="kurti\front\Round-with-V-neck.png" />
-    <Content Include="kurti\front\select_itm.png" />
-    <Content Include="kurti\front\Square-round-neck.png" />
-    <Content Include="kurti\front\style.css" />
-    <Content Include="kurti\front\UTC225.png" />
-    <Content Include="kurti\front\UTC226.png" />
-    <Content Include="kurti\KurtiAddon.aspx" />
-    <Content Include="kurti\KurtiBack.aspx" />
-    <Content Include="kurti\KurtiFront.aspx" />
-    <Content Include="kurti\KurtiSleeve.aspx" />
-    <Content Include="kurti\sleeve\1.png" />
-    <Content Include="kurti\sleeve\3-4th-sleeves1.png" />
-    <Content Include="kurti\sleeve\6.png" />
-    <Content Include="kurti\sleeve\7.png" />
-    <Content Include="kurti\sleeve\8.png" />
-    <Content Include="kurti\sleeve\animate.css" />
-    <Content Include="kurti\sleeve\bootstrap.min.css" />
-    <Content Include="kurti\sleeve\Cap-sleeve1.png" />
-    <Content Include="kurti\sleeve\Capture.png" />
-    <Content Include="kurti\sleeve\font-awesome.min.css" />
-    <Content Include="kurti\sleeve\Half-sleeves1.png" />
-    <Content Include="kurti\sleeve\jquery.filer-dragdropbox-theme.css" />
-    <Content Include="kurti\sleeve\jquery.filer.css" />
-    <Content Include="kurti\sleeve\responsive.css" />
-    <Content Include="kurti\sleeve\Short-sleeve1.png" />
-    <Content Include="kurti\sleeve\style.css" />
-    <Content Include="kurti\sleeve\UTC225.png" />
-    <Content Include="kurti\sleeve\UTC226.png" />
     <Content Include="OFL.txt" />
     <Content Include="OrderDetail.aspx" />
     <Content Include="OrderInvoice.aspx" />
@@ -689,123 +659,6 @@
     <Content Include="signup_files\css%282%29" />
     <Content Include="signup_files\jquery.filer.min.js.download" />
     <Content Include="signup_files\jquery.min.js.download" />
-    <Content Include="slawar\addon\5-Days-deli.png" />
-    <Content Include="slawar\addon\American-Crepe.png" />
-    <Content Include="slawar\addon\animate.css" />
-    <Content Include="slawar\addon\Backwithzip1.png" />
-    <Content Include="slawar\addon\Binding-on-Neckline-and-Sle.png" />
-    <Content Include="slawar\addon\bootstrap.min.css" />
-    <Content Include="slawar\addon\Capture.png" />
-    <Content Include="slawar\addon\font-awesome.min.css" />
-    <Content Include="slawar\addon\Hemming-for-Dupatta1.png" />
-    <Content Include="slawar\addon\jquery.filer-dragdropbox-theme.css" />
-    <Content Include="slawar\addon\jquery.filer.css" />
-    <Content Include="slawar\addon\responsive.css" />
-    <Content Include="slawar\addon\style.css" />
-    <Content Include="slawar\addon\Task-106-Add-Ons1.png" />
-    <Content Include="slawar\addon\Tassels-with-Neck-Ties1.png" />
-    <Content Include="slawar\addon\Waist with Normal Strings1.png" />
-    <Content Include="slawar\addon\Waist-with-Elastic1..png" />
-    <Content Include="slawar\addon\Waist-with-Normal-Strings1.png" />
-    <Content Include="slawar\back\animate.css" />
-    <Content Include="slawar\back\Backless-with-straps.png" />
-    <Content Include="slawar\back\Backless-with-strings.png" />
-    <Content Include="slawar\back\Boat-Neck-with-Bar-keyhole.png" />
-    <Content Include="slawar\back\Boat-Neck-with-Circle.png" />
-    <Content Include="slawar\back\Boat-Neck-with-Daimond.png" />
-    <Content Include="slawar\back\Boat-Neck-with-dori.png" />
-    <Content Include="slawar\back\bootstrap.min.css" />
-    <Content Include="slawar\back\Broad-sweetheart-neck.png" />
-    <Content Include="slawar\back\Capture.png" />
-    <Content Include="slawar\back\Collared-back-with-strings.png" />
-    <Content Include="slawar\back\Collared-back.png" />
-    <Content Include="slawar\back\Crew-neck.png" />
-    <Content Include="slawar\back\font-awesome.min.css" />
-    <Content Include="slawar\back\Four-Strings.png" />
-    <Content Include="slawar\back\High-Collar-Halter-Back.png" />
-    <Content Include="slawar\back\jquery.filer-dragdropbox-theme.css" />
-    <Content Include="slawar\back\jquery.filer.css" />
-    <Content Include="slawar\back\Leaf-Neck.png" />
-    <Content Include="slawar\back\pot.png" />
-    <Content Include="slawar\back\Rectangle-neck.png" />
-    <Content Include="slawar\back\responsive.css" />
-    <Content Include="slawar\back\Round-neck-with-dori.png" />
-    <Content Include="slawar\back\Round-neck.png" />
-    <Content Include="slawar\back\Scalloped-neck-with-dori.png" />
-    <Content Include="slawar\back\Scalloped-neck.png" />
-    <Content Include="slawar\back\Slant-eye-keyhole.png" />
-    <Content Include="slawar\back\Square-neck.png" />
-    <Content Include="slawar\back\style.css" />
-    <Content Include="slawar\back\UTC225.png" />
-    <Content Include="slawar\back\UTC226.png" />
-    <Content Include="slawar\bottom\animate.css" />
-    <Content Include="slawar\bottom\bootstrap.min.css" />
-    <Content Include="slawar\bottom\Capture.png" />
-    <Content Include="slawar\bottom\churidar1.png" />
-    <Content Include="slawar\bottom\font-awesome.min.css" />
-    <Content Include="slawar\bottom\jquery.filer-dragdropbox-theme.css" />
-    <Content Include="slawar\bottom\jquery.filer.css" />
-    <Content Include="slawar\bottom\palazzo pants.png" />
-    <Content Include="slawar\bottom\Patiala1.png" />
-    <Content Include="slawar\bottom\responsive.css" />
-    <Content Include="slawar\bottom\Salwar1.png" />
-    <Content Include="slawar\bottom\Straight-Pant.png" />
-    <Content Include="slawar\bottom\style.css" />
-    <Content Include="slawar\bottom\UTC225.png" />
-    <Content Include="slawar\bottom\UTC226.png" />
-    <Content Include="slawar\front\10.png" />
-    <Content Include="slawar\front\11.png" />
-    <Content Include="slawar\front\12.png" />
-    <Content Include="slawar\front\14.png" />
-    <Content Include="slawar\front\18.png" />
-    <Content Include="slawar\front\19.png" />
-    <Content Include="slawar\front\22.png" />
-    <Content Include="slawar\front\3.png" />
-    <Content Include="slawar\front\44-%281%29.png" />
-    <Content Include="slawar\front\5.png" />
-    <Content Include="slawar\front\9.png" />
-    <Content Include="slawar\front\animate.css" />
-    <Content Include="slawar\front\bootstrap.min.css" />
-    <Content Include="slawar\front\Capture.png" />
-    <Content Include="slawar\front\Classic-Shirt-Collar.png" />
-    <Content Include="slawar\front\Collar-with-Deep-V-neck.png" />
-    <Content Include="slawar\front\Diamond-Neck1.png" />
-    <Content Include="slawar\front\font-awesome.min.css" />
-    <Content Include="slawar\front\Halter-neck1.png" />
-    <Content Include="slawar\front\High-collar-halter-neck.png" />
-    <Content Include="slawar\front\High-Collar-with-slant-keyh.png" />
-    <Content Include="slawar\front\jquery.filer-dragdropbox-theme.css" />
-    <Content Include="slawar\front\jquery.filer.css" />
-    <Content Include="slawar\front\Peter-Pan-Collar.png" />
-    <Content Include="slawar\front\responsive.css" />
-    <Content Include="slawar\front\Round-with-V-neck.png" />
-    <Content Include="slawar\front\Square-round-neck.png" />
-    <Content Include="slawar\front\style.css" />
-    <Content Include="slawar\front\UTC225.png" />
-    <Content Include="slawar\front\UTC226.png" />
-    <Content Include="slawar\SlawarAddon.aspx" />
-    <Content Include="slawar\SlawarBack.aspx" />
-    <Content Include="slawar\SlawarBottom.aspx" />
-    <Content Include="slawar\SlawarFront.aspx" />
-    <Content Include="slawar\SlawarSleeve.aspx" />
-    <Content Include="slawar\sleeve\1.png" />
-    <Content Include="slawar\sleeve\3-4th-sleeves1.png" />
-    <Content Include="slawar\sleeve\6.png" />
-    <Content Include="slawar\sleeve\7.png" />
-    <Content Include="slawar\sleeve\8.png" />
-    <Content Include="slawar\sleeve\animate.css" />
-    <Content Include="slawar\sleeve\bootstrap.min.css" />
-    <Content Include="slawar\sleeve\Cap-sleeve1.png" />
-    <Content Include="slawar\sleeve\Capture.png" />
-    <Content Include="slawar\sleeve\font-awesome.min.css" />
-    <Content Include="slawar\sleeve\Half-sleeves1.png" />
-    <Content Include="slawar\sleeve\jquery.filer-dragdropbox-theme.css" />
-    <Content Include="slawar\sleeve\jquery.filer.css" />
-    <Content Include="slawar\sleeve\responsive.css" />
-    <Content Include="slawar\sleeve\Short-sleeve1.png" />
-    <Content Include="slawar\sleeve\style.css" />
-    <Content Include="slawar\sleeve\UTC225.png" />
-    <Content Include="slawar\sleeve\UTC226.png" />
     <Content Include="TermsCondition.aspx" />
     <Content Include="UserPanel\AddressBook.aspx" />
     <Content Include="UserPanel\AddSizingProfile.aspx" />
@@ -895,139 +748,6 @@
     <Content Include="Contents\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Contents\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Contents\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="slawar\addon\analytics.js.download" />
-    <Content Include="slawar\addon\bootstrap.min.js.download" />
-    <Content Include="slawar\addon\css" />
-    <Content Include="slawar\addon\css%281%29" />
-    <Content Include="slawar\addon\css%282%29" />
-    <Content Include="slawar\addon\jquery.min.js.download" />
-    <Content Include="slawar\addon\wow.min.js.download" />
-    <Content Include="slawar\back\analytics.js.download" />
-    <Content Include="slawar\back\bootstrap.min.js.download" />
-    <Content Include="slawar\back\css" />
-    <Content Include="slawar\back\css%281%29" />
-    <Content Include="slawar\back\css%282%29" />
-    <Content Include="slawar\back\jquery.filer.min.js.download" />
-    <Content Include="slawar\back\jquery.min.js.download" />
-    <Content Include="slawar\bottom\analytics.js.download" />
-    <Content Include="slawar\bottom\bootstrap.min.js.download" />
-    <Content Include="slawar\bottom\css" />
-    <Content Include="slawar\bottom\css%281%29" />
-    <Content Include="slawar\bottom\css%282%29" />
-    <Content Include="slawar\bottom\jquery.filer.min.js.download" />
-    <Content Include="slawar\bottom\jquery.min.js.download" />
-    <Content Include="slawar\front\analytics.js.download" />
-    <Content Include="slawar\front\bootstrap.min.js.download" />
-    <Content Include="slawar\front\css" />
-    <Content Include="slawar\front\css%281%29" />
-    <Content Include="slawar\front\css%282%29" />
-    <Content Include="slawar\front\jquery.filer.min.js.download" />
-    <Content Include="slawar\front\jquery.min.js.download" />
-    <Content Include="slawar\sleeve\analytics.js.download" />
-    <Content Include="slawar\sleeve\bootstrap.min.js.download" />
-    <Content Include="slawar\sleeve\css" />
-    <Content Include="slawar\sleeve\css%281%29" />
-    <Content Include="slawar\sleeve\css%282%29" />
-    <Content Include="slawar\sleeve\jquery.filer.min.js.download" />
-    <Content Include="slawar\sleeve\jquery.min.js.download" />
-    <Content Include="anarkali\addon\analytics.js.download" />
-    <Content Include="anarkali\addon\bootstrap.min.js.download" />
-    <Content Include="anarkali\addon\css" />
-    <Content Include="anarkali\addon\css%281%29" />
-    <Content Include="anarkali\addon\css%282%29" />
-    <Content Include="anarkali\addon\jquery.min.js.download" />
-    <Content Include="anarkali\addon\wow.min.js.download" />
-    <Content Include="anarkali\anarkali\analytics.js.download" />
-    <Content Include="anarkali\anarkali\bootstrap.min.js.download" />
-    <Content Include="anarkali\anarkali\css" />
-    <Content Include="anarkali\anarkali\css%281%29" />
-    <Content Include="anarkali\anarkali\css%282%29" />
-    <Content Include="anarkali\anarkali\jquery.filer.min.js.download" />
-    <Content Include="anarkali\anarkali\jquery.min.js.download" />
-    <Content Include="blouse\addons\analytics.js.download" />
-    <Content Include="blouse\addons\bootstrap.min.js.download" />
-    <Content Include="blouse\addons\css" />
-    <Content Include="blouse\addons\css%281%29" />
-    <Content Include="blouse\addons\css%282%29" />
-    <Content Include="blouse\addons\jquery.min.js.download" />
-    <Content Include="blouse\addons\wow.min.js.download" />
-    <Content Include="blouse\back\analytics.js.download" />
-    <Content Include="blouse\back\bootstrap.min.js.download" />
-    <Content Include="blouse\back\css" />
-    <Content Include="blouse\back\css%281%29" />
-    <Content Include="blouse\back\css%282%29" />
-    <Content Include="blouse\back\jquery.filer.min.js.download" />
-    <Content Include="blouse\back\jquery.min.js.download" />
-    <Content Include="blouse\front\analytics.js.download" />
-    <Content Include="blouse\front\bootstrap.min.js.download" />
-    <Content Include="blouse\front\css" />
-    <Content Include="blouse\front\css%281%29" />
-    <Content Include="blouse\front\css%282%29" />
-    <Content Include="blouse\front\jquery.filer.min.js.download" />
-    <Content Include="blouse\front\jquery.min.js.download" />
-    <Content Include="blouse\sleeve\analytics.js.download" />
-    <Content Include="blouse\sleeve\bootstrap.min.js.download" />
-    <Content Include="blouse\sleeve\css" />
-    <Content Include="blouse\sleeve\css%281%29" />
-    <Content Include="blouse\sleeve\css%282%29" />
-    <Content Include="blouse\sleeve\jquery.filer.min.js.download" />
-    <Content Include="blouse\sleeve\jquery.min.js.download" />
-    <Content Include="bottom\addon\analytics.js.download" />
-    <Content Include="bottom\addon\bootstrap.min.js.download" />
-    <Content Include="bottom\addon\css" />
-    <Content Include="bottom\addon\css%281%29" />
-    <Content Include="bottom\addon\css%282%29" />
-    <Content Include="bottom\addon\jquery.min.js.download" />
-    <Content Include="bottom\addon\wow.min.js.download" />
-    <Content Include="bottom\bottom\analytics.js.download" />
-    <Content Include="bottom\bottom\bootstrap.min.js.download" />
-    <Content Include="bottom\bottom\css" />
-    <Content Include="bottom\bottom\css%281%29" />
-    <Content Include="bottom\bottom\css%282%29" />
-    <Content Include="bottom\bottom\jquery.filer.min.js.download" />
-    <Content Include="bottom\bottom\jquery.min.js.download" />
-    <Content Include="Emboridey\addon\analytics.js.download" />
-    <Content Include="Emboridey\addon\bootstrap.min.js.download" />
-    <Content Include="Emboridey\addon\css" />
-    <Content Include="Emboridey\addon\css%281%29" />
-    <Content Include="Emboridey\addon\css%282%29" />
-    <Content Include="Emboridey\addon\jquery.min.js.download" />
-    <Content Include="Emboridey\addon\wow.min.js.download" />
-    <Content Include="Emboridey\emboridey\analytics.js.download" />
-    <Content Include="Emboridey\emboridey\bootstrap.min.js.download" />
-    <Content Include="Emboridey\emboridey\css" />
-    <Content Include="Emboridey\emboridey\css%281%29" />
-    <Content Include="Emboridey\emboridey\css%282%29" />
-    <Content Include="Emboridey\emboridey\jquery.filer.min.js.download" />
-    <Content Include="Emboridey\emboridey\jquery.min.js.download" />
-    <Content Include="kurti\addon\analytics.js.download" />
-    <Content Include="kurti\addon\bootstrap.min.js.download" />
-    <Content Include="kurti\addon\css" />
-    <Content Include="kurti\addon\css%281%29" />
-    <Content Include="kurti\addon\css%282%29" />
-    <Content Include="kurti\addon\jquery.min.js.download" />
-    <Content Include="kurti\addon\wow.min.js.download" />
-    <Content Include="kurti\back\analytics.js.download" />
-    <Content Include="kurti\back\bootstrap.min.js.download" />
-    <Content Include="kurti\back\css" />
-    <Content Include="kurti\back\css%281%29" />
-    <Content Include="kurti\back\css%282%29" />
-    <Content Include="kurti\back\jquery.filer.min.js.download" />
-    <Content Include="kurti\back\jquery.min.js.download" />
-    <Content Include="kurti\front\analytics.js.download" />
-    <Content Include="kurti\front\bootstrap.min.js.download" />
-    <Content Include="kurti\front\css" />
-    <Content Include="kurti\front\css%281%29" />
-    <Content Include="kurti\front\css%282%29" />
-    <Content Include="kurti\front\jquery.filer.min.js.download" />
-    <Content Include="kurti\front\jquery.min.js.download" />
-    <Content Include="kurti\sleeve\analytics.js.download" />
-    <Content Include="kurti\sleeve\bootstrap.min.js.download" />
-    <Content Include="kurti\sleeve\css" />
-    <Content Include="kurti\sleeve\css%281%29" />
-    <Content Include="kurti\sleeve\css%282%29" />
-    <Content Include="kurti\sleeve\jquery.filer.min.js.download" />
-    <Content Include="kurti\sleeve\jquery.min.js.download" />
     <Content Include="packages.config" />
     <Content Include="Admin\images\Thumbs.db" />
     <Content Include="Admin\webfonts\fa-brands-400.eot" />
@@ -1055,6 +775,14 @@
     <Content Include="UserPanel\files\saved_resource" />
     <Content Include="UserPanel\files\shopify_common-040322ee69221c50a47032355f2f7e6cbae505567e2157d53dfb0a2e7701839c.js.download" />
     <Content Include="js\jquery-3.3.1.min" />
+    <Content Include="DesignModel\js\jquery-3.3.1.min" />
+    <Content Include="DesignModel\kurti\sleeve\analytics.js.download" />
+    <Content Include="DesignModel\kurti\sleeve\bootstrap.min.js.download" />
+    <Content Include="DesignModel\kurti\sleeve\css" />
+    <Content Include="DesignModel\kurti\sleeve\css%281%29" />
+    <Content Include="DesignModel\kurti\sleeve\css%282%29" />
+    <Content Include="DesignModel\kurti\sleeve\jquery.filer.min.js.download" />
+    <Content Include="DesignModel\kurti\sleeve\jquery.min.js.download" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -1190,62 +918,6 @@
     <Compile Include="Admin\test.aspx.designer.cs">
       <DependentUpon>test.aspx</DependentUpon>
     </Compile>
-    <Compile Include="anarkali\Anarkali.aspx.cs">
-      <DependentUpon>Anarkali.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="anarkali\Anarkali.aspx.designer.cs">
-      <DependentUpon>Anarkali.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="anarkali\AnarkaliAddon.aspx.cs">
-      <DependentUpon>AnarkaliAddon.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="anarkali\AnarkaliAddon.aspx.designer.cs">
-      <DependentUpon>AnarkaliAddon.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="blouse\BlouseAddon.aspx.cs">
-      <DependentUpon>BlouseAddon.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="blouse\BlouseAddon.aspx.designer.cs">
-      <DependentUpon>BlouseAddon.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="blouse\BlouseBack.aspx.cs">
-      <DependentUpon>BlouseBack.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="blouse\BlouseBack.aspx.designer.cs">
-      <DependentUpon>BlouseBack.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="blouse\BlouseFront.aspx.cs">
-      <DependentUpon>BlouseFront.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="blouse\BlouseFront.aspx.designer.cs">
-      <DependentUpon>BlouseFront.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="blouse\BlouseSleeve.aspx.cs">
-      <DependentUpon>BlouseSleeve.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="blouse\BlouseSleeve.aspx.designer.cs">
-      <DependentUpon>BlouseSleeve.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="bottom\Bottom.aspx.cs">
-      <DependentUpon>Bottom.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="bottom\Bottom.aspx.designer.cs">
-      <DependentUpon>Bottom.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="bottom\BottomAddon.aspx.cs">
-      <DependentUpon>BottomAddon.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="bottom\BottomAddon.aspx.designer.cs">
-      <DependentUpon>BottomAddon.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Captcha.aspx.cs">
       <DependentUpon>Captcha.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1267,19 +939,47 @@
     <Compile Include="ContactUs.aspx.designer.cs">
       <DependentUpon>ContactUs.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Emboridey\Emboridey.aspx.cs">
-      <DependentUpon>Emboridey.aspx</DependentUpon>
+    <Compile Include="DesignModel\anarkali.aspx.cs">
+      <DependentUpon>anarkali.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Emboridey\Emboridey.aspx.designer.cs">
-      <DependentUpon>Emboridey.aspx</DependentUpon>
+    <Compile Include="DesignModel\anarkali.aspx.designer.cs">
+      <DependentUpon>anarkali.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Emboridey\EmborideyAddon.aspx.cs">
-      <DependentUpon>EmborideyAddon.aspx</DependentUpon>
+    <Compile Include="DesignModel\blouse.aspx.cs">
+      <DependentUpon>blouse.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Emboridey\EmborideyAddon.aspx.designer.cs">
-      <DependentUpon>EmborideyAddon.aspx</DependentUpon>
+    <Compile Include="DesignModel\blouse.aspx.designer.cs">
+      <DependentUpon>blouse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DesignModel\bottom.aspx.cs">
+      <DependentUpon>bottom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DesignModel\bottom.aspx.designer.cs">
+      <DependentUpon>bottom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DesignModel\embordary.aspx.cs">
+      <DependentUpon>embordary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DesignModel\embordary.aspx.designer.cs">
+      <DependentUpon>embordary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DesignModel\kurti.aspx.cs">
+      <DependentUpon>kurti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DesignModel\kurti.aspx.designer.cs">
+      <DependentUpon>kurti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DesignModel\salwar.aspx.cs">
+      <DependentUpon>salwar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DesignModel\salwar.aspx.designer.cs">
+      <DependentUpon>salwar.aspx</DependentUpon>
     </Compile>
     <Compile Include="FAQ.aspx.cs">
       <DependentUpon>FAQ.aspx</DependentUpon>
@@ -1308,34 +1008,6 @@
     </Compile>
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="kurti\KurtiAddon.aspx.cs">
-      <DependentUpon>KurtiAddon.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="kurti\KurtiAddon.aspx.designer.cs">
-      <DependentUpon>KurtiAddon.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="kurti\KurtiBack.aspx.cs">
-      <DependentUpon>KurtiBack.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="kurti\KurtiBack.aspx.designer.cs">
-      <DependentUpon>KurtiBack.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="kurti\KurtiFront.aspx.cs">
-      <DependentUpon>KurtiFront.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="kurti\KurtiFront.aspx.designer.cs">
-      <DependentUpon>KurtiFront.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="kurti\KurtiSleeve.aspx.cs">
-      <DependentUpon>KurtiSleeve.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="kurti\KurtiSleeve.aspx.designer.cs">
-      <DependentUpon>KurtiSleeve.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -1386,41 +1058,6 @@
     </Compile>
     <Compile Include="SelectDesign.aspx.designer.cs">
       <DependentUpon>SelectDesign.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="slawar\SlawarAddon.aspx.cs">
-      <DependentUpon>SlawarAddon.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="slawar\SlawarAddon.aspx.designer.cs">
-      <DependentUpon>SlawarAddon.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="slawar\SlawarBack.aspx.cs">
-      <DependentUpon>SlawarBack.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="slawar\SlawarBack.aspx.designer.cs">
-      <DependentUpon>SlawarBack.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="slawar\SlawarBottom.aspx.cs">
-      <DependentUpon>SlawarBottom.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="slawar\SlawarBottom.aspx.designer.cs">
-      <DependentUpon>SlawarBottom.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="slawar\SlawarFront.aspx.cs">
-      <DependentUpon>SlawarFront.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="slawar\SlawarFront.aspx.designer.cs">
-      <DependentUpon>SlawarFront.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="slawar\SlawarSleeve.aspx.cs">
-      <DependentUpon>SlawarSleeve.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="slawar\SlawarSleeve.aspx.designer.cs">
-      <DependentUpon>SlawarSleeve.aspx</DependentUpon>
     </Compile>
     <Compile Include="StitchQueueMaster.Master.cs">
       <DependentUpon>StitchQueueMaster.Master</DependentUpon>

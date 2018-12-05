@@ -1,23 +1,17 @@
-﻿<!DOCTYpE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Front</title>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/StitchQueueMaster.Master" AutoEventWireup="true" CodeBehind="blouse.aspx.cs" Inherits="StitchQueue.DesignModel.blouse" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/jquery.toast.min.css" rel="stylesheet">
-    <link href="cssstyle.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/jquery.toast.min.css" rel="stylesheet"/>
+    <link href="cssstyle.css" rel="stylesheet"/>
+    <link href="css/main.css" rel="stylesheet"/>
 
-</head>
 
-<body>
+   
 
-    <table>
+     <table>
         <tr>
             <div class="container">
                 <div class="row">
@@ -383,6 +377,7 @@
             <script src="js/main.js"></script>
         </tr>
     </table>
-</body>
 
-</html>
+
+
+</asp:Content>

@@ -1,21 +1,14 @@
-﻿<!DOCTYpE html>
-<html lang="en">
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/StitchQueueMaster.Master" AutoEventWireup="true" CodeBehind="salwar.aspx.cs" Inherits="StitchQueue.DesignModel.salwar" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+      <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/jquery.toast.min.css" rel="stylesheet"/>
+    <link href="cssstyle.css" rel="stylesheet"/>
+    <link href="css/main.css" rel="stylesheet"/>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Front</title>
-
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/jquery.toast.min.css" rel="stylesheet">
-    <link href="cssstyle.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-
-</head>
-
-<body>
+    
 
     <table>
         <tr>
@@ -88,94 +81,94 @@
                     </div>
                     <div class="step step-1" data-design="front">
                         <div class="row">
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="1">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="117">
                                 <img src="salwar/Front/UTC225.png" class="img-responsive center center">
                                 <p class="text-center">As per Your Material's Design</p>
                             </div>
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="2">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="118">
                                 <img src="salwar/Front/UTC226.png" class="img-responsive center">
                                 <p class="text-center">As per Mesurement Dress Design</p>
                             </div>
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="3">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="119">
                                 <img src="salwar/Front/19.png" class="img-responsive center">
                                 <p class="text-center">Square criss-cross neck</p>
                             </div>
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="4">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="120">
                                 <img src="salwar/Front/12.png" class="img-responsive center">
                                 <p class="text-center">Deep Sweetheart neck</p>
                             </div>
                         </div>
                         <br>
                         <div class="row">
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="5">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="121">
                                 <img src="salwar/Front/3.png" class="img-responsive center">
                                 <p class="text-center">Stand-up Collar neck</p>
                             </div>
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="6">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="122">
                                 <img src="salwar/Front/5.png" class="img-responsive center">
                                 <p class="text-center">Horseshoe neck</p>
                             </div>
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="7">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="123">
                                 <img src="salwar/Front/9.png" class="img-responsive center">
                                 <p class="text-center">Boat neck</p>
                             </div>
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="8">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="124">
                                 <img src="salwar/Front/14.png" class="img-responsive center">
                                 <p class="text-center">Scalloped neck</p>
                             </div>
                         </div>
                         <br>
                         <div class="row">
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="9">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="125">
                                 <img src="salwar/Front/10.png" class="img-responsive center">
                                 <p class="text-center">U-Neck</p>
                             </div>
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="10">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="126">
                                 <img src="salwar/Front/22.png" class="img-responsive center">
                                 <p class="text-center">Spaghetti - Square neck</p>
                             </div>
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="11">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="127">
                                 <img src="salwar/Front/11.png" class="img-responsive center">
                                 <p class="text-center">Nehru Collar</p>
                             </div>
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="12">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="128">
                                 <img src="salwar/Front/Halter-neck1.png" class="img-responsive center">
                                 <p class="text-center">Halter neck</p>
                             </div>
                         </div>
                         <br>
                         <div class="row">
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="13">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="129">
                                 <img src="salwar/Front/Diamond-Neck1.png" class="img-responsive center">
                                 <p class="text-center">Diamond-Neck1</p>
                             </div>
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="14">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="130">
                                 <img src="salwar/Front/Classic-Shirt-Collar.png" class="img-responsive center">
                                 <p class="text-center">Classic Shirt Collar</p>
                             </div>
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="15">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="131">
                                 <img src="salwar/Front/Collar-with-Deep-V-neck.png" class="img-responsive center">
                                 <p class="text-center">Collar with Deep V-neck</p>
                             </div>
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="16">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="132">
                                 <img src="salwar/Front/High-collar-halter-neck.png" class="img-responsive center">
                                 <p class="text-center">High collar halter neck</p>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="16">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="133">
                                 <img src="salwar/Front/High-Collar-with-slant-keyh.png" class="img-responsive center">
                                 <p class="text-center">High Collar with slant keyhole</p>
                             </div>
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="17">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="134">
                                 <img src="salwar/Front/Round-with-V-neck.png" class="img-responsive center">
                                 <p class="text-center">Round with V-neck</p>
                             </div>
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="18">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="135">
                                 <img src="salwar/Front/Square-round-neck.png" class="img-responsive center">
                                 <p class="text-center">Square round neck</p>
                             </div>
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="19">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="136">
                                 <img src="salwar/Front/44-(1).png" class="img-responsive center">
                                 <p class="text-center">Round V neck</p>
                             </div>
@@ -183,91 +176,91 @@
                     </div>
                     <div class="step step-2 hidden" data-design="back">
                         <div class="row">
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="1">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="137">
                                 <img src="salwar/back/UTC225.png" class="img-responsive">
                                 <P class="text-center">As Per Your Material's Design</P>
                             </div>
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="2">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="138">
                                 <img src="salwar/back/UTC226.png" class="img-responsive">
                                 <P class="text-center">As Per Mesurement Dress Design</P>
                             </div>
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="3">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="139">
                                 <img src="salwar/back/Backless-with-straps.png" class="img-responsive">
                                 <P class="text-center">Square criss-cross neck</P>
                             </div>
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="4">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="140">
                                 <img src="salwar/back/Backless-with-strings.png" class="img-responsive">
                                 <P class="text-center">Deep Sweetheart neck</P>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="5">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="141">
                                 <img src="salwar/back/Boat-Neck-with-Bar-keyhole.png" class="img-responsive">
                                 <P class="text-center">Stand-up Collar neck</P>
                             </div>
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="6">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="142">
                                 <img src="salwar/back/Backless-with-straps.png" class="img-responsive">
                                 <P class="text-center">Horseshoe neck</P>
                             </div>
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="7">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="143">
                                 <img src="salwar/back/Boat-Neck-with-Circle.png" class="img-responsive">
                                 <P class="text-center">Boat neck</P>
                             </div>
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="8">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="144">
                                 <img src="salwar/back/Boat-Neck-with-Daimond.png" class="img-responsive">
                                 <P class="text-center">Scalloped neck</P>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="9">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="145">
                                 <img src="salwar/back/Boat-Neck-with-dori.png" class="img-responsive">
                                 <P class="text-center">U-Neck</P>
                             </div>
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="10">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="146">
                                 <img src="salwar/back/Broad-sweetheart-neck.png" class="img-responsive">
                                 <P class="text-center">Spaghetti - Square neck</P>
                             </div>
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="11">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="147">
                                 <img src="salwar/back/Collared-back-with-strings.png" class="img-responsive">
                                 <P class="text-center">Nehru Collar</P>
                             </div>
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="12">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="148">
                                 <img src="salwar/back/Collared-back.png" class="img-responsive">
                                 <P class="text-center">Halter neck</P>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="13">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="149">
                                 <img src="salwar/back/Crew-neck.png" class="img-responsive">
                                 <P class="text-center">Diamond Neck</P>
                             </div>
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="14">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="150">
                                 <img src="salwar/back/Four-Strings.png" class="img-responsive">
                                 <P class="text-center">Classic Shirt Collar</P>
                             </div>
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="15">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="151">
                                 <img src="salwar/back/High-Collar-Halter-Back.png" class="img-responsive">
                                 <P class="text-center">Collar with Deep V-neck</P>
                             </div>
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="16">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="152">
                                 <img src="salwar/back/Leaf-Neck.png" class="img-responsive">
                                 <P class="text-center">High collar halter neck</P>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="17">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="153">
                                 <img src="salwar/back/pot.png" class="img-responsive">
                                 <P class="text-center">High Collar with slant keyhole</P>
                             </div>
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="18">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="154">
                                 <img src="salwar/back/Square-neck.png" class="img-responsive">
                                 <P class="text-center">Round with V-neck</P>
                             </div>
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="18">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="155">
                                 <img src="salwar/back/Round-neck-with-dori.png" class="img-responsive">
                                 <P class="text-center">Square round neck</P>
                             </div>
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="19">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="156">
                                 <img src="salwar/back/Round-neck.png" class="img-responsive">
                                 <P class="text-center">Round V neck</P>
                             </div>
@@ -275,47 +268,47 @@
                     </div>
                     <div class="step step-3 hidden" data-design="sleeve">
                         <div class="row">
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="1">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="157">
                                 <img src="salwar/back/UTC225.png" class="img-responsive">
                                 <P class="text-center">As Per Your Material's Design</P>
                             </div>
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="2">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="158">
                                 <img src="salwar/back/UTC226.png" class="img-responsive">
                                 <P class="text-center">As Per Mesurement Dress Design</P>
                             </div>
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="3">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="159">
                                 <img src="salwar/sleeve/1.png" class="img-responsive">
                                 <P class="text-center">Square criss-cross neck</P>
                             </div>
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="4">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="160">
                                 <img src="salwar/sleeve/3-4th-sleeves1.png" class="img-responsive">
                                 <P class="text-center">Deep Sweetheart neck</P>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="5">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="161">
                                 <img src="salwar/sleeve/6.png" class="img-responsive">
                                 <P class="text-center">Stand-up Collar neck</P>
                             </div>
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="6">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="162">
                                 <img src="salwar/sleeve/7.png" class="img-responsive">
                                 <P class="text-center">Horseshoe neckr</P>
                             </div>
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="7">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="163">
                                 <img src="salwar/sleeve/8.png" class="img-responsive">
                                 <P class="text-center">Boat neck</P>
                             </div>
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="8">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="164">
                                 <img src="salwar/sleeve/Cap-sleeve1.png" class="img-responsive">
                                 <P class="text-center">Scalloped neck</P>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="9">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="165">
                                 <img src="salwar/sleeve/Half-sleeves1.png" class="img-responsive">
                                 <P class="text-center">U-Neck</P>
                             </div>
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="10">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="166">
                                 <img src="salwar/sleeve/Short-sleeve1.png" class="img-responsive">
                                 <P class="text-center">Spaghetti - Square neck</P>
                             </div>
@@ -323,34 +316,34 @@
                     </div>
                 <div class="step step-4 hidden" data-design="bottom">
                         <div class="row">
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="1">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="167">
                                 <img src="salwar/bottom/UTC225.png" class="img-responsive center center">
                                 <p class="text-center">As per Your Material's Design</p>
                             </div>
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="2">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="168">
                                 <img src="salwar/bottom/UTC226.png" class="img-responsive center">
                                 <p class="text-center">As per Mesurement Dress Design</p>
                             </div>
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="3">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="169">
                                 <img src="salwar/bottom/churidar1.png" class="img-responsive center">
                                 <p class="text-center">churidar1</p>
                             </div>
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="4">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="170">
                                 <img src="salwar/bottom/palazzo pants.png" class="img-responsive center">
                                 <p class="text-center">palazzo pants</p>
                             </div>
                         </div>
                         
                               <div class="row">
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="5">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="171">
                                 <img src="salwar/bottom/Patiala1.png" class="img-responsive center">
                                 <p class="text-center">Patiala1</p>
                             </div>
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="6">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="172">
                                 <img src="salwar/bottom/Straight-Pant.png" class="img-responsive center">
                                 <p class="text-center">Straight-Pant</p>
                             </div>
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="7">
+                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 design-box" data-id="173">
                                 <img src="salwar/bottom/Salwar1.png" class="img-responsive center">
                                 <p class="text-center">Salwar1</p>
                             </div>
@@ -440,6 +433,5 @@
             <script src="js/main.js"></script>
         </tr>
     </table>
-</body>
 
-</html>
+</asp:Content>

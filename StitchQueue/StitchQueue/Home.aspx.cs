@@ -15,37 +15,34 @@ namespace StitchQueue
 {
     public partial class Home : System.Web.UI.Page
     {
-        SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbconnection"].ConnectionString);
+        //SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbconnection"].ConnectionString);
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
-            {
-                con.Open();
+            //if (!IsPostBack)
+            //{
+            //    con.Open();
 
-                SqlCommand cmd = new SqlCommand("select * from Product", con);
+            //    SqlCommand cmd = new SqlCommand("select * from Product", con);
 
-                cmd.ExecuteNonQuery();
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-                Data.DataSource = dt;
-                Data.DataBind();
-                con.Close();
-            }
+            //    cmd.ExecuteNonQuery();
+            //    SqlDataAdapter da = new SqlDataAdapter(cmd);
+            //    DataTable dt = new DataTable();
+            //    da.Fill(dt);
+            //    Data.DataSource = dt;
+            //    Data.DataBind();
+            //    con.Close();
+            //}
 
         }
 
-        protected void Data_ItemCommand(object source, ListViewCommandEventArgs e)
-        {
-            if (e.CommandName == "addtocart")
-            {
-                Response.Redirect("Cart.aspx?id=" + e.CommandArgument.ToString());
-            }
-        }
+        //protected void Data_ItemCommand(object source, ListViewCommandEventArgs e)
+        //{
+        //    if (e.CommandName == "addtocart")
+        //    {
+        //        Response.Redirect("Cart.aspx?id=" + e.CommandArgument.ToString());
+        //    }
+        //}
 
-        protected void prData_ItemCommand(object source, RepeaterCommandEventArgs e)
-        {
-            
-        }
+        
     }
 }
