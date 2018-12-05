@@ -1,0 +1,20 @@
+.fixed-header{
+}
+.design-box{
+    text-align: center;
+    cursor: pointer;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.active-box{
+    border:5px solid #0095ff;
+    padding: 5px;
+}
+
+.footer{
+    margin-top:30px;
+    padding: 10px;
+}

@@ -32,6 +32,10 @@
         .main-top-hed {
             color: #E40256;
         }
+		
+		.container {
+    width: 1350px;
+}
     </style>
     <form id="orderdetail">
         <div class="container-fluid">
@@ -79,7 +83,7 @@
                     </div>
                     <br />
                     <br />
-
+<div class="container">
                     <div class="col-md-4">
                         <h2 class="hed-add-col">ORDER REVIEW</h2>
                         <!-- Start payment 1 -->
@@ -112,7 +116,7 @@
 
                         <!-- End Add 3 -->
                     </div>
-
+</div>
 
                     <div class="col-md-12 no-padding">
                         <div class="col-md-4">

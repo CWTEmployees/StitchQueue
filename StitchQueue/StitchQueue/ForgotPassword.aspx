@@ -12,58 +12,48 @@
     <link rel="stylesheet" type="text/css" href="css/login.css">
 </head>
 <body>
-    <%--<style>
-        .close {
-            margin-top: -11px;
-            padding-top: 0px;
-            height: 37px;
-            background-color: transparent;
-            border: none;
-        }
-    </style>--%>
     
-        <div id="myModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="col-sm-6 col-md-8 col-md-offset-3">
-                        <div class="modal-header">
-                            <%--<asp:Button ID="frgbtn" runat="server" class="close" Text="x" />--%>
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h1 class="text-center login-title">Forgot Password</h1>
-                        </div>
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="col-sm-6 col-md-8 col-md-offset-3">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h1 class="text-center login-title">Forgot Password</h1>
+                    </div>
 
-                        <div class="account-wall">
-                            <img class="profile-img" src="Contents/images/default-user.png"
-                                alt="">
-                            <form class="frgpass" runat="server">
-                                <asp:TextBox ID="email" runat="server" class="form-control" placeholder="EmailId"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="frvfrgpass" runat="server" ValidationGroup="frgpass" ControlToValidate="email" ForeColor="Red" ErrorMessage="Enter Email Id" Display="Dynamic"></asp:RequiredFieldValidator>
-                                <%--<input class="form-control" placeholder="Email" type="text" id="inputEmail" />--%>
+                    <div class="account-wall">
+                        <img class="profile-img" src="Contents/images/default-user.png"
+                            alt="">
+                        <form class="frgpass" runat="server">
+                            <asp:TextBox ID="email" runat="server" class="form-control" placeholder="EmailId"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="frvfrgpass" runat="server" ValidationGroup="frgpass" ControlToValidate="email" ForeColor="Red" ErrorMessage="Enter Email Id" Display="Dynamic"></asp:RequiredFieldValidator>
+                            <%--<input class="form-control" placeholder="Email" type="text" id="inputEmail" />--%>
 
-                                <label class="checkbox pull-right">
-                                    <a href="Login.aspx" class="">Back to Sign in</a>
-                                </label>
+                            <label class="checkbox pull-right">
+                                <a href="Login.aspx" class="">Back to Sign in</a>
+                            </label>
 
 
-                                <asp:Label ID="frgpasslbl" runat="server"></asp:Label>
+                            <asp:Label ID="frgpasslbl" runat="server"></asp:Label>
 
-                                <br />
-                                <asp:Button ID="frgpass" runat="server" class="btn btn-lg btn-block" Text="Submit" ValidationGroup="frgpass" OnClick="frgpass_Click" />
-                                <%--<button class="btn btn-lg btn-block" type="submit">
+                            <br />
+                            <asp:Button ID="frgpass" runat="server" class="btn btn-lg btn-block" Text="Submit" ValidationGroup="frgpass" OnClick="frgpass_Click"/>
+                            <%--<button class="btn btn-lg btn-block" type="submit">
                                 Submit</button>--%>
 
-                                <span class="clearfix"></span>
-                            </form>
-                        </div>
-
+                            <span class="clearfix"></span>
+                        </form>
                     </div>
+
                 </div>
-
             </div>
-        </div>
 
-    </form>
+        </div>
+    </div>
+    
+
     <!-- Trigger/Open The Modal -->
     <!-- <button id="myBtn">Open Modal</button> -->
 

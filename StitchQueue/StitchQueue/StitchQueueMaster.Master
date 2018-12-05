@@ -305,7 +305,7 @@ section {
 
 
 
-        <a href="#" id="toTop" style="display: block;">
+        <a href="#" id="toTop" style="display: block;margin: 30px 10px;">
             <span id="toTopHover" style="opacity: 0;">"To Top"</span>
         </a>
 

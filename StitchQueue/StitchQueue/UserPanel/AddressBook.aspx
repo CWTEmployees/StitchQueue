@@ -14,10 +14,15 @@
                                     <img src="./files/address-book.png" alt="1" class=""></span>
                                 <span>Address Book</span>
                             </h1>
-                            <p>Your address details</p>
+                            <p style="margin-top:-40px">Your address details</p>
                         </div>
                     </div>
-
+<style>
+	.heading-contant h1 {
+   
+    margin: 50px;
+}
+	</style>
                     <div class="content row m-top-50" style="border: 1px solid #ccc; padding: 20px;">
                         <div class="row padding-bottom-30">
                             <div class="col-md-2 col-sm-2 address-block add_more_address" data-type="pickup">

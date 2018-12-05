@@ -53,7 +53,27 @@
                     display: inline;
                 }
         </style>
-
+<style>
+	@media (min-width: 280px) and (max-width: 476px) {
+  
+  .work_3 {
+    margin-left: 230px !important;
+    margin-top: 20px !important;
+}
+  .work_1 img {
+    width: 110px !important;
+    margin-left: 46px !important;
+}
+		.work_4 img {
+    width: 110px !important;
+    margin-left: 36px !important;
+}
+		.work_5 img {
+    width: 110px !important;
+    margin-left: 26px !important;
+}
+}
+	</style>
         <!-- Our Services -->
 
         <section id="services">
@@ -201,19 +221,19 @@
                         <img src="images/star_a3.png" class="img-responsive" width="300">
                     </div>
                     <div class="work_1">
-                        <img src="images/1.png" width="200">
+                        <img src="images/s1.png" width="200">
                     </div>
                     <div class="work_2" align="center">
-                        <img src="images/2.png" width="200">
+                        <img src="images/s2.png" width="200">
                     </div>
                     <div class="work_3">
-                        <img src="images/3.png" width="200">
+                        <img src="images/s3.png" width="200">
                     </div>
                     <div class="work_4">
-                        <img src="images/4.png" width="200">
+                        <img src="images/s4.png" width="200">
                     </div>
                     <div class="work_5">
-                        <img src="images/5.png" width="200">
+                        <img src="images/s5.png" width="200">
                     </div>
                     <br>
                     <br>
