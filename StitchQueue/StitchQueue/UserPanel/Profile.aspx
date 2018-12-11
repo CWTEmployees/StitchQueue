@@ -113,8 +113,7 @@
                                         align-items: center;
                                     }
                                 }
-								                       
-							</style>
+                            </style>
 
 
                             <div class="col-md-6 col-sm-12 zero-padding" style="border: 1px solid #eee;">
@@ -127,7 +126,7 @@
                                                 <td class="firstname">
                                                     <asp:Label ID="lblfirstname" runat="server" Text=""></asp:Label>
                                                     <asp:TextBox ID="txtfirstname" runat="server"></asp:TextBox>
-                                                    <asp:RequiredFieldValidator ID="rfvfirst" runat="server" ControlToValidate="txtfirstname" ErrorMessage="FirstName cannot be empty" ForeColor="Red" ValidationGroup="userprfl"></asp:RequiredFieldValidator>
+                                                    <asp:RequiredFieldValidator ID="rfvfirst" runat="server" ControlToValidate="txtfirstname" Display="Dynamic" ErrorMessage="FirstName cannot be empty" ForeColor="Red" ValidationGroup="userprfl"></asp:RequiredFieldValidator>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -135,7 +134,7 @@
                                                 <td class="lastname">
                                                     <asp:Label ID="lbllastname" runat="server" Text=""></asp:Label>
                                                     <asp:TextBox ID="txtlastname" runat="server"></asp:TextBox>
-                                                    <asp:RequiredFieldValidator ID="rfvlast" runat="server" ControlToValidate="txtlastname" ErrorMessage="LastName cannot be empty" ForeColor="Red" ValidationGroup="userprfl"></asp:RequiredFieldValidator>
+                                                    <asp:RequiredFieldValidator ID="rfvlast" runat="server" Display="Dynamic" ControlToValidate="txtlastname" ErrorMessage="LastName cannot be empty" ForeColor="Red" ValidationGroup="userprfl"></asp:RequiredFieldValidator>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -143,17 +142,21 @@
                                                 <td class="dob">
                                                     <asp:Label ID="lblgender" runat="server" Text=""></asp:Label>
                                                     <asp:TextBox ID="txtgender" runat="server"></asp:TextBox>
-                                                    <asp:RequiredFieldValidator ID="rfvgender" runat="server" ControlToValidate="txtgender" ErrorMessage="Enter Gender" ForeColor="Red" ValidationGroup="userprfl"></asp:RequiredFieldValidator>
+                                                    <asp:RequiredFieldValidator ID="rfvgender" runat="server" ControlToValidate="txtgender" Display="Dynamic" ErrorMessage="Enter Gender" ForeColor="Red" ValidationGroup="userprfl"></asp:RequiredFieldValidator>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td><b>Date of Birth</b></td>
                                                 <td class="dob">
-                                                    <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+
                                                     <asp:Label ID="lbldateofbirth" runat="server" Text=""></asp:Label>
                                                     <asp:TextBox ID="txtdateofbirth" runat="server"></asp:TextBox>
-                                                    <ajaxToolkit:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="txtdateofbirth"></ajaxToolkit:CalendarExtender>
-                                                    <asp:RequiredFieldValidator ID="rfvcal" runat="server" ControlToValidate="txtdateofbirth" ErrorMessage="Select Date Of Birth" ForeColor="Red" ValidationGroup="userprfl"></asp:RequiredFieldValidator>
+                                                    <ajaxToolkit:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="txtdateofbirth" />
+                                                    <asp:ScriptManager ID="ScriptManager1" runat="server">
+                                                    </asp:ScriptManager>
+                                                    
+                                                    <asp:RequiredFieldValidator ID="rfvcal" runat="server" ControlToValidate="txtdateofbirth" Display="Dynamic" ErrorMessage="Select Date Of Birth" ForeColor="Red" ValidationGroup="userprfl"></asp:RequiredFieldValidator>
+
                                                 </td>
                                             </tr>
                                             <tr>
@@ -186,7 +189,7 @@
                                                 <td><b>Country</b></td>
                                                 <td class="countery">
                                                     <asp:Label ID="lblcountry" runat="server" Text=""></asp:Label>
-                                                    <asp:TextBox ID="txtcountry" runat="server"></asp:TextBox><asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ForeColor="Red" ValidationGroup="userprfl" ControlToValidate="txtEmail" Display="Dynamic"></asp:RequiredFieldValidator>
+                                                    <asp:TextBox ID="txtcountry" runat="server"></asp:TextBox>
                                                     <asp:RequiredFieldValidator ID="rfvcountry" runat="server" ForeColor="Red" ValidationGroup="userprfl" ErrorMessage="Enter Country" ControlToValidate="txtcountry" Display="Dynamic"></asp:RequiredFieldValidator>
                                                 </td>
                                             </tr>
@@ -225,6 +228,8 @@
             </div>
 
         </div>
+
+
 
         <div class="modal fade" id="profile_info_manager" tabindex="-1" role="dialog" aria-labelledby="profileinfoManagerLabel">
             <div class="modal-dialog" role="document">
@@ -315,10 +320,10 @@
 
 
 
-        </div>
-    
-  <link rel="stylesheet" type="text/css" href="./css/contact2.css">
 
-        <br>
+
+        <link rel="stylesheet" type="text/css" href="./css/contact2.css" />
+
+        <br />
     </form>
 </asp:Content>
